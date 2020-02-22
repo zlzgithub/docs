@@ -1,0 +1,38 @@
+---
+- hosts: all
+  gather_facts: false
+  vars:
+    artifact_path: "{{artifact}}"
+
+  tasks:
+  - debug:
+      msg: "{{artifact_path}}"
+
+#  - meta: end_play
+#    when: true
+
+  - name: Uploading artifacts to target dir
+    unarchive:
+      src: "{{artifact_path}}"
+      dest: /var/www/
+      mode: 0755
+
+  - name: stat htdocs
+    stat: path=/var/www/htdocs
+    register: htdocs_stat
+
+  - name: remove old files
+    file:
+      path: /var/www/html
+      state: absent
+    when: htdocs_stat.stat.exists
+  
+  - name: Move htdocs to html
+    command: mv /var/www/htdocs /var/www/html
+    when: htdocs_stat.stat.exists
+
+  - name: Ensure Httpd Service is Started
+    service:
+      name: httpd
+      state: started
+

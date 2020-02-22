@@ -1,0 +1,36 @@
+language: ruby
+
+os:
+  - linux
+
+env:
+  global:
+    - GIT_DEPLOY_REPO=https://${gh_token}@github.com/zlzgithub/docs.git
+    - GIT_DEPLOY_DIR=_book
+    - GIT_DEPLOY_BRANCH=gh-pages
+    - GIT_DEPLOY_USERNAME=zlzgithub
+    - GIT_DEPLOY_EMAIL=zenglz.jx@gmail.com
+
+branches:
+  only:
+    - master
+
+services:
+  - docker
+
+install:
+  - rm -rf _book || exit 0
+  - git config --global user.email "${GIT_DEPLOY_EMAIL}"
+  - git config --global user.name "${GIT_DEPLOY_USERNAME}"
+
+script:
+  - docker run --rm -v "$(pwd):/opt/data" lzzeng/node-gitbook-cli:alpine sh -c "gitbook install && gitbook build"
+
+after_success:
+  # - bash deploy.sh -m "update gh-pages"
+  # or:
+  - cd _book
+  - sudo git init
+  - sudo git add .
+  - sudo git commit -m "update gh-pages"
+  - sudo git push --force --quiet "${GIT_DEPLOY_REPO}" master:${GIT_DEPLOY_BRANCH}

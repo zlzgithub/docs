@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  pages:
+    image: lzzeng/node-gitbook-cli:alpine
+    build: .
+    environment:
+      SERVICE_NAME: pages
+      SERVICE_TAGS: "pages,http"
+    command:
+      - sh
+      - -c
+      - |
+        gitbook install
+        gitbook serve
+    volumes:
+      - /data/docs:/opt/data
+    #restart: always
+    ports:
+      - 4000:4000

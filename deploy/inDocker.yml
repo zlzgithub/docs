@@ -1,0 +1,19 @@
+---
+- hosts: all
+  gather_facts: false
+  vars:
+    compose_path: "/tmp/gitbook"
+    compose_file: "/tmp/gitbook/pages/docker-compose.yml"
+
+  tasks:
+  - name: cp files
+    copy: src=files/pages dest={{compose_path}}
+
+#  - meta: end_play
+#    when: true
+
+  - name: restart docker
+    shell: |
+      docker-compose -f "{{compose_file}}" down
+      docker-compose -f "{{compose_file}}" pull
+      docker-compose -f "{{compose_file}}" up -d

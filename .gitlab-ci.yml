@@ -1,0 +1,32 @@
+stages:
+  - build
+  - deploy
+
+
+build:
+  image: docker:stable
+  stage: build
+  tags:
+    - dind-v19
+  script:
+    - docker info
+    - image_name=lzzeng/docs:latest
+    - docker build -t $image_name .
+    - docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD
+    - docker push $image_name
+  only:
+    - master # this job will affect only the 'master' branch
+
+
+ansible-docker:
+  image: ansible-alpine:2.8.0
+  stage: deploy
+  tags:
+    - dind-v19
+  script:
+    - echo "GITBOOK_HOST is $GITBOOK_HOST_DEV"
+    - echo "$SSH_PRIVATE_KEY_DEV" > ~/.key
+    - chmod 600 ~/.key
+    - echo "$ANSIBLE_CFG_CONTENT" > ~/.ansible.cfg
+    - ansible-playbook -i "$GITBOOK_HOST_DEV," --private-key ~/.key -u root deploy/inDocker.yml
+
