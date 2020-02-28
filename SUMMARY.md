@@ -70,6 +70,7 @@
   * [ELK若干问题](docs/log-analysis/elk-problems.md)
   * [清理ES索引](docs/log-analysis/clean_elk_indices.md)
   * [K8s部署ELK并启用AD认证](docs/log-analysis/k8s-elk-auth-kibana-via-ad.md)
+  * [ELK部署整改](docs/log-analysis/k8s-elk-improvement.md)
 
 ### 持续集成
 
