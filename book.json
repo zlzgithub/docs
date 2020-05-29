@@ -1,6 +1,6 @@
 {
     "title": "DevOps Pages",
-    "author": "",
+    "author": "Zeng",
     "description": "运维笔记",
     "output.name": "site",
     "language": "zh-hans",
@@ -25,11 +25,9 @@
         "anchor-navigation-ex",
         "code",
         "todo",
-        "insert-logo",
         "pageview-count",
         "hide-element",
-        "fancybox",
-        "versions-select"
+        "fancybox"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -47,10 +45,6 @@
         "editlink": {
             "base": "https://github.com/zlzgithub/docs/blob/master/",
             "label": "编辑本页"
-        },
-        "insert-logo": {
-            "url": "/docs/styles/logo.png",
-            "style": "background: none; max-height: 60px; min-height: 60px"
         },
         "hide-element": {
             "elements": [".gitbook-link", ".treeview__container-title"]
@@ -72,14 +66,6 @@
         },
         "sectionx": {
             "tag": "b"
-        },
-        "versions": {
-            "options": [
-                {
-                    "value": "https://zlzgithub.github.io/docs/",
-                    "text": "latest"
-                }
-            ]
         }
     }
 }

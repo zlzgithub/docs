@@ -1,13 +1,9 @@
 # 目录
 
 * [目 录](SUMMARY.md)
+* [DevOps](README.md)
 
-## >> 自动化运维
-
-* [首 页](README.md)
-* [Alerts](docs/devops.md)
-
-### 应用部署
+## 应用部署
 
 * [Ansible](docs/deployment/ansible/README.md)
   * [简介](docs/deployment/ansible/ansible-intro.md)
@@ -48,8 +44,10 @@
   * [磁盘扩容](docs/deployment/else/disk-lvcreate.md)
   * [docker若干](docs/deployment/else/docker-notes.md)
 
-### 服务监控
+## 监控报警
 
+* [Alerts](docs/monitoring/alerts/README.md)
+  * [系统监控](docs/monitoring/alerts/intro_syshost_syslink.md)
 * [Consul](docs/monitoring/consul/README.md)
   * [Consul](docs/monitoring/consul/consul.md)
   * [Consul-template](docs/monitoring/consul/consul-template.md)
@@ -60,9 +58,16 @@
   * [Prometheus](docs/monitoring/prometheus/prom/README.md)
     * [核心组件——prometheus](docs/monitoring/prometheus/prom/prometheus-intro.md)
     * [告警组件——alertmanager](docs/monitoring/prometheus/prom/alertmanager.md)
-    * [图表展示——grafana](docs/monitoring/prometheus/prom/grafana-intro.md)
     * [联邦](docs/monitoring/prometheus/prom/prometheus_federate.md)
-    * [自动发现](docs/monitoring/prometheus/prom/prometheus-discovery.md)    
+    * [自动发现](docs/monitoring/prometheus/prom/prometheus-discovery.md) 
+  * [Grafana](docs/monitoring/grafana/README.md)
+    * [K8s](docs/monitoring/grafana/grafana-tmpl_k8s.md)
+    * [ELK](docs/monitoring/grafana/grafana-tmpl_log.md)
+    * [MySQL-Replication](docs/monitoring/grafana/grafana-tmpl_mysql-repl.md)
+    * [PMM MySQL](docs/monitoring/grafana/grafana-tmpl_pmm-mysql.md)
+    * [RabbitMQ Cluster](docs/monitoring/grafana/grafana-tmpl_rabbitmq-cluster.md)
+    * [RabbitMQ](docs/monitoring/grafana/grafana-tmpl_rabbitmq.md)
+    * [Redis](docs/monitoring/grafana/grafana-tmpl_redis.md)
   * [常用软件接入Prometheus监控](docs/monitoring/prometheus/3rd/README.md)
     * [MySQL](docs/monitoring/prometheus/3rd/mysql-monitor-steps.md)
     * [MySQL主从同步](docs/monitoring/prometheus/3rd/Prometheus-monitor-mysql-replication.md)
@@ -74,7 +79,7 @@
 * [Zabbix](docs/monitoring/zabbix/zabbix-intro.md)
   * [自动发现](docs/monitoring/zabbix/zabbix-discovery-rule.md)
 
-### 日志分析
+## 日志分析
 
 * [ELK](docs/log-analysis/README.md)
   * [X-pack权限控制版ES](docs/log-analysis/es-xpack.md)
@@ -86,26 +91,26 @@
   * [使用Grafana](docs/log-analysis/elk-grafana.md)
   * [ES APIs](docs/log-analysis/es-api-memo.md)
 
-### 持续集成
+## 持续集成
 
 * [CI/CD](docs/cicd/README.md)
 * [GitLab CI/CD](docs/cicd/gitlab/README.md)
   * [GitLab Runner](docs/cicd/gitlab/gitlab-runner.md)
   * [GitLab CI/CD](docs/cicd/gitlab/gitlab-cicd.md)
 
-### 配置管理
+## 配置管理
 
 * [CMDB](docs/config-management/README.md)
   * [Ansible Tower](docs/config-management/ansible-tower.md)
   * [BlueKing](docs/config-management/bk-cmdb.md)
 
-### 任务调度
+## 任务调度
 
 * [简介](docs/task-scheduling/README.md)
 * [XXL-JOB](docs/task-scheduling/xxl-job.md)
   * [XXL-JOB升级](docs/task-scheduling/upgrade-xxl-job.md)
 
-## >> 关于本书
+## 关于本书
 
 * [制作](docs/my-gitbook.md)
 * [发布](docs/cicd/publish-gitbook.md)
