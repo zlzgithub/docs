@@ -1,7 +1,5 @@
 # Percona toolkit
 
----
-
 
 
 **安装**

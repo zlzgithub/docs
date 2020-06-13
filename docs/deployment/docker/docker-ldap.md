@@ -1,4 +1,4 @@
-# Docker安装LDAP服务
+# LDAP
 
 
 
@@ -14,8 +14,8 @@ ldap:
     LDAP_TLS: false \
     LDAP_ORGANISATION: "lzzeng" \
     LDAP_DOMAIN: "lzzeng.cn" \
-    LDAP_ADMIN_PASSWORD: "ldap@dmin" \
-    LDAP_CONFIG_PASSWORD: "ldap@dmin" \
+    LDAP_ADMIN_PASSWORD: "xxxxxx" \
+    LDAP_CONFIG_PASSWORD: "xxxxxx" \
   restart: always
 
 ldapadmin:

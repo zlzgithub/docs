@@ -1,6 +1,6 @@
 # Yum安装RabbitMQ
 
----
+
 
 > 系统：CentOS 7.6
 

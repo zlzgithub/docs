@@ -9,7 +9,7 @@
 .
 |-- book.json
 |-- docs
-|-- node_modules # 可不预先安装js依赖
+|-- node_modules		# 可不预先安装js依赖
 |-- README.md
 `-- SUMMARY.md
 ```
@@ -79,7 +79,7 @@ command:
   - /bin/sh
   - -c
   - |
-    cd /opt/data #当镜像默认workdir不是/opt/data时，可在command中cd；是则不必cd
+    cd /opt/data 		#当镜像默认workdir不是/opt/data时，可在command中cd；是则不必cd
     gitbook serve
 
 command:

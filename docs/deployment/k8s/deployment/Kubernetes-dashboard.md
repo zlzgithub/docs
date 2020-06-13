@@ -20,7 +20,7 @@ kubectl -n kube-system delete $(kubectl -n kube-system get pod -o name | grep da
 
 
 
-获取登录token：
+获取登录token的几种方法（权限不同）：
 
 ```sh
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | awk '/^deployment-controller-token-/{print $1}') | awk '$1=="token:"{print $2}'

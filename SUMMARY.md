@@ -7,7 +7,6 @@
 
 * [Ansible](docs/deployment/ansible/README.md)
   * [简介](docs/deployment/ansible/ansible-intro.md)
-  * [示例](docs/deployment/ansible/ansible-examples.md)
 * [Docker](docs/deployment/docker/README.md)
   * [Prometheus](docs/deployment/docker/docker-prometheus.md)
   * [Nginx Consul](docs/deployment/docker/docker-nginx-consul.md)
@@ -59,7 +58,7 @@
     * [核心组件——prometheus](docs/monitoring/prometheus/prom/prometheus-intro.md)
     * [告警组件——alertmanager](docs/monitoring/prometheus/prom/alertmanager.md)
     * [联邦](docs/monitoring/prometheus/prom/prometheus_federate.md)
-    * [自动发现](docs/monitoring/prometheus/prom/prometheus-discovery.md) 
+    * [自动发现](docs/monitoring/prometheus/prom/prometheus-discovery.md)
   * [Grafana](docs/monitoring/grafana/README.md)
     * [K8s](docs/monitoring/grafana/grafana-tmpl_k8s.md)
     * [ELK](docs/monitoring/grafana/grafana-tmpl_log.md)

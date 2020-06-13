@@ -1,4 +1,6 @@
-## redis
+# Redis
+
+
 
 ```sh
 [root@localhost redis]# docker inspect redis_redis_1 |grep net
@@ -100,7 +102,7 @@ f015467b0439b9694a6d633cc62a2502079e74f7 172.17.0.8:8002@18002 master - 0 155719
 
 
 
-### redis-single
+## redis-single
 
 docker-compose.yml:
 
@@ -129,7 +131,7 @@ networks:
 
 ---
 
-### redis-cluster
+## redis-cluster
 
 单节点多容器redis集群
 
@@ -148,7 +150,7 @@ services:
    - REDIS_PORT=6381
   ports:
     - '6381:6381'       #服务端口
-    - '16381:16381'   #集群端口
+    - '16381:16381'   	#集群端口
 
  redis2:
   image: redis-cluster

@@ -1,6 +1,6 @@
 # 安装ruby-2.6和redis-dump
 
----
+
 
 > 系统：CentOS 7.6
 

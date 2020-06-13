@@ -1,8 +1,8 @@
 # MySQL主从配置
 
----
 
-- mysql配置
+
+## mysql配置
 
 master端my.cnf配置示例：
 
@@ -80,7 +80,7 @@ read_only=1
 
 
 
-- master端添加slave端复制账号
+## master端添加slave端复制账号
 
 ```mysql
 CREATE USER 'slave'@'%' IDENTIFIED BY 'xxxxxx'; #slave密码xxxxxx，下面change master时用到
@@ -94,7 +94,7 @@ GRANT REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'slave'@'%';
 
 
 
-- 获取master信息
+## 获取master信息
 
 ```mysql
 # mysql -uroot -p
@@ -122,7 +122,7 @@ change master to master_host='172.17.0.2', master_user='slave', master_password=
 
 
 
-- slave启动、查看
+## slave启动、查看
 
 ```mysql
 mysql> start slave;
