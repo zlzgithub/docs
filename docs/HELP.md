@@ -2,6 +2,8 @@
 
 [Ops](assets/Ops.zip)
 
+[pic](assets/E.zip)
+
 [docker&k8s_1115](assets/docker&k8s_1115.zip)
 
 Example [GitBook] website using GitLab Pages.
