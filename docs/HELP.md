@@ -2,6 +2,8 @@
 
 [Ops](assets/Ops.zip)
 
+[Ops-lite](assets/Ops-lite.zip)
+
 [pic](assets/E.zip)
 
 [docker&k8s_1115](assets/docker&k8s_1115.zip)

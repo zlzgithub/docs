@@ -44,6 +44,7 @@
   * [修复mysql主从](docs/deployment/else/repair-mysql-repl.md)
   * [磁盘扩容](docs/deployment/else/disk-lvcreate.md)
   * [docker若干](docs/deployment/else/docker-notes.md)
+  * [HiS](docs/normal/HiS.md)
 
 ## 监控报警
 
