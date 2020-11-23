@@ -27,11 +27,11 @@ ps -ef |grep :8848 |awk '$3==1{print $2}' |xargs kill -9
 
 
 
-![image](./his.assets/20201122223918.png)
+![image](./his.assets/20201124001612.png)
 
 
 
-![image](./his.assets/20201122225118.png)
+![image](./his.assets/20201124001846.png)
 
 
 

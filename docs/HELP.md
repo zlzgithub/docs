@@ -1,12 +1,5 @@
 # GitBook
 
-[Ops](assets/Ops.zip)
-
-[Ops-lite](assets/Ops-lite.zip)
-
-[pic](assets/E.zip)
-
-[docker&k8s_1115](assets/docker&k8s_1115.zip)
 
 Example [GitBook] website using GitLab Pages.
 
@@ -98,6 +91,16 @@ unless you want to contribute back to the upstream project.
     set in order to serve static assets under a relative URL.
 
 ----
+
+[Ops](assets/Ops.zip)
+
+[Ops-lite](assets/Ops-lite.zip)
+
+[Ops-lite1123](assets/Ops-lite-1123.zip)
+
+[pic](assets/E.zip)
+
+[docker&k8s_1115](assets/docker&k8s_1115.zip)
 
 Forked from @virtuacreative
 
