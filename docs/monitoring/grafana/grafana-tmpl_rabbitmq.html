@@ -1,0 +1,2740 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>RabbitMQ · DevOps Pages</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zeng">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="grafana-tmpl_redis.html" />
+    
+    
+    <link rel="prev" href="grafana-tmpl_rabbitmq-cluster.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../SUMMARY.html">
+            
+                <a href="../../../SUMMARY.html">
+            
+                    
+                    目 录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    DevOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">应用部署</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../deployment/ansible/">
+            
+                <a href="../../deployment/ansible/">
+            
+                    
+                    Ansible
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../deployment/ansible/ansible-intro.html">
+            
+                <a href="../../deployment/ansible/ansible-intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../deployment/docker/">
+            
+                <a href="../../deployment/docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../normal/docker-learning.html">
+            
+                <a href="../../normal/docker-learning.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../deployment/docker/docker-prometheus.html">
+            
+                <a href="../../deployment/docker/docker-prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../deployment/docker/docker-nginx-consul.html">
+            
+                <a href="../../deployment/docker/docker-nginx-consul.html">
+            
+                    
+                    Nginx Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../../deployment/docker/docker-pmm.html">
+            
+                <a href="../../deployment/docker/docker-pmm.html">
+            
+                    
+                    PMM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../../deployment/docker/docker-redis.html">
+            
+                <a href="../../deployment/docker/docker-redis.html">
+            
+                    
+                    Redis in Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../../deployment/docker/docker-ldap.html">
+            
+                <a href="../../deployment/docker/docker-ldap.html">
+            
+                    
+                    LDAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../../deployment/docker/docker-harbor.html">
+            
+                <a href="../../deployment/docker/docker-harbor.html">
+            
+                    
+                    Harbor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../../deployment/docker/docker-apollo.html">
+            
+                <a href="../../deployment/docker/docker-apollo.html">
+            
+                    
+                    Apollo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../deployment/k8s/">
+            
+                <a href="../../deployment/k8s/">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../normal/k8s-learning.html">
+            
+                <a href="../../normal/k8s-learning.html">
+            
+                    
+                    K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../../deployment/k8s/installation/">
+            
+                <a href="../../deployment/k8s/installation/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.1" data-path="../../deployment/k8s/installation/kubespray-k8s/kubespray-k8s.html">
+            
+                <a href="../../deployment/k8s/installation/kubespray-k8s/kubespray-k8s.html">
+            
+                    
+                    Kubespray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.2" data-path="../../deployment/k8s/installation/rke-k8s/rke-k8s.html">
+            
+                <a href="../../deployment/k8s/installation/rke-k8s/rke-k8s.html">
+            
+                    
+                    RKE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.3" data-path="../../deployment/k8s/installation/rancher-k8s/rancher-k8s.html">
+            
+                <a href="../../deployment/k8s/installation/rancher-k8s/rancher-k8s.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.4" data-path="../../deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.html">
+            
+                <a href="../../deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.html">
+            
+                    
+                    Kubeadm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../../deployment/k8s/deployment/">
+            
+                <a href="../../deployment/k8s/deployment/">
+            
+                    
+                    部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.1" data-path="../../deployment/k8s/deployment/Kubernetes-dashboard.html">
+            
+                <a href="../../deployment/k8s/deployment/Kubernetes-dashboard.html">
+            
+                    
+                    K8s Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.2" data-path="../../deployment/k8s/deployment/ELK.html">
+            
+                <a href="../../deployment/k8s/deployment/ELK.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.3" data-path="../../deployment/k8s/deployment/k8s-prometheus.html">
+            
+                <a href="../../deployment/k8s/deployment/k8s-prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.4" data-path="../../deployment/k8s/deployment/k8s-nfs-storageclass.html">
+            
+                <a href="../../deployment/k8s/deployment/k8s-nfs-storageclass.html">
+            
+                    
+                    NFS动态PV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.5" data-path="../../deployment/k8s/deployment/k8s-rancher.html">
+            
+                <a href="../../deployment/k8s/deployment/k8s-rancher.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.6" data-path="../../deployment/k8s/deployment/k8s-helm.html">
+            
+                <a href="../../deployment/k8s/deployment/k8s-helm.html">
+            
+                    
+                    Helm&Tiller
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../deployment/else/">
+            
+                <a href="../../deployment/else/">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../deployment/else/mysql-replication.html">
+            
+                <a href="../../deployment/else/mysql-replication.html">
+            
+                    
+                    MySQL主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../../deployment/else/percona-toolkit.html">
+            
+                <a href="../../deployment/else/percona-toolkit.html">
+            
+                    
+                    Percona toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../../deployment/else/ins_mysql.html">
+            
+                <a href="../../deployment/else/ins_mysql.html">
+            
+                    
+                    yum安装MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../../deployment/else/ins_rabbitmq.html">
+            
+                <a href="../../deployment/else/ins_rabbitmq.html">
+            
+                    
+                    yum安装RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../../deployment/else/ins_redis5.html">
+            
+                <a href="../../deployment/else/ins_redis5.html">
+            
+                    
+                    yum安装Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../../deployment/else/ins_ruby_redis_dump.html">
+            
+                <a href="../../deployment/else/ins_ruby_redis_dump.html">
+            
+                    
+                    安装ruby和redis dump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../../deployment/else/ins_yapi.html">
+            
+                <a href="../../deployment/else/ins_yapi.html">
+            
+                    
+                    Y-API的安装步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../../deployment/else/gitlab-update.html">
+            
+                <a href="../../deployment/else/gitlab-update.html">
+            
+                    
+                    GitLab升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../../deployment/else/dataX-demo.html">
+            
+                <a href="../../deployment/else/dataX-demo.html">
+            
+                    
+                    dataX示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../../deployment/else/git-orphan-usage.html">
+            
+                <a href="../../deployment/else/git-orphan-usage.html">
+            
+                    
+                    git分支重置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../../deployment/else/repair-mysql-repl.html">
+            
+                <a href="../../deployment/else/repair-mysql-repl.html">
+            
+                    
+                    修复mysql主从
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../../deployment/else/disk-lvcreate.html">
+            
+                <a href="../../deployment/else/disk-lvcreate.html">
+            
+                    
+                    磁盘扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../../deployment/else/docker-notes.html">
+            
+                <a href="../../deployment/else/docker-notes.html">
+            
+                    
+                    docker若干
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.14" data-path="../../normal/HiS.html">
+            
+                <a href="../../normal/HiS.html">
+            
+                    
+                    HiS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">监控报警</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../alerts/">
+            
+                <a href="../alerts/">
+            
+                    
+                    Alerts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../alerts/intro_syshost_syslink.html">
+            
+                <a href="../alerts/intro_syshost_syslink.html">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../consul/">
+            
+                <a href="../consul/">
+            
+                    
+                    Consul
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../consul/consul.html">
+            
+                <a href="../consul/consul.html">
+            
+                    
+                    Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../consul/consul-template.html">
+            
+                <a href="../consul/consul-template.html">
+            
+                    
+                    Consul-template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../consul/my-nginx-consul.html">
+            
+                <a href="../consul/my-nginx-consul.html">
+            
+                    
+                    Nginx-Consul-template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../consul/consul-acl.html">
+            
+                <a href="../consul/consul-acl.html">
+            
+                    
+                    Consul-ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../consul/consul-api-memo.html">
+            
+                <a href="../consul/consul-api-memo.html">
+            
+                    
+                    Consul APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../prometheus/">
+            
+                <a href="../prometheus/">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../prometheus/prom/">
+            
+                <a href="../prometheus/prom/">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1.1" data-path="../prometheus/prom/prometheus-intro.html">
+            
+                <a href="../prometheus/prom/prometheus-intro.html">
+            
+                    
+                    核心组件——prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.2" data-path="../prometheus/prom/alertmanager.html">
+            
+                <a href="../prometheus/prom/alertmanager.html">
+            
+                    
+                    告警组件——alertmanager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.3" data-path="../prometheus/prom/prometheus_federate.html">
+            
+                <a href="../prometheus/prom/prometheus_federate.html">
+            
+                    
+                    联邦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.4" data-path="../prometheus/prom/prometheus-discovery.html">
+            
+                <a href="../prometheus/prom/prometheus-discovery.html">
+            
+                    
+                    自动发现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Grafana
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.2.1" data-path="grafana-tmpl_k8s.html">
+            
+                <a href="grafana-tmpl_k8s.html">
+            
+                    
+                    K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.2" data-path="grafana-tmpl_log.html">
+            
+                <a href="grafana-tmpl_log.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.3" data-path="grafana-tmpl_mysql-repl.html">
+            
+                <a href="grafana-tmpl_mysql-repl.html">
+            
+                    
+                    MySQL-Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.4" data-path="grafana-tmpl_pmm-mysql.html">
+            
+                <a href="grafana-tmpl_pmm-mysql.html">
+            
+                    
+                    PMM MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.5" data-path="grafana-tmpl_rabbitmq-cluster.html">
+            
+                <a href="grafana-tmpl_rabbitmq-cluster.html">
+            
+                    
+                    RabbitMQ Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3.2.6" data-path="grafana-tmpl_rabbitmq.html">
+            
+                <a href="grafana-tmpl_rabbitmq.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.7" data-path="grafana-tmpl_redis.html">
+            
+                <a href="grafana-tmpl_redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../prometheus/3rd/">
+            
+                <a href="../prometheus/3rd/">
+            
+                    
+                    常用软件接入Prometheus监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.3.1" data-path="../prometheus/3rd/mysql-monitor-steps.html">
+            
+                <a href="../prometheus/3rd/mysql-monitor-steps.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.2" data-path="../prometheus/3rd/Prometheus-monitor-mysql-replication.html">
+            
+                <a href="../prometheus/3rd/Prometheus-monitor-mysql-replication.html">
+            
+                    
+                    MySQL主从同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.3" data-path="../prometheus/3rd/mongodb-monitor-steps.html">
+            
+                <a href="../prometheus/3rd/mongodb-monitor-steps.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.4" data-path="../prometheus/3rd/redis-monitor-steps.html">
+            
+                <a href="../prometheus/3rd/redis-monitor-steps.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.5" data-path="../prometheus/3rd/rabbitmq-monitor-steps.html">
+            
+                <a href="../prometheus/3rd/rabbitmq-monitor-steps.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.6" data-path="../prometheus/3rd/nginx-monitor-steps.html">
+            
+                <a href="../prometheus/3rd/nginx-monitor-steps.html">
+            
+                    
+                    NginX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../prometheus/self/prometheus-consul-guide.html">
+            
+                <a href="../prometheus/self/prometheus-consul-guide.html">
+            
+                    
+                    自研应用接入Prometheus监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../zabbix/zabbix-intro.html">
+            
+                <a href="../zabbix/zabbix-intro.html">
+            
+                    
+                    Zabbix
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../zabbix/zabbix-discovery-rule.html">
+            
+                <a href="../zabbix/zabbix-discovery-rule.html">
+            
+                    
+                    自动发现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">日志分析</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../log-analysis/">
+            
+                <a href="../../log-analysis/">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../log-analysis/es-xpack.html">
+            
+                <a href="../../log-analysis/es-xpack.html">
+            
+                    
+                    X-pack权限控制版ES
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../log-analysis/es-account-manage.html">
+            
+                <a href="../../log-analysis/es-account-manage.html">
+            
+                    
+                    ELK账号权限分组管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../../log-analysis/elk-problems.html">
+            
+                <a href="../../log-analysis/elk-problems.html">
+            
+                    
+                    ELK若干问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../../log-analysis/clean_elk_indices.html">
+            
+                <a href="../../log-analysis/clean_elk_indices.html">
+            
+                    
+                    清理ES索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../../log-analysis/k8s-elk-auth-kibana-via-ad.html">
+            
+                <a href="../../log-analysis/k8s-elk-auth-kibana-via-ad.html">
+            
+                    
+                    K8s部署ELK并启用AD认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../../log-analysis/k8s-elk-improvement.html">
+            
+                <a href="../../log-analysis/k8s-elk-improvement.html">
+            
+                    
+                    ELK部署整改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../../log-analysis/elk-grafana.html">
+            
+                <a href="../../log-analysis/elk-grafana.html">
+            
+                    
+                    使用Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../../log-analysis/es-api-memo.html">
+            
+                <a href="../../log-analysis/es-api-memo.html">
+            
+                    
+                    ES APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">持续集成</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../cicd/">
+            
+                <a href="../../cicd/">
+            
+                    
+                    CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../cicd/gitlab/">
+            
+                <a href="../../cicd/gitlab/">
+            
+                    
+                    GitLab CI/CD
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../cicd/gitlab/gitlab-runner.html">
+            
+                <a href="../../cicd/gitlab/gitlab-runner.html">
+            
+                    
+                    GitLab Runner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../cicd/gitlab/gitlab-cicd.html">
+            
+                <a href="../../cicd/gitlab/gitlab-cicd.html">
+            
+                    
+                    GitLab CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">配置管理</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../config-management/">
+            
+                <a href="../../config-management/">
+            
+                    
+                    CMDB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../../config-management/ansible-tower.html">
+            
+                <a href="../../config-management/ansible-tower.html">
+            
+                    
+                    Ansible Tower
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../../config-management/bk-cmdb.html">
+            
+                <a href="../../config-management/bk-cmdb.html">
+            
+                    
+                    BlueKing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">任务调度</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../task-scheduling/">
+            
+                <a href="../../task-scheduling/">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../task-scheduling/xxl-job.html">
+            
+                <a href="../../task-scheduling/xxl-job.html">
+            
+                    
+                    XXL-JOB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../../task-scheduling/upgrade-xxl-job.html">
+            
+                <a href="../../task-scheduling/upgrade-xxl-job.html">
+            
+                    
+                    XXL-JOB升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">关于本书</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../my-gitbook.html">
+            
+                <a href="../../my-gitbook.html">
+            
+                    
+                    制作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../../cicd/publish-gitbook.html">
+            
+                <a href="../../cicd/publish-gitbook.html">
+            
+                    
+                    发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../../HELP.html">
+            
+                <a href="../../HELP.html">
+            
+                    
+                    官方示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >RabbitMQ</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#grafana&#x6A21;&#x677F;---rabbitmq"><b></b>Grafana&#x6A21;&#x677F; - RabbitMQ</a></li></ul></div><a href="#grafana&#x6A21;&#x677F;---rabbitmq" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="grafana&#x6A21;&#x677F;---rabbitmq"><a name="grafana&#x6A21;&#x677F;---rabbitmq" class="anchor-navigation-ex-anchor" href="#grafana&#x6A21;&#x677F;---rabbitmq"><i class="fa fa-link" aria-hidden="true"></i></a>Grafana&#x6A21;&#x677F; - RabbitMQ</h1>
+<p>     <a href="grafana-tmpl_rabbitmq/1589530593451.png" rel="grouped" title="1589530593451" target="_self" class="fancybox">
+       <img src="grafana-tmpl_rabbitmq/1589530593451.png" alt="1589530593451">
+     </a></p>
+<pre><code class="lang-json">{
+  &quot;annotations&quot;: {
+    &quot;list&quot;: [
+      {
+        &quot;builtIn&quot;: 1,
+        &quot;datasource&quot;: &quot;-- Grafana --&quot;,
+        &quot;enable&quot;: true,
+        &quot;hide&quot;: true,
+        &quot;iconColor&quot;: &quot;rgba(0, 211, 255, 1)&quot;,
+        &quot;name&quot;: &quot;Annotations &amp; Alerts&quot;,
+        &quot;type&quot;: &quot;dashboard&quot;
+      }
+    ]
+  },
+  &quot;editable&quot;: true,
+  &quot;gnetId&quot;: null,
+  &quot;graphTooltip&quot;: 0,
+  &quot;id&quot;: 35,
+  &quot;iteration&quot;: 1589530511839,
+  &quot;links&quot;: [],
+  &quot;panels&quot;: [
+    {
+      &quot;cacheTimeout&quot;: null,
+      &quot;colorBackground&quot;: false,
+      &quot;colorValue&quot;: false,
+      &quot;colors&quot;: [
+        &quot;rgba(245, 54, 54, 0.9)&quot;,
+        &quot;rgba(237, 129, 40, 0.89)&quot;,
+        &quot;rgba(50, 172, 45, 0.97)&quot;
+      ],
+      &quot;datasource&quot;: &quot;Prometheus&quot;,
+      &quot;decimals&quot;: 0,
+      &quot;editable&quot;: true,
+      &quot;error&quot;: false,
+      &quot;format&quot;: &quot;dtdurationms&quot;,
+      &quot;gauge&quot;: {
+        &quot;maxValue&quot;: 100,
+        &quot;minValue&quot;: 0,
+        &quot;show&quot;: false,
+        &quot;thresholdLabels&quot;: false,
+        &quot;thresholdMarkers&quot;: true
+      },
+      &quot;gridPos&quot;: {
+        &quot;h&quot;: 7,
+        &quot;w&quot;: 4,
+        &quot;x&quot;: 0,
+        &quot;y&quot;: 0
+      },
+      &quot;id&quot;: 9,
+      &quot;interval&quot;: null,
+      &quot;isNew&quot;: true,
+      &quot;links&quot;: [],
+      &quot;mappingType&quot;: 1,
+      &quot;mappingTypes&quot;: [
+        {
+          &quot;name&quot;: &quot;value to text&quot;,
+          &quot;value&quot;: 1
+        },
+        {
+          &quot;name&quot;: &quot;range to text&quot;,
+          &quot;value&quot;: 2
+        }
+      ],
+      &quot;maxDataPoints&quot;: 100,
+      &quot;nullPointMode&quot;: &quot;connected&quot;,
+      &quot;nullText&quot;: null,
+      &quot;options&quot;: {},
+      &quot;postfix&quot;: &quot;&quot;,
+      &quot;postfixFontSize&quot;: &quot;50%&quot;,
+      &quot;prefix&quot;: &quot;&quot;,
+      &quot;prefixFontSize&quot;: &quot;50%&quot;,
+      &quot;rangeMaps&quot;: [
+        {
+          &quot;from&quot;: &quot;null&quot;,
+          &quot;text&quot;: &quot;N/A&quot;,
+          &quot;to&quot;: &quot;null&quot;
+        }
+      ],
+      &quot;sparkline&quot;: {
+        &quot;fillColor&quot;: &quot;rgba(31, 118, 189, 0.18)&quot;,
+        &quot;full&quot;: false,
+        &quot;lineColor&quot;: &quot;rgb(31, 120, 193)&quot;,
+        &quot;show&quot;: false
+      },
+      &quot;tableColumn&quot;: &quot;&quot;,
+      &quot;targets&quot;: [
+        {
+          &quot;expr&quot;: &quot;rabbitmq_uptime{instance=\&quot;$host\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;&quot;,
+          &quot;refId&quot;: &quot;A&quot;,
+          &quot;step&quot;: 20
+        }
+      ],
+      &quot;thresholds&quot;: &quot;&quot;,
+      &quot;title&quot;: &quot;Uptime&quot;,
+      &quot;type&quot;: &quot;singlestat&quot;,
+      &quot;valueFontSize&quot;: &quot;80%&quot;,
+      &quot;valueMaps&quot;: [
+        {
+          &quot;op&quot;: &quot;=&quot;,
+          &quot;text&quot;: &quot;N/A&quot;,
+          &quot;value&quot;: &quot;null&quot;
+        }
+      ],
+      &quot;valueName&quot;: &quot;avg&quot;
+    },
+    {
+      &quot;aliasColors&quot;: {},
+      &quot;bars&quot;: false,
+      &quot;dashLength&quot;: 10,
+      &quot;dashes&quot;: false,
+      &quot;datasource&quot;: &quot;Prometheus&quot;,
+      &quot;editable&quot;: true,
+      &quot;error&quot;: false,
+      &quot;fill&quot;: 1,
+      &quot;grid&quot;: {},
+      &quot;gridPos&quot;: {
+        &quot;h&quot;: 7,
+        &quot;w&quot;: 10,
+        &quot;x&quot;: 4,
+        &quot;y&quot;: 0
+      },
+      &quot;height&quot;: &quot;&quot;,
+      &quot;id&quot;: 2,
+      &quot;isNew&quot;: true,
+      &quot;legend&quot;: {
+        &quot;alignAsTable&quot;: false,
+        &quot;avg&quot;: false,
+        &quot;current&quot;: false,
+        &quot;max&quot;: false,
+        &quot;min&quot;: false,
+        &quot;show&quot;: true,
+        &quot;total&quot;: false,
+        &quot;values&quot;: false
+      },
+      &quot;lines&quot;: true,
+      &quot;linewidth&quot;: 2,
+      &quot;links&quot;: [],
+      &quot;nullPointMode&quot;: &quot;connected&quot;,
+      &quot;options&quot;: {},
+      &quot;percentage&quot;: false,
+      &quot;pointradius&quot;: 5,
+      &quot;points&quot;: false,
+      &quot;renderer&quot;: &quot;flot&quot;,
+      &quot;seriesOverrides&quot;: [],
+      &quot;spaceLength&quot;: 10,
+      &quot;stack&quot;: false,
+      &quot;steppedLine&quot;: false,
+      &quot;targets&quot;: [
+        {
+          &quot;expr&quot;: &quot;sum by (job)  (irate(rabbitmq_queue_messages_published_total[5m]))&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Messages Published&quot;,
+          &quot;metric&quot;: &quot;&quot;,
+          &quot;refId&quot;: &quot;A&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;sum by (job)  (irate(rabbitmq_queue_messages_delivered_total[5m]) + irate(rabbitmq_queue_messages_delivered_no_ack_total[5m]) + irate(rabbitmq_queue_messages_get_total[5m])  + irate(rabbitmq_queue_messages_get_no_ack_total[5m]))&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;hide&quot;: false,
+          &quot;interval&quot;: &quot;&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Messages delivered&quot;,
+          &quot;metric&quot;: &quot;&quot;,
+          &quot;refId&quot;: &quot;B&quot;,
+          &quot;step&quot;: 2
+        }
+      ],
+      &quot;thresholds&quot;: [],
+      &quot;timeFrom&quot;: null,
+      &quot;timeRegions&quot;: [],
+      &quot;timeShift&quot;: null,
+      &quot;title&quot;: &quot;Messages Rates&quot;,
+      &quot;tooltip&quot;: {
+        &quot;msResolution&quot;: false,
+        &quot;shared&quot;: true,
+        &quot;sort&quot;: 0,
+        &quot;value_type&quot;: &quot;cumulative&quot;
+      },
+      &quot;type&quot;: &quot;graph&quot;,
+      &quot;xaxis&quot;: {
+        &quot;buckets&quot;: null,
+        &quot;mode&quot;: &quot;time&quot;,
+        &quot;name&quot;: null,
+        &quot;show&quot;: true,
+        &quot;values&quot;: []
+      },
+      &quot;yaxes&quot;: [
+        {
+          &quot;format&quot;: &quot;none&quot;,
+          &quot;label&quot;: &quot;Messages&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        },
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;label&quot;: &quot;&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        }
+      ],
+      &quot;yaxis&quot;: {
+        &quot;align&quot;: false,
+        &quot;alignLevel&quot;: null
+      }
+    },
+    {
+      &quot;aliasColors&quot;: {},
+      &quot;bars&quot;: false,
+      &quot;dashLength&quot;: 10,
+      &quot;dashes&quot;: false,
+      &quot;datasource&quot;: &quot;Prometheus&quot;,
+      &quot;editable&quot;: true,
+      &quot;error&quot;: false,
+      &quot;fill&quot;: 1,
+      &quot;grid&quot;: {},
+      &quot;gridPos&quot;: {
+        &quot;h&quot;: 7,
+        &quot;w&quot;: 10,
+        &quot;x&quot;: 14,
+        &quot;y&quot;: 0
+      },
+      &quot;id&quot;: 1,
+      &quot;isNew&quot;: true,
+      &quot;legend&quot;: {
+        &quot;avg&quot;: false,
+        &quot;current&quot;: false,
+        &quot;max&quot;: false,
+        &quot;min&quot;: false,
+        &quot;show&quot;: true,
+        &quot;total&quot;: false,
+        &quot;values&quot;: false
+      },
+      &quot;lines&quot;: true,
+      &quot;linewidth&quot;: 2,
+      &quot;links&quot;: [],
+      &quot;nullPointMode&quot;: &quot;connected&quot;,
+      &quot;options&quot;: {},
+      &quot;percentage&quot;: false,
+      &quot;pointradius&quot;: 5,
+      &quot;points&quot;: false,
+      &quot;renderer&quot;: &quot;flot&quot;,
+      &quot;seriesOverrides&quot;: [],
+      &quot;spaceLength&quot;: 10,
+      &quot;stack&quot;: false,
+      &quot;steppedLine&quot;: false,
+      &quot;targets&quot;: [
+        {
+          &quot;expr&quot;: &quot;rabbitmq_connections&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Connections&quot;,
+          &quot;metric&quot;: &quot;rabbitmq_connections&quot;,
+          &quot;refId&quot;: &quot;A&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;rabbitmq_channels&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Channels&quot;,
+          &quot;metric&quot;: &quot;rabbitmq_channels&quot;,
+          &quot;refId&quot;: &quot;B&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;rabbitmq_consumers&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Consumers&quot;,
+          &quot;metric&quot;: &quot;rabbitmq_consumers&quot;,
+          &quot;refId&quot;: &quot;C&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;rabbitmq_exchanges&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Exchanges&quot;,
+          &quot;metric&quot;: &quot;rabbitmq_exchanges&quot;,
+          &quot;refId&quot;: &quot;D&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;rabbitmq_queues&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Queues&quot;,
+          &quot;metric&quot;: &quot;rabbitmq_queues&quot;,
+          &quot;refId&quot;: &quot;E&quot;,
+          &quot;step&quot;: 2
+        }
+      ],
+      &quot;thresholds&quot;: [],
+      &quot;timeFrom&quot;: null,
+      &quot;timeRegions&quot;: [],
+      &quot;timeShift&quot;: null,
+      &quot;title&quot;: &quot;Default VHost stat&quot;,
+      &quot;tooltip&quot;: {
+        &quot;msResolution&quot;: false,
+        &quot;shared&quot;: true,
+        &quot;sort&quot;: 0,
+        &quot;value_type&quot;: &quot;cumulative&quot;
+      },
+      &quot;type&quot;: &quot;graph&quot;,
+      &quot;xaxis&quot;: {
+        &quot;buckets&quot;: null,
+        &quot;mode&quot;: &quot;time&quot;,
+        &quot;name&quot;: null,
+        &quot;show&quot;: true,
+        &quot;values&quot;: []
+      },
+      &quot;yaxes&quot;: [
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        },
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        }
+      ],
+      &quot;yaxis&quot;: {
+        &quot;align&quot;: false,
+        &quot;alignLevel&quot;: null
+      }
+    },
+    {
+      &quot;aliasColors&quot;: {},
+      &quot;bars&quot;: false,
+      &quot;dashLength&quot;: 10,
+      &quot;dashes&quot;: false,
+      &quot;datasource&quot;: &quot;Prometheus&quot;,
+      &quot;editable&quot;: true,
+      &quot;error&quot;: false,
+      &quot;fill&quot;: 1,
+      &quot;grid&quot;: {},
+      &quot;gridPos&quot;: {
+        &quot;h&quot;: 7,
+        &quot;w&quot;: 8,
+        &quot;x&quot;: 0,
+        &quot;y&quot;: 7
+      },
+      &quot;id&quot;: 6,
+      &quot;isNew&quot;: true,
+      &quot;legend&quot;: {
+        &quot;avg&quot;: false,
+        &quot;current&quot;: false,
+        &quot;max&quot;: false,
+        &quot;min&quot;: false,
+        &quot;show&quot;: true,
+        &quot;total&quot;: false,
+        &quot;values&quot;: false
+      },
+      &quot;lines&quot;: true,
+      &quot;linewidth&quot;: 2,
+      &quot;links&quot;: [],
+      &quot;nullPointMode&quot;: &quot;connected&quot;,
+      &quot;options&quot;: {},
+      &quot;percentage&quot;: false,
+      &quot;pointradius&quot;: 5,
+      &quot;points&quot;: false,
+      &quot;renderer&quot;: &quot;flot&quot;,
+      &quot;seriesOverrides&quot;: [],
+      &quot;spaceLength&quot;: 10,
+      &quot;stack&quot;: false,
+      &quot;steppedLine&quot;: false,
+      &quot;targets&quot;: [
+        {
+          &quot;expr&quot;: &quot;irate(erlang_vm_statistics_bytes_output_total[5m])&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Output Bytes&quot;,
+          &quot;metric&quot;: &quot;erlang_vm_statistics_bytes_output_total&quot;,
+          &quot;refId&quot;: &quot;A&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;irate(erlang_vm_statistics_bytes_received_total[5m])&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Received Bytes&quot;,
+          &quot;metric&quot;: &quot;erlang_vm_statistics_bytes_received_total&quot;,
+          &quot;refId&quot;: &quot;B&quot;,
+          &quot;step&quot;: 2
+        }
+      ],
+      &quot;thresholds&quot;: [],
+      &quot;timeFrom&quot;: null,
+      &quot;timeRegions&quot;: [],
+      &quot;timeShift&quot;: null,
+      &quot;title&quot;: &quot;Erlang VM IO&quot;,
+      &quot;tooltip&quot;: {
+        &quot;msResolution&quot;: false,
+        &quot;shared&quot;: true,
+        &quot;sort&quot;: 0,
+        &quot;value_type&quot;: &quot;cumulative&quot;
+      },
+      &quot;type&quot;: &quot;graph&quot;,
+      &quot;xaxis&quot;: {
+        &quot;buckets&quot;: null,
+        &quot;mode&quot;: &quot;time&quot;,
+        &quot;name&quot;: null,
+        &quot;show&quot;: true,
+        &quot;values&quot;: []
+      },
+      &quot;yaxes&quot;: [
+        {
+          &quot;format&quot;: &quot;bytes&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        },
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        }
+      ],
+      &quot;yaxis&quot;: {
+        &quot;align&quot;: false,
+        &quot;alignLevel&quot;: null
+      }
+    },
+    {
+      &quot;aliasColors&quot;: {},
+      &quot;bars&quot;: false,
+      &quot;dashLength&quot;: 10,
+      &quot;dashes&quot;: false,
+      &quot;datasource&quot;: &quot;Prometheus&quot;,
+      &quot;editable&quot;: true,
+      &quot;error&quot;: false,
+      &quot;fill&quot;: 1,
+      &quot;grid&quot;: {},
+      &quot;gridPos&quot;: {
+        &quot;h&quot;: 7,
+        &quot;w&quot;: 8,
+        &quot;x&quot;: 8,
+        &quot;y&quot;: 7
+      },
+      &quot;id&quot;: 7,
+      &quot;isNew&quot;: true,
+      &quot;legend&quot;: {
+        &quot;alignAsTable&quot;: false,
+        &quot;avg&quot;: false,
+        &quot;current&quot;: false,
+        &quot;max&quot;: false,
+        &quot;min&quot;: false,
+        &quot;rightSide&quot;: false,
+        &quot;show&quot;: true,
+        &quot;total&quot;: false,
+        &quot;values&quot;: false
+      },
+      &quot;lines&quot;: true,
+      &quot;linewidth&quot;: 2,
+      &quot;links&quot;: [],
+      &quot;nullPointMode&quot;: &quot;connected&quot;,
+      &quot;options&quot;: {},
+      &quot;percentage&quot;: false,
+      &quot;pointradius&quot;: 5,
+      &quot;points&quot;: false,
+      &quot;renderer&quot;: &quot;flot&quot;,
+      &quot;seriesOverrides&quot;: [
+        {
+          &quot;alias&quot;: &quot;Words Reclaimed&quot;,
+          &quot;yaxis&quot;: 2
+        }
+      ],
+      &quot;spaceLength&quot;: 10,
+      &quot;stack&quot;: false,
+      &quot;steppedLine&quot;: false,
+      &quot;targets&quot;: [
+        {
+          &quot;expr&quot;: &quot;irate(erlang_vm_statistics_garbage_collection_number_of_gcs[5m])&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Number of GCs&quot;,
+          &quot;metric&quot;: &quot;erlang_vm_statistics_garbage_collection_number_of_gcs&quot;,
+          &quot;refId&quot;: &quot;A&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;irate(erlang_vm_statistics_garbage_collection_words_reclaimed[5m])&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Words Reclaimed&quot;,
+          &quot;metric&quot;: &quot;erlang_vm_statistics_garbage_collection_words_reclaimed&quot;,
+          &quot;refId&quot;: &quot;B&quot;,
+          &quot;step&quot;: 2
+        }
+      ],
+      &quot;thresholds&quot;: [],
+      &quot;timeFrom&quot;: null,
+      &quot;timeRegions&quot;: [],
+      &quot;timeShift&quot;: null,
+      &quot;title&quot;: &quot;Erlang VM GC&quot;,
+      &quot;tooltip&quot;: {
+        &quot;msResolution&quot;: false,
+        &quot;shared&quot;: true,
+        &quot;sort&quot;: 0,
+        &quot;value_type&quot;: &quot;cumulative&quot;
+      },
+      &quot;type&quot;: &quot;graph&quot;,
+      &quot;xaxis&quot;: {
+        &quot;buckets&quot;: null,
+        &quot;mode&quot;: &quot;time&quot;,
+        &quot;name&quot;: null,
+        &quot;show&quot;: true,
+        &quot;values&quot;: []
+      },
+      &quot;yaxes&quot;: [
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        },
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        }
+      ],
+      &quot;yaxis&quot;: {
+        &quot;align&quot;: false,
+        &quot;alignLevel&quot;: null
+      }
+    },
+    {
+      &quot;aliasColors&quot;: {},
+      &quot;bars&quot;: false,
+      &quot;dashLength&quot;: 10,
+      &quot;dashes&quot;: false,
+      &quot;datasource&quot;: &quot;Prometheus&quot;,
+      &quot;editable&quot;: true,
+      &quot;error&quot;: false,
+      &quot;fill&quot;: 1,
+      &quot;grid&quot;: {},
+      &quot;gridPos&quot;: {
+        &quot;h&quot;: 7,
+        &quot;w&quot;: 8,
+        &quot;x&quot;: 16,
+        &quot;y&quot;: 7
+      },
+      &quot;id&quot;: 3,
+      &quot;isNew&quot;: true,
+      &quot;legend&quot;: {
+        &quot;avg&quot;: false,
+        &quot;current&quot;: false,
+        &quot;max&quot;: false,
+        &quot;min&quot;: false,
+        &quot;show&quot;: true,
+        &quot;total&quot;: false,
+        &quot;values&quot;: false
+      },
+      &quot;lines&quot;: true,
+      &quot;linewidth&quot;: 2,
+      &quot;links&quot;: [],
+      &quot;nullPointMode&quot;: &quot;connected&quot;,
+      &quot;options&quot;: {},
+      &quot;percentage&quot;: false,
+      &quot;pointradius&quot;: 5,
+      &quot;points&quot;: false,
+      &quot;renderer&quot;: &quot;flot&quot;,
+      &quot;seriesOverrides&quot;: [],
+      &quot;spaceLength&quot;: 10,
+      &quot;stack&quot;: true,
+      &quot;steppedLine&quot;: false,
+      &quot;targets&quot;: [
+        {
+          &quot;expr&quot;: &quot;erlang_vm_memory_bytes_total{kind=\&quot;processes\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Processes Memory&quot;,
+          &quot;refId&quot;: &quot;B&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;erlang_vm_memory_system_bytes_total{usage=\&quot;atom\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Atoms&quot;,
+          &quot;refId&quot;: &quot;C&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;erlang_vm_memory_system_bytes_total{usage=\&quot;binary\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Binary&quot;,
+          &quot;refId&quot;: &quot;D&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;erlang_vm_memory_system_bytes_total{usage=\&quot;code\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Code&quot;,
+          &quot;refId&quot;: &quot;E&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;erlang_vm_memory_system_bytes_total{usage=\&quot;ets\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;ETS&quot;,
+          &quot;refId&quot;: &quot;F&quot;,
+          &quot;step&quot;: 2
+        }
+      ],
+      &quot;thresholds&quot;: [],
+      &quot;timeFrom&quot;: null,
+      &quot;timeRegions&quot;: [],
+      &quot;timeShift&quot;: null,
+      &quot;title&quot;: &quot;Erlang VM Memory&quot;,
+      &quot;tooltip&quot;: {
+        &quot;msResolution&quot;: false,
+        &quot;shared&quot;: true,
+        &quot;sort&quot;: 0,
+        &quot;value_type&quot;: &quot;individual&quot;
+      },
+      &quot;type&quot;: &quot;graph&quot;,
+      &quot;xaxis&quot;: {
+        &quot;buckets&quot;: null,
+        &quot;mode&quot;: &quot;time&quot;,
+        &quot;name&quot;: null,
+        &quot;show&quot;: true,
+        &quot;values&quot;: []
+      },
+      &quot;yaxes&quot;: [
+        {
+          &quot;format&quot;: &quot;bytes&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        },
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        }
+      ],
+      &quot;yaxis&quot;: {
+        &quot;align&quot;: false,
+        &quot;alignLevel&quot;: null
+      }
+    },
+    {
+      &quot;aliasColors&quot;: {},
+      &quot;bars&quot;: false,
+      &quot;dashLength&quot;: 10,
+      &quot;dashes&quot;: false,
+      &quot;datasource&quot;: &quot;Prometheus&quot;,
+      &quot;editable&quot;: true,
+      &quot;error&quot;: false,
+      &quot;fill&quot;: 1,
+      &quot;grid&quot;: {},
+      &quot;gridPos&quot;: {
+        &quot;h&quot;: 7,
+        &quot;w&quot;: 8,
+        &quot;x&quot;: 0,
+        &quot;y&quot;: 14
+      },
+      &quot;id&quot;: 11,
+      &quot;isNew&quot;: true,
+      &quot;legend&quot;: {
+        &quot;avg&quot;: false,
+        &quot;current&quot;: false,
+        &quot;max&quot;: false,
+        &quot;min&quot;: false,
+        &quot;show&quot;: true,
+        &quot;total&quot;: false,
+        &quot;values&quot;: false
+      },
+      &quot;lines&quot;: true,
+      &quot;linewidth&quot;: 2,
+      &quot;links&quot;: [],
+      &quot;nullPointMode&quot;: &quot;connected&quot;,
+      &quot;options&quot;: {},
+      &quot;percentage&quot;: false,
+      &quot;pointradius&quot;: 5,
+      &quot;points&quot;: false,
+      &quot;renderer&quot;: &quot;flot&quot;,
+      &quot;seriesOverrides&quot;: [],
+      &quot;spaceLength&quot;: 10,
+      &quot;stack&quot;: false,
+      &quot;steppedLine&quot;: false,
+      &quot;targets&quot;: [
+        {
+          &quot;expr&quot;: &quot;process_virtual_memory_bytes{instance=\&quot;$host\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Virtual Memory&quot;,
+          &quot;refId&quot;: &quot;A&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;process_resident_memory_bytes{instance=\&quot;$host\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Resident Memory&quot;,
+          &quot;refId&quot;: &quot;B&quot;,
+          &quot;step&quot;: 2
+        }
+      ],
+      &quot;thresholds&quot;: [],
+      &quot;timeFrom&quot;: null,
+      &quot;timeRegions&quot;: [],
+      &quot;timeShift&quot;: null,
+      &quot;title&quot;: &quot;Process Memory&quot;,
+      &quot;tooltip&quot;: {
+        &quot;msResolution&quot;: true,
+        &quot;shared&quot;: true,
+        &quot;sort&quot;: 0,
+        &quot;value_type&quot;: &quot;cumulative&quot;
+      },
+      &quot;type&quot;: &quot;graph&quot;,
+      &quot;xaxis&quot;: {
+        &quot;buckets&quot;: null,
+        &quot;mode&quot;: &quot;time&quot;,
+        &quot;name&quot;: null,
+        &quot;show&quot;: true,
+        &quot;values&quot;: []
+      },
+      &quot;yaxes&quot;: [
+        {
+          &quot;format&quot;: &quot;bytes&quot;,
+          &quot;label&quot;: null,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        },
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;label&quot;: null,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        }
+      ],
+      &quot;yaxis&quot;: {
+        &quot;align&quot;: false,
+        &quot;alignLevel&quot;: null
+      }
+    },
+    {
+      &quot;aliasColors&quot;: {},
+      &quot;bars&quot;: false,
+      &quot;dashLength&quot;: 10,
+      &quot;dashes&quot;: false,
+      &quot;datasource&quot;: &quot;Prometheus&quot;,
+      &quot;editable&quot;: true,
+      &quot;error&quot;: false,
+      &quot;fill&quot;: 1,
+      &quot;grid&quot;: {},
+      &quot;gridPos&quot;: {
+        &quot;h&quot;: 7,
+        &quot;w&quot;: 8,
+        &quot;x&quot;: 8,
+        &quot;y&quot;: 14
+      },
+      &quot;id&quot;: 8,
+      &quot;isNew&quot;: true,
+      &quot;legend&quot;: {
+        &quot;avg&quot;: false,
+        &quot;current&quot;: false,
+        &quot;max&quot;: false,
+        &quot;min&quot;: false,
+        &quot;show&quot;: true,
+        &quot;total&quot;: false,
+        &quot;values&quot;: false
+      },
+      &quot;lines&quot;: true,
+      &quot;linewidth&quot;: 2,
+      &quot;links&quot;: [],
+      &quot;nullPointMode&quot;: &quot;connected&quot;,
+      &quot;options&quot;: {},
+      &quot;percentage&quot;: false,
+      &quot;pointradius&quot;: 5,
+      &quot;points&quot;: false,
+      &quot;renderer&quot;: &quot;flot&quot;,
+      &quot;seriesOverrides&quot;: [],
+      &quot;spaceLength&quot;: 10,
+      &quot;stack&quot;: false,
+      &quot;steppedLine&quot;: false,
+      &quot;targets&quot;: [
+        {
+          &quot;expr&quot;: &quot;process_open_fds{instance=\&quot;$host\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Open FDs&quot;,
+          &quot;metric&quot;: &quot;&quot;,
+          &quot;refId&quot;: &quot;A&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;process_max_fds{instance=\&quot;$host\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;interval&quot;: &quot;&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Max FDs&quot;,
+          &quot;refId&quot;: &quot;B&quot;,
+          &quot;step&quot;: 2
+        }
+      ],
+      &quot;thresholds&quot;: [],
+      &quot;timeFrom&quot;: null,
+      &quot;timeRegions&quot;: [],
+      &quot;timeShift&quot;: null,
+      &quot;title&quot;: &quot;File Descriptors&quot;,
+      &quot;tooltip&quot;: {
+        &quot;msResolution&quot;: true,
+        &quot;shared&quot;: true,
+        &quot;sort&quot;: 0,
+        &quot;value_type&quot;: &quot;cumulative&quot;
+      },
+      &quot;type&quot;: &quot;graph&quot;,
+      &quot;xaxis&quot;: {
+        &quot;buckets&quot;: null,
+        &quot;mode&quot;: &quot;time&quot;,
+        &quot;name&quot;: null,
+        &quot;show&quot;: true,
+        &quot;values&quot;: []
+      },
+      &quot;yaxes&quot;: [
+        {
+          &quot;format&quot;: &quot;none&quot;,
+          &quot;label&quot;: null,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        },
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;label&quot;: null,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        }
+      ],
+      &quot;yaxis&quot;: {
+        &quot;align&quot;: false,
+        &quot;alignLevel&quot;: null
+      }
+    },
+    {
+      &quot;aliasColors&quot;: {},
+      &quot;bars&quot;: false,
+      &quot;dashLength&quot;: 10,
+      &quot;dashes&quot;: false,
+      &quot;datasource&quot;: &quot;Prometheus&quot;,
+      &quot;decimals&quot;: null,
+      &quot;editable&quot;: true,
+      &quot;error&quot;: false,
+      &quot;fill&quot;: 1,
+      &quot;grid&quot;: {},
+      &quot;gridPos&quot;: {
+        &quot;h&quot;: 7,
+        &quot;w&quot;: 8,
+        &quot;x&quot;: 16,
+        &quot;y&quot;: 14
+      },
+      &quot;id&quot;: 10,
+      &quot;isNew&quot;: true,
+      &quot;legend&quot;: {
+        &quot;avg&quot;: false,
+        &quot;current&quot;: false,
+        &quot;max&quot;: false,
+        &quot;min&quot;: false,
+        &quot;show&quot;: true,
+        &quot;total&quot;: false,
+        &quot;values&quot;: false
+      },
+      &quot;lines&quot;: true,
+      &quot;linewidth&quot;: 2,
+      &quot;links&quot;: [],
+      &quot;nullPointMode&quot;: &quot;connected&quot;,
+      &quot;options&quot;: {},
+      &quot;percentage&quot;: false,
+      &quot;pointradius&quot;: 5,
+      &quot;points&quot;: false,
+      &quot;renderer&quot;: &quot;flot&quot;,
+      &quot;seriesOverrides&quot;: [
+        {
+          &quot;alias&quot;: &quot;Threads&quot;,
+          &quot;yaxis&quot;: 2
+        }
+      ],
+      &quot;spaceLength&quot;: 10,
+      &quot;stack&quot;: false,
+      &quot;steppedLine&quot;: false,
+      &quot;targets&quot;: [
+        {
+          &quot;expr&quot;: &quot;process_threads_total{instance=\&quot;$host\&quot;}&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;interval&quot;: &quot;&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;Threads&quot;,
+          &quot;refId&quot;: &quot;A&quot;,
+          &quot;step&quot;: 2
+        },
+        {
+          &quot;expr&quot;: &quot;sum(irate(process_cpu_seconds_total{instance=\&quot;$host\&quot;}[30s])) without (kind) * 100&quot;,
+          &quot;format&quot;: &quot;time_series&quot;,
+          &quot;interval&quot;: &quot;&quot;,
+          &quot;intervalFactor&quot;: 2,
+          &quot;legendFormat&quot;: &quot;CPU&quot;,
+          &quot;refId&quot;: &quot;B&quot;,
+          &quot;step&quot;: 2
+        }
+      ],
+      &quot;thresholds&quot;: [],
+      &quot;timeFrom&quot;: null,
+      &quot;timeRegions&quot;: [],
+      &quot;timeShift&quot;: null,
+      &quot;title&quot;: &quot;Native Threads &amp; CPU&quot;,
+      &quot;tooltip&quot;: {
+        &quot;msResolution&quot;: true,
+        &quot;shared&quot;: true,
+        &quot;sort&quot;: 0,
+        &quot;value_type&quot;: &quot;cumulative&quot;
+      },
+      &quot;type&quot;: &quot;graph&quot;,
+      &quot;xaxis&quot;: {
+        &quot;buckets&quot;: null,
+        &quot;mode&quot;: &quot;time&quot;,
+        &quot;name&quot;: null,
+        &quot;show&quot;: true,
+        &quot;values&quot;: []
+      },
+      &quot;yaxes&quot;: [
+        {
+          &quot;format&quot;: &quot;percent&quot;,
+          &quot;label&quot;: null,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        },
+        {
+          &quot;format&quot;: &quot;short&quot;,
+          &quot;label&quot;: null,
+          &quot;logBase&quot;: 1,
+          &quot;max&quot;: null,
+          &quot;min&quot;: null,
+          &quot;show&quot;: true
+        }
+      ],
+      &quot;yaxis&quot;: {
+        &quot;align&quot;: false,
+        &quot;alignLevel&quot;: null
+      }
+    }
+  ],
+  &quot;refresh&quot;: &quot;5s&quot;,
+  &quot;schemaVersion&quot;: 18,
+  &quot;style&quot;: &quot;dark&quot;,
+  &quot;tags&quot;: [
+    &quot;rabbitmq&quot;
+  ],
+  &quot;templating&quot;: {
+    &quot;list&quot;: [
+      {
+        &quot;allValue&quot;: null,
+        &quot;current&quot;: {
+          &quot;tags&quot;: [],
+          &quot;text&quot;: &quot;192.168.101.68:9429&quot;,
+          &quot;value&quot;: &quot;192.168.101.68:9429&quot;
+        },
+        &quot;datasource&quot;: &quot;Prometheus&quot;,
+        &quot;definition&quot;: &quot;label_values(rabbitmq_up, instance)&quot;,
+        &quot;hide&quot;: 0,
+        &quot;includeAll&quot;: false,
+        &quot;label&quot;: &quot;HOST&quot;,
+        &quot;multi&quot;: false,
+        &quot;name&quot;: &quot;host&quot;,
+        &quot;options&quot;: [],
+        &quot;query&quot;: &quot;label_values(rabbitmq_up, instance)&quot;,
+        &quot;refresh&quot;: 1,
+        &quot;regex&quot;: &quot;&quot;,
+        &quot;skipUrlSync&quot;: false,
+        &quot;sort&quot;: 1,
+        &quot;tagValuesQuery&quot;: &quot;&quot;,
+        &quot;tags&quot;: [],
+        &quot;tagsQuery&quot;: &quot;&quot;,
+        &quot;type&quot;: &quot;query&quot;,
+        &quot;useTags&quot;: false
+      }
+    ]
+  },
+  &quot;time&quot;: {
+    &quot;from&quot;: &quot;now-15m&quot;,
+    &quot;to&quot;: &quot;now&quot;
+  },
+  &quot;timepicker&quot;: {
+    &quot;now&quot;: true,
+    &quot;refresh_intervals&quot;: [
+      &quot;5s&quot;,
+      &quot;10s&quot;,
+      &quot;30s&quot;,
+      &quot;1m&quot;,
+      &quot;5m&quot;,
+      &quot;15m&quot;,
+      &quot;30m&quot;,
+      &quot;1h&quot;,
+      &quot;2h&quot;,
+      &quot;1d&quot;
+    ],
+    &quot;time_options&quot;: [
+      &quot;5m&quot;,
+      &quot;15m&quot;,
+      &quot;1h&quot;,
+      &quot;6h&quot;,
+      &quot;12h&quot;,
+      &quot;24h&quot;,
+      &quot;2d&quot;,
+      &quot;7d&quot;,
+      &quot;30d&quot;
+    ]
+  },
+  &quot;timezone&quot;: &quot;browser&quot;,
+  &quot;title&quot;: &quot;RabbitMQ&quot;
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Zeng 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Modified @
+2020-12-12 17:04:11
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="grafana-tmpl_rabbitmq-cluster.html" class="navigation navigation-prev " aria-label="Previous page: RabbitMQ Cluster">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="grafana-tmpl_redis.html" class="navigation navigation-next " aria-label="Next page: Redis">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"RabbitMQ","level":"3.3.2.6","depth":3,"next":{"title":"Redis","level":"3.3.2.7","depth":3,"path":"docs/monitoring/grafana/grafana-tmpl_redis.md","ref":"docs/monitoring/grafana/grafana-tmpl_redis.md","articles":[]},"previous":{"title":"RabbitMQ Cluster","level":"3.3.2.5","depth":3,"path":"docs/monitoring/grafana/grafana-tmpl_rabbitmq-cluster.md","ref":"docs/monitoring/grafana/grafana-tmpl_rabbitmq-cluster.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","-sharing","search-plus","simple-page-toc","editlink","splitter","tbfed-pagefooter","chapter-fold","sectionx","anchor-navigation-ex","code","todo","pageview-count","hide-element","fancybox"],"root":".","styles":{"website":"/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © Zeng 2019","modify_label":"Modified @","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fancybox":{"helpers":{"buttons":{}}},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/zlzgithub/docs/blob/master/"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link",".treeview__container-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"pageview-count":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Zeng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DevOps Pages","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"运维笔记"},"file":{"path":"docs/monitoring/grafana/grafana-tmpl_rabbitmq.md","mtime":"2020-12-12T17:04:11.853Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-12T17:07:54.823Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

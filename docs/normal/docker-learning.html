@@ -1,0 +1,2296 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Docker · DevOps Pages</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zeng">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../deployment/docker/docker-prometheus.html" />
+    
+    
+    <link rel="prev" href="../deployment/docker/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../SUMMARY.html">
+            
+                <a href="../../SUMMARY.html">
+            
+                    
+                    目 录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    DevOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">应用部署</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../deployment/ansible/">
+            
+                <a href="../deployment/ansible/">
+            
+                    
+                    Ansible
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../deployment/ansible/ansible-intro.html">
+            
+                <a href="../deployment/ansible/ansible-intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../deployment/docker/">
+            
+                <a href="../deployment/docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.2.1" data-path="docker-learning.html">
+            
+                <a href="docker-learning.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../deployment/docker/docker-prometheus.html">
+            
+                <a href="../deployment/docker/docker-prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../deployment/docker/docker-nginx-consul.html">
+            
+                <a href="../deployment/docker/docker-nginx-consul.html">
+            
+                    
+                    Nginx Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../deployment/docker/docker-pmm.html">
+            
+                <a href="../deployment/docker/docker-pmm.html">
+            
+                    
+                    PMM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../deployment/docker/docker-redis.html">
+            
+                <a href="../deployment/docker/docker-redis.html">
+            
+                    
+                    Redis in Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../deployment/docker/docker-ldap.html">
+            
+                <a href="../deployment/docker/docker-ldap.html">
+            
+                    
+                    LDAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../deployment/docker/docker-harbor.html">
+            
+                <a href="../deployment/docker/docker-harbor.html">
+            
+                    
+                    Harbor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../deployment/docker/docker-apollo.html">
+            
+                <a href="../deployment/docker/docker-apollo.html">
+            
+                    
+                    Apollo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../deployment/k8s/">
+            
+                <a href="../deployment/k8s/">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="k8s-learning.html">
+            
+                <a href="k8s-learning.html">
+            
+                    
+                    K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../deployment/k8s/installation/">
+            
+                <a href="../deployment/k8s/installation/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.1" data-path="../deployment/k8s/installation/kubespray-k8s/kubespray-k8s.html">
+            
+                <a href="../deployment/k8s/installation/kubespray-k8s/kubespray-k8s.html">
+            
+                    
+                    Kubespray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.2" data-path="../deployment/k8s/installation/rke-k8s/rke-k8s.html">
+            
+                <a href="../deployment/k8s/installation/rke-k8s/rke-k8s.html">
+            
+                    
+                    RKE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.3" data-path="../deployment/k8s/installation/rancher-k8s/rancher-k8s.html">
+            
+                <a href="../deployment/k8s/installation/rancher-k8s/rancher-k8s.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.4" data-path="../deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.html">
+            
+                <a href="../deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.html">
+            
+                    
+                    Kubeadm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../deployment/k8s/deployment/">
+            
+                <a href="../deployment/k8s/deployment/">
+            
+                    
+                    部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.1" data-path="../deployment/k8s/deployment/Kubernetes-dashboard.html">
+            
+                <a href="../deployment/k8s/deployment/Kubernetes-dashboard.html">
+            
+                    
+                    K8s Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.2" data-path="../deployment/k8s/deployment/ELK.html">
+            
+                <a href="../deployment/k8s/deployment/ELK.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.3" data-path="../deployment/k8s/deployment/k8s-prometheus.html">
+            
+                <a href="../deployment/k8s/deployment/k8s-prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.4" data-path="../deployment/k8s/deployment/k8s-nfs-storageclass.html">
+            
+                <a href="../deployment/k8s/deployment/k8s-nfs-storageclass.html">
+            
+                    
+                    NFS动态PV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.5" data-path="../deployment/k8s/deployment/k8s-rancher.html">
+            
+                <a href="../deployment/k8s/deployment/k8s-rancher.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.6" data-path="../deployment/k8s/deployment/k8s-helm.html">
+            
+                <a href="../deployment/k8s/deployment/k8s-helm.html">
+            
+                    
+                    Helm&Tiller
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../deployment/else/">
+            
+                <a href="../deployment/else/">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../deployment/else/mysql-replication.html">
+            
+                <a href="../deployment/else/mysql-replication.html">
+            
+                    
+                    MySQL主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../deployment/else/percona-toolkit.html">
+            
+                <a href="../deployment/else/percona-toolkit.html">
+            
+                    
+                    Percona toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../deployment/else/ins_mysql.html">
+            
+                <a href="../deployment/else/ins_mysql.html">
+            
+                    
+                    yum安装MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../deployment/else/ins_rabbitmq.html">
+            
+                <a href="../deployment/else/ins_rabbitmq.html">
+            
+                    
+                    yum安装RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../deployment/else/ins_redis5.html">
+            
+                <a href="../deployment/else/ins_redis5.html">
+            
+                    
+                    yum安装Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../deployment/else/ins_ruby_redis_dump.html">
+            
+                <a href="../deployment/else/ins_ruby_redis_dump.html">
+            
+                    
+                    安装ruby和redis dump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../deployment/else/ins_yapi.html">
+            
+                <a href="../deployment/else/ins_yapi.html">
+            
+                    
+                    Y-API的安装步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../deployment/else/gitlab-update.html">
+            
+                <a href="../deployment/else/gitlab-update.html">
+            
+                    
+                    GitLab升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../deployment/else/dataX-demo.html">
+            
+                <a href="../deployment/else/dataX-demo.html">
+            
+                    
+                    dataX示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../deployment/else/git-orphan-usage.html">
+            
+                <a href="../deployment/else/git-orphan-usage.html">
+            
+                    
+                    git分支重置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../deployment/else/repair-mysql-repl.html">
+            
+                <a href="../deployment/else/repair-mysql-repl.html">
+            
+                    
+                    修复mysql主从
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../deployment/else/disk-lvcreate.html">
+            
+                <a href="../deployment/else/disk-lvcreate.html">
+            
+                    
+                    磁盘扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../deployment/else/docker-notes.html">
+            
+                <a href="../deployment/else/docker-notes.html">
+            
+                    
+                    docker若干
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.14" data-path="HiS.html">
+            
+                <a href="HiS.html">
+            
+                    
+                    HiS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">监控报警</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../monitoring/alerts/">
+            
+                <a href="../monitoring/alerts/">
+            
+                    
+                    Alerts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../monitoring/alerts/intro_syshost_syslink.html">
+            
+                <a href="../monitoring/alerts/intro_syshost_syslink.html">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../monitoring/consul/">
+            
+                <a href="../monitoring/consul/">
+            
+                    
+                    Consul
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../monitoring/consul/consul.html">
+            
+                <a href="../monitoring/consul/consul.html">
+            
+                    
+                    Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../monitoring/consul/consul-template.html">
+            
+                <a href="../monitoring/consul/consul-template.html">
+            
+                    
+                    Consul-template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../monitoring/consul/my-nginx-consul.html">
+            
+                <a href="../monitoring/consul/my-nginx-consul.html">
+            
+                    
+                    Nginx-Consul-template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../monitoring/consul/consul-acl.html">
+            
+                <a href="../monitoring/consul/consul-acl.html">
+            
+                    
+                    Consul-ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../monitoring/consul/consul-api-memo.html">
+            
+                <a href="../monitoring/consul/consul-api-memo.html">
+            
+                    
+                    Consul APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../monitoring/prometheus/">
+            
+                <a href="../monitoring/prometheus/">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../monitoring/prometheus/prom/">
+            
+                <a href="../monitoring/prometheus/prom/">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1.1" data-path="../monitoring/prometheus/prom/prometheus-intro.html">
+            
+                <a href="../monitoring/prometheus/prom/prometheus-intro.html">
+            
+                    
+                    核心组件——prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.2" data-path="../monitoring/prometheus/prom/alertmanager.html">
+            
+                <a href="../monitoring/prometheus/prom/alertmanager.html">
+            
+                    
+                    告警组件——alertmanager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.3" data-path="../monitoring/prometheus/prom/prometheus_federate.html">
+            
+                <a href="../monitoring/prometheus/prom/prometheus_federate.html">
+            
+                    
+                    联邦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.4" data-path="../monitoring/prometheus/prom/prometheus-discovery.html">
+            
+                <a href="../monitoring/prometheus/prom/prometheus-discovery.html">
+            
+                    
+                    自动发现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../monitoring/grafana/">
+            
+                <a href="../monitoring/grafana/">
+            
+                    
+                    Grafana
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.2.1" data-path="../monitoring/grafana/grafana-tmpl_k8s.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_k8s.html">
+            
+                    
+                    K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.2" data-path="../monitoring/grafana/grafana-tmpl_log.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_log.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.3" data-path="../monitoring/grafana/grafana-tmpl_mysql-repl.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_mysql-repl.html">
+            
+                    
+                    MySQL-Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.4" data-path="../monitoring/grafana/grafana-tmpl_pmm-mysql.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_pmm-mysql.html">
+            
+                    
+                    PMM MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.5" data-path="../monitoring/grafana/grafana-tmpl_rabbitmq-cluster.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_rabbitmq-cluster.html">
+            
+                    
+                    RabbitMQ Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.6" data-path="../monitoring/grafana/grafana-tmpl_rabbitmq.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_rabbitmq.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.7" data-path="../monitoring/grafana/grafana-tmpl_redis.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../monitoring/prometheus/3rd/">
+            
+                <a href="../monitoring/prometheus/3rd/">
+            
+                    
+                    常用软件接入Prometheus监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.3.1" data-path="../monitoring/prometheus/3rd/mysql-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/mysql-monitor-steps.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.2" data-path="../monitoring/prometheus/3rd/Prometheus-monitor-mysql-replication.html">
+            
+                <a href="../monitoring/prometheus/3rd/Prometheus-monitor-mysql-replication.html">
+            
+                    
+                    MySQL主从同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.3" data-path="../monitoring/prometheus/3rd/mongodb-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/mongodb-monitor-steps.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.4" data-path="../monitoring/prometheus/3rd/redis-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/redis-monitor-steps.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.5" data-path="../monitoring/prometheus/3rd/rabbitmq-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/rabbitmq-monitor-steps.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.6" data-path="../monitoring/prometheus/3rd/nginx-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/nginx-monitor-steps.html">
+            
+                    
+                    NginX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../monitoring/prometheus/self/prometheus-consul-guide.html">
+            
+                <a href="../monitoring/prometheus/self/prometheus-consul-guide.html">
+            
+                    
+                    自研应用接入Prometheus监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../monitoring/zabbix/zabbix-intro.html">
+            
+                <a href="../monitoring/zabbix/zabbix-intro.html">
+            
+                    
+                    Zabbix
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../monitoring/zabbix/zabbix-discovery-rule.html">
+            
+                <a href="../monitoring/zabbix/zabbix-discovery-rule.html">
+            
+                    
+                    自动发现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">日志分析</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../log-analysis/">
+            
+                <a href="../log-analysis/">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../log-analysis/es-xpack.html">
+            
+                <a href="../log-analysis/es-xpack.html">
+            
+                    
+                    X-pack权限控制版ES
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../log-analysis/es-account-manage.html">
+            
+                <a href="../log-analysis/es-account-manage.html">
+            
+                    
+                    ELK账号权限分组管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../log-analysis/elk-problems.html">
+            
+                <a href="../log-analysis/elk-problems.html">
+            
+                    
+                    ELK若干问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../log-analysis/clean_elk_indices.html">
+            
+                <a href="../log-analysis/clean_elk_indices.html">
+            
+                    
+                    清理ES索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../log-analysis/k8s-elk-auth-kibana-via-ad.html">
+            
+                <a href="../log-analysis/k8s-elk-auth-kibana-via-ad.html">
+            
+                    
+                    K8s部署ELK并启用AD认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../log-analysis/k8s-elk-improvement.html">
+            
+                <a href="../log-analysis/k8s-elk-improvement.html">
+            
+                    
+                    ELK部署整改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../log-analysis/elk-grafana.html">
+            
+                <a href="../log-analysis/elk-grafana.html">
+            
+                    
+                    使用Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../log-analysis/es-api-memo.html">
+            
+                <a href="../log-analysis/es-api-memo.html">
+            
+                    
+                    ES APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">持续集成</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../cicd/">
+            
+                <a href="../cicd/">
+            
+                    
+                    CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../cicd/gitlab/">
+            
+                <a href="../cicd/gitlab/">
+            
+                    
+                    GitLab CI/CD
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../cicd/gitlab/gitlab-runner.html">
+            
+                <a href="../cicd/gitlab/gitlab-runner.html">
+            
+                    
+                    GitLab Runner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../cicd/gitlab/gitlab-cicd.html">
+            
+                <a href="../cicd/gitlab/gitlab-cicd.html">
+            
+                    
+                    GitLab CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">配置管理</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../config-management/">
+            
+                <a href="../config-management/">
+            
+                    
+                    CMDB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../config-management/ansible-tower.html">
+            
+                <a href="../config-management/ansible-tower.html">
+            
+                    
+                    Ansible Tower
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../config-management/bk-cmdb.html">
+            
+                <a href="../config-management/bk-cmdb.html">
+            
+                    
+                    BlueKing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">任务调度</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../task-scheduling/">
+            
+                <a href="../task-scheduling/">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../task-scheduling/xxl-job.html">
+            
+                <a href="../task-scheduling/xxl-job.html">
+            
+                    
+                    XXL-JOB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../task-scheduling/upgrade-xxl-job.html">
+            
+                <a href="../task-scheduling/upgrade-xxl-job.html">
+            
+                    
+                    XXL-JOB升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">关于本书</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../my-gitbook.html">
+            
+                <a href="../my-gitbook.html">
+            
+                    
+                    制作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../cicd/publish-gitbook.html">
+            
+                <a href="../cicd/publish-gitbook.html">
+            
+                    
+                    发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../HELP.html">
+            
+                <a href="../HELP.html">
+            
+                    
+                    官方示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Docker</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#docker-&#x5B66;&#x4E60;"><b></b>Docker &#x5B66;&#x4E60;</a></li><li><span class="title-icon "></span><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;docker"><b></b>&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;Docker</a></li><ul><li><span class="title-icon "></span><a href="#docker-&#x4E0E;-vm-&#x6BD4;&#x8F83;"><b></b>Docker &#x4E0E; VM &#x6BD4;&#x8F83;</a></li></ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x6982;&#x5FF5;"><b></b>&#x57FA;&#x672C;&#x6982;&#x5FF5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x955C;&#x50CF;"><b></b>&#x955C;&#x50CF;</a></li><li><span class="title-icon "></span><a href="#&#x5BB9;&#x5668;"><b></b>&#x5BB9;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x4ED3;&#x5E93;"><b></b>&#x4ED3;&#x5E93;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x547D;&#x4EE4;"><b></b>&#x5E38;&#x7528;&#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x955C;&#x50CF;&#x64CD;&#x4F5C;"><b></b>&#x955C;&#x50CF;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x5BB9;&#x5668;&#x64CD;&#x4F5C;"><b></b>&#x5BB9;&#x5668;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x7BA1;&#x7406;"><b></b>&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x7BA1;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;docker&#x78C1;&#x76D8;&#x5360;&#x7528;"><b></b>&#x67E5;&#x770B;docker&#x78C1;&#x76D8;&#x5360;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x6E05;&#x7406;docker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;"><b></b>&#x6E05;&#x7406;docker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;</a></li></ul></ul><li><span class="title-icon "></span><a href="#dockerfile"><b></b>Dockerfile</a></li><ul><li><span class="title-icon "></span><a href="#dockerfile&#x793A;&#x4F8B;"><b></b>Dockerfile&#x793A;&#x4F8B;</a></li><li><span class="title-icon "></span><a href="#&#x6784;&#x5EFA;&#x3001;&#x8FD0;&#x884C;"><b></b>&#x6784;&#x5EFA;&#x3001;&#x8FD0;&#x884C;</a></li><li><span class="title-icon "></span><a href="#dockerfile&#x6700;&#x4F73;&#x5B9E;&#x8DF5;"><b></b>Dockerfile&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</a></li></ul><li><span class="title-icon "></span><a href="#docker-compose"><b></b>docker-compose</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;"><b></b>&#x5B89;&#x88C5;</a></li><li><span class="title-icon "></span><a href="#docker-compose&#x793A;&#x4F8B;-&#x2014;&#x2014;-wordpress"><b></b>docker-compose&#x793A;&#x4F8B; &#x2014;&#x2014; WordPress</a></li></ul></ul></div><a href="#docker-&#x5B66;&#x4E60;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="docker-&#x5B66;&#x4E60;"><a name="docker-&#x5B66;&#x4E60;" class="anchor-navigation-ex-anchor" href="#docker-&#x5B66;&#x4E60;"><i class="fa fa-link" aria-hidden="true"></i></a>Docker &#x5B66;&#x4E60;</h1>
+<ol>
+<li><p><a href="https://docs.docker.com/engine/docker-overview/" target="_blank"><strong>Docker</strong></a> &#x662F;&#x4E00;&#x79CD;<a href="https://en.wikipedia.org/wiki/Operating-system-level_virtualization" target="_blank">&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5C42;&#x9762;&#x7684;&#x865A;&#x62DF;&#x5316;&#x6280;&#x672F;</a>&#xFF0C;&#x57FA;&#x4E8E; <code>Linux</code> &#x5185;&#x6838;&#x7684; <a href="https://zh.wikipedia.org/wiki/Cgroups" target="_blank">cgroup</a>&#xFF0C;<a href="https://en.wikipedia.org/wiki/Linux_namespaces" target="_blank">namespace</a>&#xFF0C;&#x4EE5;&#x53CA; <a href="https://docs.docker.com/storage/storagedriver/overlayfs-driver/" target="_blank">OverlayFS</a> &#x7C7B;&#x7684; <a href="https://en.wikipedia.org/wiki/Union_mount" target="_blank">Union FS</a> &#x7B49;&#x6280;&#x672F;&#x5BF9;&#x8FDB;&#x7A0B;&#x8FDB;&#x884C;&#x5C01;&#x88C5;&#x9694;&#x79BB; &#x3002;</p>
+</li>
+<li><p>Docker&#x662F; C/S&#xFF08;&#x5BA2;&#x6237;&#x7AEF;/&#x670D;&#x52A1;&#x5668;&#xFF09;&#x67B6;&#x6784;&#x3002;</p>
+</li>
+<li><p>Docker&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;Docker&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x540E;&#x8005;&#x8D1F;&#x8D23;&#x6784;&#x5EFA;&#xFF0C;&#x8FD0;&#x884C;&#x548C;&#x5206;&#x53D1;Docker&#x5BB9;&#x5668;&#x3002;</p>
+</li>
+<li><p>Docker&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x5B88;&#x62A4;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;REST API&#xFF0C;&#x901A;&#x8FC7;UNIX&#x5957;&#x63A5;&#x5B57;&#x6216;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x3002;</p>
+</li>
+</ol>
+<p>     <a href="E:\docs\myNote\_Daily\docker-k8s.assets\architecture.svg" rel="grouped" title="Docker Architecture Diagram" target="_blank" class="fancybox">
+       <img src="E:\docs\myNote\_Daily\docker-k8s.assets\architecture.svg" alt="Docker Architecture Diagram">
+     </a></p>
+<h1 id="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;docker"><a name="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;docker" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;docker"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;Docker</h1>
+<blockquote>
+<ul>
+<li><p><strong>&#x66F4;&#x9AD8;&#x6548;&#x7684;&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;</strong></p>
+</li>
+<li><p><strong>&#x66F4;&#x5FEB;&#x901F;&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;</strong></p>
+</li>
+<li><p><strong>&#x4E00;&#x81F4;&#x7684;&#x8FD0;&#x884C;&#x73AF;&#x5883;</strong></p>
+</li>
+<li><p><strong>&#x6301;&#x7EED;&#x4EA4;&#x4ED8;&#x548C;&#x90E8;&#x7F72;</strong></p>
+</li>
+<li><p><strong>&#x66F4;&#x8F7B;&#x677E;&#x7684;&#x8FC1;&#x79FB;</strong></p>
+</li>
+<li><p><strong>&#x66F4;&#x8F7B;&#x677E;&#x7684;&#x7EF4;&#x62A4;&#x548C;&#x6269;&#x5C55;</strong></p>
+</li>
+</ul>
+</blockquote>
+<p>&#x7531;&#x4E8E;&#x5BB9;&#x5668;&#x4E0D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x786C;&#x4EF6;&#x865A;&#x62DF;&#x4EE5;&#x53CA;&#x8FD0;&#x884C;&#x5B8C;&#x6574;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7B49;&#x989D;&#x5916;&#x5F00;&#x9500;&#xFF0C;<code>Docker</code> &#x5BF9;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x7684;&#x5229;&#x7528;&#x7387;&#x66F4;&#x9AD8;&#x3002;&#x65E0;&#x8BBA;&#x662F;&#x5E94;&#x7528;&#x6267;&#x884C;&#x901F;&#x5EA6;&#x3001;&#x5185;&#x5B58;&#x635F;&#x8017;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x901F;&#x5EA6;&#xFF0C;&#x90FD;&#x8981;&#x6BD4;&#x4F20;&#x7EDF;&#x865A;&#x62DF;&#x673A;&#x6280;&#x672F;&#x66F4;&#x9AD8;&#x6548;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x76F8;&#x6BD4;&#x865A;&#x62DF;&#x673A;&#x6280;&#x672F;&#xFF0C;&#x4E00;&#x4E2A;&#x76F8;&#x540C;&#x914D;&#x7F6E;&#x7684;&#x4E3B;&#x673A;&#xFF0C;&#x5F80;&#x5F80;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x66F4;&#x591A;&#x6570;&#x91CF;&#x7684;&#x5E94;&#x7528;&#x3002;</p>
+<p>&#x4F20;&#x7EDF;&#x7684;&#x865A;&#x62DF;&#x673A;&#x6280;&#x672F;&#x542F;&#x52A8;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x6570;&#x5206;&#x949F;&#xFF0C;&#x800C; <code>Docker</code> &#x5BB9;&#x5668;&#x5E94;&#x7528;&#xFF0C;&#x7531;&#x4E8E;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x4E8E;&#x5BBF;&#x4E3B;&#x5185;&#x6838;&#xFF0C;&#x65E0;&#x9700;&#x542F;&#x52A8;&#x5B8C;&#x6574;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x79D2;&#x7EA7;&#x3001;&#x751A;&#x81F3;&#x6BEB;&#x79D2;&#x7EA7;&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x3002;&#x5927;&#x5927;&#x7684;&#x8282;&#x7EA6;&#x4E86;&#x5F00;&#x53D1;&#x3001;&#x6D4B;&#x8BD5;&#x3001;&#x90E8;&#x7F72;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E00;&#x4E2A;&#x5E38;&#x89C1;&#x7684;&#x95EE;&#x9898;&#x662F;&#x73AF;&#x5883;&#x4E00;&#x81F4;&#x6027;&#x95EE;&#x9898;&#x3002;&#x7531;&#x4E8E;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3001;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x3001;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x5BFC;&#x81F4;&#x6709;&#x4E9B; bug &#x5E76;&#x672A;&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x88AB;&#x53D1;&#x73B0;&#x3002;&#x800C; <code>Docker</code> &#x7684;&#x955C;&#x50CF;&#x63D0;&#x4F9B;&#x4E86;&#x9664;&#x5185;&#x6838;&#x5916;&#x5B8C;&#x6574;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x73AF;&#x5883;&#xFF0C;&#x786E;&#x4FDD;&#x4E86;&#x5E94;&#x7528;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x4ECE;&#x800C;&#x4E0D;&#x4F1A;&#x518D;&#x51FA;&#x73B0; <em>&#x300C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x5728;&#x6211;&#x673A;&#x5668;&#x4E0A;&#x6CA1;&#x95EE;&#x9898;&#x554A;&#x300D;</em> &#x8FD9;&#x7C7B;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x5BF9;&#x5F00;&#x53D1;&#x548C;&#x8FD0;&#x7EF4;&#xFF08;<a href="https://zh.wikipedia.org/wiki/DevOps" target="_blank">DevOps</a>&#xFF09;&#x4EBA;&#x5458;&#x6765;&#x8BF4;&#xFF0C;&#x6700;&#x5E0C;&#x671B;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x6B21;&#x521B;&#x5EFA;&#x6216;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x610F;&#x5730;&#x65B9;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x4F7F;&#x7528; <code>Docker</code> &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B9A;&#x5236;&#x5E94;&#x7528;&#x955C;&#x50CF;&#x6765;&#x5B9E;&#x73B0;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x3001;&#x6301;&#x7EED;&#x4EA4;&#x4ED8;&#x3001;&#x90E8;&#x7F72;&#x3002;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <a href="">Dockerfile</a> &#x6765;&#x8FDB;&#x884C;&#x955C;&#x50CF;&#x6784;&#x5EFA;&#xFF0C;&#x5E76;&#x7ED3;&#x5408; <a href="https://en.wikipedia.org/wiki/Continuous_integration" target="_blank">&#x6301;&#x7EED;&#x96C6;&#x6210;(Continuous Integration)</a> &#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x96C6;&#x6210;&#x6D4B;&#x8BD5;&#xFF0C;&#x800C;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x5219;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x5FEB;&#x901F;&#x90E8;&#x7F72;&#x8BE5;&#x955C;&#x50CF;&#xFF0C;&#x751A;&#x81F3;&#x7ED3;&#x5408; <a href="https://en.wikipedia.org/wiki/Continuous_delivery" target="_blank">&#x6301;&#x7EED;&#x90E8;&#x7F72;(Continuous Delivery/Deployment)</a> &#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x90E8;&#x7F72;&#x3002;</p>
+<p>&#x800C;&#x4E14;&#x4F7F;&#x7528; Dockerfile&#x4F7F;&#x955C;&#x50CF;&#x6784;&#x5EFA;&#x900F;&#x660E;&#x5316;&#xFF0C;&#x4E0D;&#x4EC5;&#x4EC5;&#x5F00;&#x53D1;&#x56E2;&#x961F;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x5E94;&#x7528;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#xFF0C;&#x4E5F;&#x65B9;&#x4FBF;&#x8FD0;&#x7EF4;&#x56E2;&#x961F;&#x7406;&#x89E3;&#x5E94;&#x7528;&#x8FD0;&#x884C;&#x6240;&#x9700;&#x6761;&#x4EF6;&#xFF0C;&#x5E2E;&#x52A9;&#x66F4;&#x597D;&#x7684;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x90E8;&#x7F72;&#x8BE5;&#x955C;&#x50CF;&#x3002;</p>
+<p>&#x7531;&#x4E8E; <code>Docker</code> &#x786E;&#x4FDD;&#x4E86;&#x6267;&#x884C;&#x73AF;&#x5883;&#x7684;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x4F7F;&#x5F97;&#x5E94;&#x7528;&#x7684;&#x8FC1;&#x79FB;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x3002;<code>Docker</code> &#x53EF;&#x4EE5;&#x5728;&#x5F88;&#x591A;&#x5E73;&#x53F0;&#x4E0A;&#x8FD0;&#x884C;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x7269;&#x7406;&#x673A;&#x3001;&#x865A;&#x62DF;&#x673A;&#x3001;&#x516C;&#x6709;&#x4E91;&#x3001;&#x79C1;&#x6709;&#x4E91;&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x7B14;&#x8BB0;&#x672C;&#xFF0C;&#x5176;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;&#x56E0;&#x6B64;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5F88;&#x8F7B;&#x6613;&#x7684;&#x5C06;&#x5728;&#x4E00;&#x4E2A;&#x5E73;&#x53F0;&#x4E0A;&#x8FD0;&#x884C;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x8FC1;&#x79FB;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5E73;&#x53F0;&#x4E0A;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x7684;&#x53D8;&#x5316;&#x5BFC;&#x81F4;&#x5E94;&#x7528;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p><code>Docker</code> &#x4F7F;&#x7528;&#x7684;&#x5206;&#x5C42;&#x5B58;&#x50A8;&#x4EE5;&#x53CA;&#x955C;&#x50CF;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x4F7F;&#x5F97;&#x5E94;&#x7528;&#x91CD;&#x590D;&#x90E8;&#x5206;&#x7684;&#x590D;&#x7528;&#x66F4;&#x4E3A;&#x5BB9;&#x6613;&#xFF0C;&#x4E5F;&#x4F7F;&#x5F97;&#x5E94;&#x7528;&#x7684;&#x7EF4;&#x62A4;&#x66F4;&#x65B0;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#xFF0C;&#x57FA;&#x4E8E;&#x57FA;&#x7840;&#x955C;&#x50CF;&#x8FDB;&#x4E00;&#x6B65;&#x6269;&#x5C55;&#x955C;&#x50CF;&#x4E5F;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;&#x6B64;&#x5916;&#xFF0C;<code>Docker</code> &#x56E2;&#x961F;&#x540C;&#x5404;&#x4E2A;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#x56E2;&#x961F;&#x4E00;&#x8D77;&#x7EF4;&#x62A4;&#x4E86;&#x4E00;&#x5927;&#x6279;&#x9AD8;&#x8D28;&#x91CF;&#x7684; <a href="https://hub.docker.com/search/?type=image&amp;image_filter=official" target="_blank">&#x5B98;&#x65B9;&#x955C;&#x50CF;</a>&#xFF0C;&#x65E2;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4F7F;&#x7528;&#xFF0C;&#x53C8;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x57FA;&#x7840;&#x8FDB;&#x4E00;&#x6B65;&#x5B9A;&#x5236;&#xFF0C;&#x5927;&#x5927;&#x7684;&#x964D;&#x4F4E;&#x4E86;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x7684;&#x955C;&#x50CF;&#x5236;&#x4F5C;&#x6210;&#x672C;&#x3002;</p>
+<h2 id="docker-&#x4E0E;-vm-&#x6BD4;&#x8F83;"><a name="docker-&#x4E0E;-vm-&#x6BD4;&#x8F83;" class="anchor-navigation-ex-anchor" href="#docker-&#x4E0E;-vm-&#x6BD4;&#x8F83;"><i class="fa fa-link" aria-hidden="true"></i></a>Docker &#x4E0E; VM &#x6BD4;&#x8F83;</h2>
+<p>     <a href="E:\docs\myNote\_Daily\docker-k8s.assets\1561264718294.png" rel="grouped" title="1561264718294" target="_blank" class="fancybox">
+       <img src="E:\docs\myNote\_Daily\docker-k8s.assets\1561264718294.png" alt="1561264718294">
+     </a></p>
+<p>     <a href="E:\docs\myNote\_Daily\docker-k8s.assets\1561264737939.png" rel="grouped" title="1561264737939" target="_blank" class="fancybox">
+       <img src="E:\docs\myNote\_Daily\docker-k8s.assets\1561264737939.png" alt="1561264737939">
+     </a></p>
+<table>
+<thead>
+<tr>
+<th>&#x7279;&#x6027;</th>
+<th>&#x5BB9;&#x5668;</th>
+<th>&#x865A;&#x62DF;&#x673A;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x542F;&#x52A8;</td>
+<td>&#x79D2;&#x7EA7;</td>
+<td>&#x5206;&#x949F;&#x7EA7;</td>
+</tr>
+<tr>
+<td>&#x786C;&#x76D8;&#x4F7F;&#x7528;</td>
+<td>&#x4E00;&#x822C;&#x4E3A; <code>MB</code></td>
+<td>&#x4E00;&#x822C;&#x4E3A; <code>GB</code></td>
+</tr>
+<tr>
+<td>&#x6027;&#x80FD;</td>
+<td>&#x63A5;&#x8FD1;&#x539F;&#x751F;</td>
+<td>&#x5F31;&#x4E8E;</td>
+</tr>
+<tr>
+<td>&#x7CFB;&#x7EDF;&#x652F;&#x6301;&#x91CF;</td>
+<td>&#x5355;&#x673A;&#x652F;&#x6301;&#x4E0A;&#x5343;&#x4E2A;&#x5BB9;&#x5668;</td>
+<td>&#x4E00;&#x822C;&#x51E0;&#x5341;&#x4E2A;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="&#x57FA;&#x672C;&#x6982;&#x5FF5;"><a name="&#x57FA;&#x672C;&#x6982;&#x5FF5;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x6982;&#x5FF5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x6982;&#x5FF5;</h1>
+<h2 id="&#x955C;&#x50CF;"><a name="&#x955C;&#x50CF;" class="anchor-navigation-ex-anchor" href="#&#x955C;&#x50CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x955C;&#x50CF;</h2>
+<ol>
+<li><strong>Docker &#x955C;&#x50CF;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</strong>&#xFF0C;&#x9664;&#x4E86;&#x63D0;&#x4F9B;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x6240;&#x9700;&#x7684;&#x7A0B;&#x5E8F;&#x3001;&#x5E93;&#x3001;&#x8D44;&#x6E90;&#x3001;&#x914D;&#x7F6E;&#x7B49;&#x6587;&#x4EF6;&#x5916;&#xFF0C;&#x8FD8;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x4E3A;&#x8FD0;&#x884C;&#x65F6;&#x51C6;&#x5907;&#x7684;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF08;&#x5982;&#x533F;&#x540D;&#x5377;&#x3001;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3001;&#x7528;&#x6237;&#x7B49;&#xFF09;&#x3002;&#x955C;&#x50CF;&#x4E0D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x52A8;&#x6001;&#x6570;&#x636E;&#xFF0C;&#x5176;&#x5185;&#x5BB9;&#x5728;&#x6784;&#x5EFA;&#x4E4B;&#x540E;&#x4E5F;&#x4E0D;&#x4F1A;&#x88AB;&#x6539;&#x53D8;&#x3002;</li>
+<li>&#x955C;&#x50CF;&#x91C7;&#x7528;&#x5206;&#x5C42;&#x5B58;&#x50A8;&#xFF0C;&#x5B9E;&#x9645;&#x4F53;&#x73B0;&#x5E76;&#x975E;&#x7531;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7EC4;&#x6210;&#xFF0C;&#x800C;&#x662F;&#x7531;&#x4E00;&#x7EC4;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7EC4;&#x6210;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#xFF0C;&#x7531;&#x591A;&#x5C42;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8054;&#x5408;&#x7EC4;&#x6210;&#x3002;&#x8FD9;&#x4E2A;&#x7279;&#x70B9;&#x4E5F;&#x4F7F;&#x5F97;&#x955C;&#x50CF;&#x7684;&#x590D;&#x7528;&#x3001;&#x5B9A;&#x5236;&#x53D8;&#x7684;&#x66F4;&#x4E3A;&#x5BB9;&#x6613;</li>
+<li>&#x955C;&#x50CF;&#x5728;&#x6784;&#x5EFA;&#x65F6;&#xFF0C;&#x4F1A;&#x4E00;&#x5C42;&#x5C42;&#x6784;&#x5EFA;&#xFF0C;&#x524D;&#x4E00;&#x5C42;&#x662F;&#x540E;&#x4E00;&#x5C42;&#x7684;&#x57FA;&#x7840;&#x3002;&#x6BCF;&#x4E00;&#x5C42;&#x6784;&#x5EFA;&#x5B8C;&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x540E;&#x4E00;&#x5C42;&#x4E0A;&#x7684;&#x4EFB;&#x4F55;&#x6539;&#x53D8;&#x53EA;&#x53D1;&#x751F;&#x5728;&#x81EA;&#x5DF1;&#x8FD9;&#x4E00;&#x5C42;&#x3002;</li>
+</ol>
+<h2 id="&#x5BB9;&#x5668;"><a name="&#x5BB9;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BB9;&#x5668;</h2>
+<ol>
+<li>&#x955C;&#x50CF;&#xFF08;<code>Image</code>&#xFF09;&#x548C;&#x5BB9;&#x5668;&#xFF08;<code>Container</code>&#xFF09;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x597D;&#x6BD4;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x4E2D;&#x7684; <code>&#x7C7B;</code> &#x548C; <code>&#x5B9E;&#x4F8B;</code> &#x3002;</li>
+<li>&#x5BB9;&#x5668;&#x7684;&#x5B9E;&#x8D28;&#x662F;&#x8FDB;&#x7A0B;&#xFF0C;&#x4F46;&#x4E0E;&#x76F4;&#x63A5;&#x5728;&#x5BBF;&#x4E3B;&#x6267;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x4E0D;&#x540C;&#xFF0C;&#x5BB9;&#x5668;&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#x4E8E;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x72EC;&#x7ACB;&#x7684; <a href="https://en.wikipedia.org/wiki/Linux_namespaces" target="_blank">&#x547D;&#x540D;&#x7A7A;&#x95F4;</a>&#x3002;</li>
+<li><p>&#x6BCF;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x662F;&#x4EE5;&#x955C;&#x50CF;&#x4E3A;&#x57FA;&#x7840;&#x5C42;&#xFF0C;&#x5728;&#x5176;&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5F53;&#x524D;&#x5BB9;&#x5668;&#x7684;&#x5B58;&#x50A8;&#x5C42;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E3A;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x8BFB;&#x5199;&#x800C;&#x51C6;&#x5907;&#x7684;&#x5B58;&#x50A8;&#x5C42;&#x53EB; <strong>&#x5BB9;&#x5668;&#x5B58;&#x50A8;&#x5C42;</strong>&#x3002;</p>
+</li>
+<li><p>&#x5BB9;&#x5668;&#x5B58;&#x50A8;&#x5C42;&#x7684;&#x751F;&#x5B58;&#x5468;&#x671F;&#x548C;&#x5BB9;&#x5668;&#x4E00;&#x6837;&#x3002;</p>
+</li>
+<li>&#x4E0D;&#x968F;&#x5BB9;&#x5668;&#x9500;&#x6BC1;&#x7684;&#x6570;&#x636E;&#x7684;&#x8BFB;&#x5199;&#xFF0C;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; <strong>&#x6570;&#x636E;&#x5377;</strong>&#xFF08;Volume&#xFF09;&#x3001;&#x6216;&#x8005;&#x7ED1;&#x5B9A;&#x5BBF;&#x4E3B;&#x76EE;&#x5F55;&#x3002;</li>
+</ol>
+<h2 id="&#x4ED3;&#x5E93;"><a name="&#x4ED3;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x4ED3;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ED3;&#x5E93;</h2>
+<p>&#x4ED3;&#x5E93;&#x662F;&#x955C;&#x50CF;&#x7684;&#x7248;&#x672C;&#x5E93;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x955C;&#x50CF;&#x6807;&#x7B7E;&#x4EE3;&#x8868;&#x8BE5;&#x955C;&#x50CF;&#x7684;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x3002;Docker&#x63D0;&#x4F9B;&#x4E86;<strong>Docker Registry</strong>&#x4F5C;&#x4E3A;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x7BA1;&#x7406;&#x670D;&#x52A1;&#xFF0C;&#x7531;&#x4E8E;&#x6CA1;&#x6709;&#x56FE;&#x5F62;&#x754C;&#x9762;&#x7B49;&#x539F;&#x56E0;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x4F7F;&#x7528;Docker Hub &#xFF08;&#x5916;&#x90E8;&#x4E2A;&#x4EBA;&#x73AF;&#x5883;&#xFF09;&#x6216; Harbor&#xFF08;&#x79C1;&#x670D;&#xFF09;&#x6258;&#x7BA1;Docker&#x955C;&#x50CF;&#x3002;</p>
+<p>     <a href="E:\docs\myNote\_Daily\docker-k8s.assets\1149398-20190917180200231-1649134988.png" rel="grouped" title="img" target="_blank" class="fancybox">
+       <img src="E:\docs\myNote\_Daily\docker-k8s.assets\1149398-20190917180200231-1649134988.png" alt="img">
+     </a></p>
+<h1 id="&#x5E38;&#x7528;&#x547D;&#x4EE4;"><a name="&#x5E38;&#x7528;&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
+<p>&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;docker&#x7248;&#x672C;&#xFF1A;</p>
+<pre><code class="lang-sh">[root@VM_0_13_centos ~]# docker version
+Client:
+ Version:           18.09.6
+ API version:       1.39
+ Go version:        go1.10.8
+ Git commit:        481bc77156
+ Built:             Sat May  4 02:34:58 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.6
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.8
+  Git commit:       481bc77
+  Built:            Sat May  4 02:02:43 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
+</code></pre>
+<h2 id="&#x955C;&#x50CF;&#x64CD;&#x4F5C;"><a name="&#x955C;&#x50CF;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x955C;&#x50CF;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x955C;&#x50CF;&#x64CD;&#x4F5C;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x529F;&#x80FD;</th>
+<th>&#x547D;&#x4EE4;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x62C9;&#x53D6;&#x955C;&#x50CF;</td>
+<td><code>docker pull [&#x9009;&#x9879;] [&#x4ED3;&#x5E93;&#x5730;&#x5740;[:&#x7AEF;&#x53E3;&#x53F7;]/]&#x4ED3;&#x5E93;&#x540D;[:&#x6807;&#x7B7E;]</code></td>
+</tr>
+<tr>
+<td>&#x5217;&#x51FA;&#x955C;&#x50CF;</td>
+<td><code>docker images</code> &#x6216;&#x8005; <code>docker image ls</code></td>
+</tr>
+<tr>
+<td>&#x6784;&#x5EFA;</td>
+<td>docker build  -t  &lt;&#x955C;&#x50CF;&#x540D;&#x79F0;]&gt;  .   [-f Dockerfile&#x8DEF;&#x5F84;]</td>
+</tr>
+<tr>
+<td>&#x91CD;&#x547D;&#x540D;</td>
+<td>docker tag   &lt;&#x539F;&#x955C;&#x50CF;&gt;   &lt;&#x65B0;&#x955C;&#x50CF;&gt;</td>
+</tr>
+<tr>
+<td>&#x63A8;&#x9001;</td>
+<td>docker push   &lt;&#x955C;&#x50CF;&gt;</td>
+</tr>
+<tr>
+<td>&#x5220;&#x9664;&#x955C;&#x50CF;</td>
+<td><code>docker image rm [&#x9009;&#x9879;] &lt;&#x955C;&#x50CF;1&gt; [&lt;&#x955C;&#x50CF;2&gt; ...]</code> &#x6216; <code>docker rmi ...</code></td>
+</tr>
+<tr>
+<td>&#x67E5;&#x770B;&#x955C;&#x50CF;&#x4FE1;&#x606F;</td>
+<td><code>docker inspect  &lt;&#x955C;&#x50CF;&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>&#x90E8;&#x5206;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-sh"># docker pull alpine:latest
+latest: Pulling from library/alpine
+188c0c94c7c5: Pull complete
+Digest: sha256:c0e9560cda118f9ec63ddefb4a173a2b2a0347082d7dff7dc14272e7841a5b5a
+Status: Downloaded newer image for alpine:latest
+
+# docker image ls
+REPOSITORY    TAG            IMAGE ID        CREATED            SIZE
+alpine        latest         d6e46aa2470d     10 days ago      5.57MB
+
+# &#x67E5;&#x770B;&#x955C;&#x50CF;&#x7684;&#x5206;&#x5C42;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;alpine&#x955C;&#x50CF;&#x53EA;&#x6709;1&#x5C42;
+# docker inspect alpine:latest |jq &quot;.[0].RootFS&quot;
+{
+  &quot;Type&quot;: &quot;layers&quot;,
+  &quot;Layers&quot;: [
+    &quot;sha256:ace0eda3e3be35a979cec764a3321b4c7d0b9e4bb3094d20d3ff6782961a8d54&quot;
+  ]
+}
+
+# docker rmi alpine:latest
+Untagged: alpine:latest
+Untagged: alpine@sha256:c0e9560cda118f9ec63ddefb4a173a2b2a0347082d7dff7dc14272e7841a5b5a
+Deleted: sha256:d6e46aa2470df1d32034c6707c8041158b652f38d2a9ae3d7ad7e7532d22ebe0
+Deleted: sha256:ace0eda3e3be35a979cec764a3321b4c7d0b9e4bb3094d20d3ff6782961a8d54
+</code></pre>
+<h2 id="&#x5BB9;&#x5668;&#x64CD;&#x4F5C;"><a name="&#x5BB9;&#x5668;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x5668;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BB9;&#x5668;&#x64CD;&#x4F5C;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x529F;&#x80FD;</th>
+<th>&#x547D;&#x4EE4;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD0;&#x884C;&#x5BB9;&#x5668;</td>
+<td><code>docker run [&#x9009;&#x9879;] &lt;&#x955C;&#x50CF;&gt; [&#x547D;&#x4EE4;]</code></td>
+</tr>
+<tr>
+<td>&#x505C;&#x6B62;&#x5BB9;&#x5668;</td>
+<td><code>docker stop &lt;&#x5BB9;&#x5668;&gt;</code></td>
+</tr>
+<tr>
+<td>&#x5217;&#x51FA;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x5BB9;&#x5668;</td>
+<td><code>docker ps</code></td>
+</tr>
+<tr>
+<td>&#x5220;&#x9664;&#x5BB9;&#x5668;</td>
+<td><code>docker  rm  &lt;&#x5BB9;&#x5668;&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>&#x90E8;&#x5206;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-sh"># docker run -it --rm --name test_a  alpine:3 sh   #-i&#x4EA4;&#x4E92;&#xFF0C;-t&#x7EC8;&#x7AEF;&#xFF0C;--rm&#x9000;&#x51FA;&#x5373;&#x5220;&#x9664;
+/ # ls
+bin    dev    etc    home   lib    media  mnt    opt    proc   root   run    sbin   srv    sys    tmp    usr    var
+/ # exit
+
+# &#x5728;exit&#x4E4B;&#x524D;&#xFF0C;&#x53E6;&#x5F00;&#x4E00;&#x4E2A;ssh&#x7A97;&#x53E3;&#x67E5;&#x770B;
+# docker ps |grep test_a
+CONTAINER ID    IMAGE        COMMAND        CREATED            STATUS        PORTS        NAMES
+7495b9bd3c5e    alpine:3     &quot;sh&quot;          15 seconds ago     Up 14 seconds            test_a
+
+# &#x9000;&#x51FA;&#x540E;&#x518D;&#x67E5;&#x770B;&#xFF0C;&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x5BB9;&#x5668;&#x5DF2;&#x6D88;&#x5931;
+</code></pre>
+<h2 id="&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x7BA1;&#x7406;"><a name="&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x7BA1;&#x7406;</h2>
+<blockquote>
+<p><strong>docker system</strong> &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x3002;</p>
+</blockquote>
+<h3 id="&#x67E5;&#x770B;docker&#x78C1;&#x76D8;&#x5360;&#x7528;"><a name="&#x67E5;&#x770B;docker&#x78C1;&#x76D8;&#x5360;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;docker&#x78C1;&#x76D8;&#x5360;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;docker&#x78C1;&#x76D8;&#x5360;&#x7528;</h3>
+<pre><code class="lang-sh"># docker system df
+TYPE                TOTAL         ACTIVE        SIZE          RECLAIMABLE
+Images              70            22            12.88GB       9.229GB (71%)
+Containers          36            21            1.924GB       1.281GB (66%)
+Local Volumes       86            22            1.546GB       7.825MB (0%)
+Build Cache         0             0             0B            0B
+</code></pre>
+<h3 id="&#x6E05;&#x7406;docker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;"><a name="&#x6E05;&#x7406;docker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;" class="anchor-navigation-ex-anchor" href="#&#x6E05;&#x7406;docker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6E05;&#x7406;docker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;</h3>
+<p><code>docker system prune</code> &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6E05;&#x7406;&#x78C1;&#x76D8;&#xFF0C;&#x5220;&#x9664;&#x5173;&#x95ED;&#x7684;&#x5BB9;&#x5668;&#x3001;&#x65E0;&#x7528;&#x7684;&#x6570;&#x636E;&#x5377;&#x548C;&#x7F51;&#x7EDC;&#xFF0C;&#x4EE5;&#x53CA;dangling&#x955C;&#x50CF;(&#x5373;&#x65E0;tag&#x7684;&#x955C;&#x50CF;)&#x3002;</p>
+<p><code>docker system prune -a</code> &#x547D;&#x4EE4;&#x6E05;&#x7406;&#x5F97;&#x66F4;&#x52A0;&#x5F7B;&#x5E95;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x6CA1;&#x6709;&#x5BB9;&#x5668;&#x4F7F;&#x7528;Docker&#x955C;&#x50CF;&#x90FD;&#x5220;&#x6389;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#x4F1A;&#x628A;&#x4F60;&#x6682;&#x65F6;&#x5173;&#x95ED;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x4EE5;&#x53CA;&#x6682;&#x65F6;&#x6CA1;&#x6709;&#x7528;&#x5230;&#x7684;Docker&#x955C;&#x50CF;&#x90FD;&#x5220;&#x6389;&#x3002;</p>
+<pre><code class="lang-sh"># docker system prune 
+WARNING! This will remove:
+        - all stopped containers
+        - all networks not used by at least one container
+        - all dangling images
+        - all dangling build cache
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+&#xFF08;&#x7565;&#xFF09;
+Deleted Networks:
+&#xFF08;&#x7565;&#xFF09;
+Total reclaimed space: 2.627GB
+</code></pre>
+<h1 id="dockerfile"><a name="dockerfile" class="anchor-navigation-ex-anchor" href="#dockerfile"><i class="fa fa-link" aria-hidden="true"></i></a>Dockerfile</h1>
+<p>&#x90E8;&#x5206;&#x5E38;&#x7528;&#x6307;&#x4EE4;&#xFF1A;</p>
+<ul>
+<li><p>FROM&#xFF1A;&#x6307;&#x5B9A;&#x57FA;&#x7840;&#x955C;&#x50CF;</p>
+</li>
+<li><p>ARG&#xFF1A;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;</p>
+</li>
+<li><p>ENV&#xFF1A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;</p>
+</li>
+<li><p>ADD&#xFF1A;&#x6DFB;&#x52A0;&#x6784;&#x5EFA;&#x4E0A;&#x4E0B;&#x6587;</p>
+</li>
+<li><p>COPY&#xFF1A;&#x590D;&#x5236;&#x6587;&#x4EF6;</p>
+</li>
+<li><p>RUN&#xFF1A;&#x7F16;&#x5199;&#x4E00;&#x4E9B;shell&#x547D;&#x4EE4;</p>
+</li>
+<li><p>EXPOSE&#xFF1A;&#x66B4;&#x9732;&#x5BB9;&#x5668;&#x9700;&#x76D1;&#x542C;&#x7684;&#x7AEF;&#x53E3;</p>
+</li>
+<li><p>CMD&#xFF1A;&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x540E;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;</p>
+</li>
+<li><p>ENTRYPOINT&#xFF1A;&#x5165;&#x53E3;&#x6307;&#x4EE4;</p>
+<p>&#x6709;&#x4E86; <code>CMD</code> &#x540E;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x8FD8;&#x8981;&#x6709; <code>ENTRYPOINT</code> &#x5462;&#xFF1F;<a href="https://yeasy.gitbook.io/docker_practice/image/dockerfile/entrypoint" target="_blank">https://yeasy.gitbook.io/docker_practice/image/dockerfile/entrypoint</a></p>
+</li>
+<li><p>VOLUME&#x6307;&#x4EE4;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;docker run&#x547D;&#x4EE4;&#x7684; -v &#x53C2;&#x6570;&#x521B;&#x5EFA;volume&#x6302;&#x8F7D;&#x70B9;&#x3002;&#x5982;&#x679C;&#x901A;&#x8FC7;dockerfile&#x7684; VOLUME &#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x5728;&#x955C;&#x50CF;&#x4E2D;&#x521B;&#x5EFA;&#x6302;&#x8F7D;&#x70B9;&#xFF0C;&#x90A3;&#x4E48;&#x901A;&#x8FC7;&#x8BE5;&#x955C;&#x50CF;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x4E0D;&#x6307;&#x5B9A; -v &#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x4F1A;&#x5728;&#x5BBF;&#x4E3B;&#x673A;&#x4E0A;&#x968F;&#x673A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x76EE;&#x5F55;&#x7ED1;&#x5B9A;&#x5230; VOLUME &#x6240;&#x6307;&#x5B9A;&#x7684;&#x5BB9;&#x5668;&#x5185;&#x76EE;&#x5F55;&#x3002;</p>
+</li>
+</ul>
+<h2 id="dockerfile&#x793A;&#x4F8B;"><a name="dockerfile&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#dockerfile&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>Dockerfile&#x793A;&#x4F8B;</h2>
+<pre><code class="lang-sh">FROM python:2.7-alpine
+
+
+ARG APP_HOME
+ENV APP_HOME=${APP_HOME:-/opt/apps}
+
+WORKDIR $APP_HOME
+COPY ./myweb  myweb
+
+RUN echo &quot;https://mirror.tuna.tsinghua.edu.cn/alpine/v3.11/main/&quot; &gt; /etc/apk/repositories &amp;&amp; \
+    echo &quot;https://mirror.tuna.tsinghua.edu.cn/alpine/v3.11/community/&quot; &gt;&gt; /etc/apk/repositories &amp;&amp; \
+    apk add gcc g++ make mysql-dev --no-cache &amp;&amp; \
+    pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple &amp;&amp; \
+    pip install -U pip &amp;&amp; \
+    pip install supervisor==4.2.0 &amp;&amp; \
+    /usr/local/bin/echo_supervisord_conf &gt; /etc/supervisord.conf &amp;&amp; \
+    mkdir /etc/supervisord.d &amp;&amp; \
+    echo &quot;[include]&quot; &gt;&gt; /etc/supervisord.conf &amp;&amp; \
+    echo &quot;files = supervisord.d/*.conf&quot; &gt;&gt; /etc/supervisord.conf &amp;&amp; \
+    cd $APP_HOME/myweb &amp;&amp; \
+    pip install -r requirements.txt &amp;&amp; \
+    cp $APP_HOME/myweb/myweb_supervisord.conf  /etc/supervisord.d/
+
+EXPOSE $PORT
+CMD [&quot;supervisord&quot;, &quot;-n&quot;, &quot;-c&quot;, &quot;/etc/supervisord.conf&quot;]
+</code></pre>
+<h2 id="&#x6784;&#x5EFA;&#x3001;&#x8FD0;&#x884C;"><a name="&#x6784;&#x5EFA;&#x3001;&#x8FD0;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x6784;&#x5EFA;&#x3001;&#x8FD0;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6784;&#x5EFA;&#x3001;&#x8FD0;&#x884C;</h2>
+<blockquote>
+<p>&#x53D1;&#x51FA;docker build&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x79F0;&#x4E3A;build context&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Dockerfile&#x5047;&#x5B9A;&#x4F4D;&#x4E8E;&#x6B64;&#x5904;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x6807;&#x5FD7;&#xFF08;-f&#xFF09;&#x6307;&#x5B9A;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x3002;&#x4E0D;&#x7BA1;Dockerfile&#x5B9E;&#x9645;&#x4F4D;&#x4E8E;&#x4F55;&#x5904;&#xFF0C;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E2D;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;&#x7684;&#x6240;&#x6709;&#x9012;&#x5F52;&#x5185;&#x5BB9;&#x90FD;&#x5C06;&#x4F5C;&#x4E3A;&#x6784;&#x5EFA;&#x4E0A;&#x4E0B;&#x6587;&#x53D1;&#x9001;&#x5230;Docker&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#x3002;</p>
+</blockquote>
+<p>Dockerfile&#x6587;&#x4EF6;&#x540D;&#x79F0;&#x4E0D;&#x662F;Dockerfile&#x65F6;&#xFF0C;&#x9700;&#x901A;&#x8FC7; -f &#x53C2;&#x6570;&#x6307;&#x5B9A;&#xFF0C;&#x70B9;&#x53F7; &#x201C;.&#x201D; &#x8868;&#x793A;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4F5C;&#x4E3A;&#x6784;&#x5EFA;&#x4E0A;&#x4E0B;&#x6587;&#x3002;&#x5982;&#x679C;&#x5728;demo&#x7684;&#x4E0A;&#x4E00;&#x7EA7;&#x76EE;&#x5F55;&#x6267;&#x884C;&#x6784;&#x5EFA;&#xFF0C;&#x5219;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5199;&#xFF1A;<code>docker build -f demo/Dockerfile-myweb -t myweb:0.1 demo</code></p>
+<p>&#x6784;&#x5EFA;&#x65F6;&#x6253;&#x5370;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-sh">[root@VM_0_13_centos demo]# docker build -f Dockerfile-myweb -t myweb:0.1 .
+Sending build context to Docker daemon  1.117MB
+Step 1/9 : FROM python:2.7-alpine
+ ---&gt; 8579e446340f
+Step 2/9 : ARG APP_HOME
+ ---&gt; Using cache
+ ---&gt; 9c173fd3707d
+Step 3/9 : ENV APP_HOME=${APP_HOME:-/opt/apps}
+ ---&gt; Using cache
+ ---&gt; 721207dba6e7
+Step 4/9 : WORKDIR $APP_HOME
+ ---&gt; Using cache
+ ---&gt; 99a3b8ce16a1
+Step 5/9 : COPY ./myweb  myweb
+ ---&gt; 2e9790a1fa90
+Step 6/9 : VOLUME [&quot;$APP_HOME/myweb&quot;]
+ ---&gt; Running in 1e647a4987d7
+Removing intermediate container 1e647a4987d7
+ ---&gt; dd03f21e2aa6
+Step 7/9 : RUN echo &quot;https://mirror.tuna.tsinghua.edu.cn/alpine/v3.11/main/&quot; &gt; /etc/apk/repositories &amp;&amp;     echo &quot;https://mirror.tuna.tsinghua.edu.cn/alpine/v3.11/community/&quot; &gt;&gt; /etc/apk/repositories &amp;&amp;     apk add gcc g++ make mysql-dev --no-cache &amp;&amp;     pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple &amp;&amp;     pip install -U pip &amp;&amp;     pip install supervisor==4.2.0 &amp;&amp;     /usr/local/bin/echo_supervisord_conf &gt; /etc/supervisord.conf &amp;&amp;     mkdir /etc/supervisord.d &amp;&amp;     echo &quot;[include]&quot; &gt;&gt; /etc/supervisord.conf &amp;&amp;     echo &quot;files = supervisord.d/*.conf&quot; &gt;&gt; /etc/supervisord.conf &amp;&amp;     cd $APP_HOME/myweb &amp;&amp;     pip install -r requirements.txt &amp;&amp;     cp $APP_HOME/myweb/myweb_supervisord.conf  /etc/supervisord.d/
+ ---&gt; Running in 3b58653054de
+fetch https://mirror.tuna.tsinghua.edu.cn/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
+fetch https://mirror.tuna.tsinghua.edu.cn/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
+(1/27) Upgrading libcrypto1.1 (1.1.1d-r3 -&gt; 1.1.1g-r0)
+(2/27) Upgrading libssl1.1 (1.1.1d-r3 -&gt; 1.1.1g-r0)
+(3/27) Installing libgcc (9.3.0-r0)
+(4/27) Installing libstdc++ (9.3.0-r0)
+(5/27) Installing binutils (2.33.1-r0)
+(6/27) Installing gmp (6.1.2-r1)
+(7/27) Installing isl (0.18-r0)
+(8/27) Installing libgomp (9.3.0-r0)
+(9/27) Installing libatomic (9.3.0-r0)
+(10/27) Installing mpfr4 (4.0.2-r1)
+(11/27) Installing mpc1 (1.1.0-r1)
+(12/27) Installing gcc (9.3.0-r0)
+(13/27) Installing musl-dev (1.1.24-r2)
+(14/27) Installing libc-dev (0.7.2-r0)
+(15/27) Installing g++ (9.3.0-r0)
+(16/27) Installing make (4.2.1-r2)
+(17/27) Installing pkgconf (1.6.3-r0)
+(18/27) Installing openssl-dev (1.1.1g-r0)
+(19/27) Installing zlib-dev (1.2.11-r3)
+(20/27) Installing mariadb-connector-c (3.1.6-r0)
+(21/27) Installing mariadb-connector-c-dev (3.1.6-r0)
+(22/27) Installing mariadb-common (10.4.15-r0)
+(23/27) Installing libaio (0.3.112-r1)
+(24/27) Installing xz-libs (5.2.4-r0)
+(25/27) Installing pcre (8.43-r0)
+(26/27) Installing mariadb-embedded (10.4.15-r0)
+(27/27) Installing mariadb-dev (10.4.15-r0)
+Executing busybox-1.31.1-r9.trigger
+Executing ca-certificates-20191127-r1.trigger
+OK: 206 MiB in 57 packages
+Writing to /root/.config/pip/pip.conf
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting pip
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/cb/28/91f26bd088ce8e22169032100d4260614fc3da435025ff389ef1d396a433/pip-20.2.4-py2.py3-none-any.whl (1.5 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.0.2
+    Uninstalling pip-20.0.2:
+      Successfully uninstalled pip-20.0.2
+Successfully installed pip-20.2.4
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting supervisor==4.2.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2f/43/130066cd6003233401142f5f98cd09c93165f5c6408f850dd965b4f2470e/supervisor-4.2.0-py2.py3-none-any.whl (738 kB)
+Installing collected packages: supervisor
+Successfully installed supervisor-4.2.0
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting django==1.11
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/47/a6/078ebcbd49b19e22fd560a2348cfc5cec9e5dcfe3c4fad8e64c9865135bb/Django-1.11-py2.py3-none-any.whl (6.9 MB)
+Collecting mysqlclient==1.3.12
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6f/86/bad31f1c1bb0cc99e88ca2adb7cb5c71f7a6540c1bb001480513de76a931/mysqlclient-1.3.12.tar.gz (89 kB)
+Collecting pytz
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/12/f8/ff09af6ff61a3efaad5f61ba5facdf17e7722c4393f7d8a66674d2dbd29f/pytz-2020.4-py2.py3-none-any.whl (509 kB)
+Building wheels for collected packages: mysqlclient
+  Building wheel for mysqlclient (setup.py): started
+  Building wheel for mysqlclient (setup.py): finished with status &apos;done&apos;
+  Created wheel for mysqlclient: filename=mysqlclient-1.3.12-cp27-cp27mu-linux_x86_64.whl size=114991 sha256=aaaaa66718424c6b59bf7d69bd448408c90f72b86fad837db5a0faeaf4755278
+  Stored in directory: /root/.cache/pip/wheels/ec/42/25/33153f9d017dea3007e9da4daa09ac5ab23e853ec2c2c6a14d
+Successfully built mysqlclient
+Installing collected packages: pytz, django, mysqlclient
+Successfully installed django-1.11 mysqlclient-1.3.12 pytz-2020.4
+Removing intermediate container 3b58653054de
+ ---&gt; 74221bc92419
+Step 8/9 : EXPOSE $PORT
+ ---&gt; Running in bc109d388ec3
+Removing intermediate container bc109d388ec3
+ ---&gt; 7f45f5e2be2c
+Step 9/9 : CMD [&quot;supervisord&quot;, &quot;-n&quot;, &quot;-c&quot;, &quot;/etc/supervisord.conf&quot;]
+ ---&gt; Running in f0f4f867b879
+Removing intermediate container f0f4f867b879
+ ---&gt; 4eede34e1dad
+Successfully built 4eede34e1dad
+Successfully tagged myweb:0.1
+</code></pre>
+<p><strong>&#x67E5;&#x770B;&#x5BB9;&#x5668;&#x8FDB;&#x7A0B;</strong></p>
+<pre><code class="lang-sh">[root@VM_0_13_centos demo]# docker ps |grep myweb
+9ad3a7949611        myweb:0.1                              &quot;supervisord -n -c /&#x2026;&quot;   7 minutes ago       Up 7 minutes        0.0.0.0:8009-&gt;8000/tcp                                   myweb
+</code></pre>
+<p>&#x5176;&#x4E2D; <code>9ad3a7949611</code> &#x662F;&#x5BB9;&#x5668;id&#xFF0C;&#x4E5F;&#x662F;&#x5BB9;&#x5668;&#x7684;hostname</p>
+<p><strong>&#x67E5;&#x770B;volume</strong></p>
+<pre><code class="lang-sh">[root@VM_0_13_centos demo]# docker inspect 9ad3a7949611 |jq &quot;.[0].Mounts&quot;
+[
+  {
+    &quot;Type&quot;: &quot;volume&quot;,
+    &quot;Name&quot;: &quot;9bf8c23683f1d587c6184216377472ae5262a3f0a7f39794bb4e13124616bb2f&quot;,
+    &quot;Source&quot;: &quot;/var/lib/docker/volumes/9bf8c23683f1d587c6184216377472ae5262a3f0a7f39794bb4e13124616bb2f/_data&quot;,
+    &quot;Destination&quot;: &quot;/opt/apps/myweb&quot;,
+    &quot;Driver&quot;: &quot;local&quot;,
+    &quot;Mode&quot;: &quot;&quot;,
+    &quot;RW&quot;: true,
+    &quot;Propagation&quot;: &quot;&quot;
+  }
+]
+
+[root@VM_0_13_centos demo]# ls /var/lib/docker/volumes/9bf8c23683f1d587c6184216377472ae5262a3f0a7f39794bb4e13124616bb2f/_data
+manage.py  myweb  myweb_supervisord.conf  requirements.txt  static  templates  visit
+</code></pre>
+<p><strong>&#x67E5;&#x770B;env</strong></p>
+<pre><code class="lang-sh">[root@VM_0_13_centos demo]# docker inspect 9ad3a7949611 |jq &quot;.[0].Config.Env&quot;
+[
+  &quot;PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;,
+  &quot;LANG=C.UTF-8&quot;,
+  &quot;PYTHONIOENCODING=UTF-8&quot;,
+  &quot;GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF&quot;,
+  &quot;PYTHON_VERSION=2.7.18&quot;,
+  &quot;PYTHON_PIP_VERSION=20.0.2&quot;,
+  &quot;PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py&quot;,
+  &quot;PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e&quot;,
+  &quot;APP_HOME=/opt/apps&quot;
+]
+</code></pre>
+<p><strong>&#x8FDB;&#x5165;&#x5BB9;&#x5668;&#x67E5;&#x770B;</strong></p>
+<pre><code class="lang-sh">[root@VM_0_13_centos demo]# docker exec -it myweb sh
+/opt/apps # hostname
+bc8b06c2c6a1
+
+/opt/apps # env
+PYTHONIOENCODING=UTF-8
+HOSTNAME=9ad3a7949611
+PYTHON_PIP_VERSION=20.0.2
+SHLVL=1
+HOME=/root
+GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
+PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py
+TERM=xterm
+APP_HOME=/opt/apps
+PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=C.UTF-8
+PYTHON_VERSION=2.7.18
+PWD=/opt/apps
+PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e
+
+/opt/apps # ps -ef 
+PID   USER     TIME  COMMAND
+    1 root      0:01 {supervisord} /usr/local/bin/python /usr/local/bin/supervisord -n -c /etc/supervisord.conf
+    7 root      0:00 /usr/local/bin/python manage.py runserver 0.0.0.0:8000
+   17 root      0:56 /usr/local/bin/python manage.py runserver 0.0.0.0:8000
+   34 root      0:00 sh
+   40 root      0:00 ps -ef
+</code></pre>
+<h2 id="dockerfile&#x6700;&#x4F73;&#x5B9E;&#x8DF5;"><a name="dockerfile&#x6700;&#x4F73;&#x5B9E;&#x8DF5;" class="anchor-navigation-ex-anchor" href="#dockerfile&#x6700;&#x4F73;&#x5B9E;&#x8DF5;"><i class="fa fa-link" aria-hidden="true"></i></a>Dockerfile&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h2>
+<ol>
+<li>&#x57FA;&#x7840;&#x955C;&#x50CF;</li>
+</ol>
+<p>&#x5982;&#x679C;&#x4F60;&#x4EE5; <code>scratch</code> &#x4E3A;&#x57FA;&#x7840;&#x955C;&#x50CF;&#x7684;&#x8BDD;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x4F60;&#x4E0D;&#x4EE5;&#x4EFB;&#x4F55;&#x955C;&#x50CF;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6240;&#x5199;&#x7684;&#x6307;&#x4EE4;&#x5C06;&#x4F5C;&#x4E3A;&#x955C;&#x50CF;&#x7B2C;&#x4E00;&#x5C42;&#x5F00;&#x59CB;&#x5B58;&#x5728;&#x3002;</p>
+<p>&#x4E0D;&#x4EE5;&#x4EFB;&#x4F55;&#x7CFB;&#x7EDF;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x76F4;&#x63A5;&#x5C06;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x8FDB;&#x955C;&#x50CF;&#x7684;&#x505A;&#x6CD5;&#x5E76;&#x4E0D;&#x7F55;&#x89C1;&#xFF0C;&#x6BD4;&#x5982; <a href="https://hub.docker.com/_/swarm/" target="_blank"><code>swarm</code></a>&#x3001;<a href="https://quay.io/repository/coreos/etcd" target="_blank"><code>etcd</code></a>&#x3002;&#x5BF9;&#x4E8E; Linux &#x4E0B;&#x9759;&#x6001;&#x7F16;&#x8BD1;&#x7684;&#x7A0B;&#x5E8F;&#x6765;&#x8BF4;&#xFF0C;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x6709;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x8FD0;&#x884C;&#x65F6;&#x652F;&#x6301;&#xFF0C;&#x6240;&#x9700;&#x7684;&#x4E00;&#x5207;&#x5E93;&#x90FD;&#x5DF2;&#x7ECF;&#x5728;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x91CC;&#x4E86;&#xFF0C;&#x56E0;&#x6B64;&#x76F4;&#x63A5; <code>FROM scratch</code> &#x4F1A;&#x8BA9;&#x955C;&#x50CF;&#x4F53;&#x79EF;&#x66F4;&#x52A0;&#x5C0F;&#x5DE7;&#x3002;&#x4F7F;&#x7528; <a href="https://golang.org/" target="_blank">Go &#x8BED;&#x8A00;</a> &#x5F00;&#x53D1;&#x7684;&#x5E94;&#x7528;&#x5F88;&#x591A;&#x4F1A;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x5236;&#x4F5C;&#x955C;&#x50CF;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x6709;&#x4EBA;&#x8BA4;&#x4E3A; Go &#x662F;&#x7279;&#x522B;&#x9002;&#x5408;&#x5BB9;&#x5668;&#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;&#x7684;&#x8BED;&#x8A00;&#x7684;&#x539F;&#x56E0;&#x4E4B;&#x4E00;&#x3002;</p>
+<ol>
+<li>&#x591A;&#x9636;&#x6BB5;&#x6784;&#x5EFA;</li>
+</ol>
+<h1 id="docker-compose"><a name="docker-compose" class="anchor-navigation-ex-anchor" href="#docker-compose"><i class="fa fa-link" aria-hidden="true"></i></a>docker-compose</h1>
+<p><code>Compose</code> &#x9879;&#x76EE;&#x662F; Docker &#x5B98;&#x65B9;&#x7684;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF0C;&#x8D1F;&#x8D23;&#x5B9E;&#x73B0;&#x5BF9; Docker &#x5BB9;&#x5668;&#x96C6;&#x7FA4;&#x7684;&#x5FEB;&#x901F;&#x7F16;&#x6392;&#x3002;</p>
+<p><code>Compose</code> &#x5B9A;&#x4F4D;&#x662F; &#x300C;&#x5B9A;&#x4E49;&#x548C;&#x8FD0;&#x884C;&#x591A;&#x4E2A; Docker &#x5BB9;&#x5668;&#x7684;&#x5E94;&#x7528;&#xFF08;Defining and running multi-container Docker applications&#xFF09;&#x300D;&#xFF0C;&#x5176;&#x524D;&#x8EAB;&#x662F;&#x5F00;&#x6E90;&#x9879;&#x76EE; Fig&#x3002;</p>
+<p><code>Compose</code> &#x4E2D;&#x6709;&#x4E24;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#xFF1A;</p>
+<ul>
+<li>&#x670D;&#x52A1; (<code>service</code>)&#xFF1A;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x53EF;&#x4EE5;&#x5305;&#x62EC;&#x82E5;&#x5E72;&#x8FD0;&#x884C;&#x76F8;&#x540C;&#x955C;&#x50CF;&#x7684;&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x3002;</li>
+<li>&#x9879;&#x76EE; (<code>project</code>)&#xFF1A;&#x7531;&#x4E00;&#x7EC4;&#x5173;&#x8054;&#x7684;&#x5E94;&#x7528;&#x5BB9;&#x5668;&#x7EC4;&#x6210;&#x7684;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x4E1A;&#x52A1;&#x5355;&#x5143;&#xFF0C;&#x5728; <code>docker-compose.yml</code> &#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+<p><code>Compose</code> &#x7684;&#x9ED8;&#x8BA4;&#x7BA1;&#x7406;&#x5BF9;&#x8C61;&#x662F;&#x9879;&#x76EE;&#xFF0C;&#x901A;&#x8FC7;&#x5B50;&#x547D;&#x4EE4;&#x5BF9;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x4E00;&#x7EC4;&#x5BB9;&#x5668;&#x8FDB;&#x884C;&#x4FBF;&#x6377;&#x5730;&#x751F;&#x547D;&#x5468;&#x671F;&#x7BA1;&#x7406;&#x3002;</p>
+<h2 id="&#x5B89;&#x88C5;"><a name="&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;</h2>
+<pre><code class="lang-sh">$ sudo curl -L https://github.com/docker/compose/releases/download/1.25.5/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose
+
+$ sudo chmod +x /usr/local/bin/docker-compose
+</code></pre>
+<p>&#x6216;&#x8005;&#x901A;&#x8FC7;pip&#x5B89;&#x88C5;</p>
+<pre><code class="lang-sh">$ sudo pip install -U docker-compose
+</code></pre>
+<h2 id="docker-compose&#x793A;&#x4F8B;-&#x2014;&#x2014;-wordpress"><a name="docker-compose&#x793A;&#x4F8B;-&#x2014;&#x2014;-wordpress" class="anchor-navigation-ex-anchor" href="#docker-compose&#x793A;&#x4F8B;-&#x2014;&#x2014;-wordpress"><i class="fa fa-link" aria-hidden="true"></i></a>docker-compose&#x793A;&#x4F8B; &#x2014;&#x2014; WordPress</h2>
+<p>docker-compose.yml</p>
+<pre><code class="lang-yaml">version: &quot;3&quot;
+services:
+
+   db:
+     image: mysql:8.0
+     command:
+      - --default_authentication_plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci     
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: somewordpress
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: wordpress
+
+   wordpress:
+     depends_on:
+       - db
+     image: wordpress:latest
+     ports:
+       - &quot;8020:80&quot;
+     restart: always
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD: wordpress
+volumes:
+  db_data:
+</code></pre>
+<p>&#x542F;&#x52A8;</p>
+<pre><code class="lang-sh">[root@VM_0_13_centos wordpress-demo]# docker-compose up -d
+Creating network &quot;wordpress-demo_default&quot; with the default driver
+Creating wordpress-demo_db_1 ... done
+Creating wordpress-demo_wordpress_1 ... done
+
+[root@VM_0_13_centos wordpress-demo]# docker-compose ps
+Name                         Command                             State   Ports        
+-----------------------------------------------------------------------------------
+wordpress-demo_db_1          docker-entrypoint.sh --def ...   Up      3306/tcp, 33060/tcp 
+wordpress-demo_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:8020-&gt;80/tcp
+</code></pre>
+<p>     <a href="E:\docs\myNote\_Daily\docker-k8s.assets\image-20201107174243776.png" rel="grouped" title="image-20201107174243776" target="_blank" class="fancybox">
+       <img src="E:\docs\myNote\_Daily\docker-k8s.assets\image-20201107174243776.png" alt="image-20201107174243776">
+     </a></p>
+<p>&#x67E5;&#x770B;db&#x6570;&#x636E;&#x5377;</p>
+<pre><code class="lang-sh">[root@VM_0_13_centos wordpress-demo]# docker inspect wordpress-demo_db_1 |jq &quot;.[0].Mounts&quot;
+[
+  {
+    &quot;Type&quot;: &quot;volume&quot;,
+    &quot;Name&quot;: &quot;wordpress-demo_db_data&quot;,
+    &quot;Source&quot;: &quot;/var/lib/docker/volumes/wordpress-demo_db_data/_data&quot;,
+    &quot;Destination&quot;: &quot;/var/lib/mysql&quot;,
+    &quot;Driver&quot;: &quot;local&quot;,
+    &quot;Mode&quot;: &quot;rw&quot;,
+    &quot;RW&quot;: true,
+    &quot;Propagation&quot;: &quot;&quot;
+  }
+]
+
+[root@VM_0_13_centos wordpress-demo]# ls /var/lib/docker/volumes/wordpress-demo_db_data/_data
+auto.cnf       binlog.000004  client-cert.pem    ib_buffer_pool  ibtmp1        performance_schema  server-key.pem  wordpress
+binlog.000001  binlog.index   client-key.pem     ibdata1         #innodb_temp  private_key.pem     sys
+binlog.000002  ca-key.pem     #ib_16384_0.dblwr  ib_logfile0     mysql         public_key.pem      undo_001
+binlog.000003  ca.pem         #ib_16384_1.dblwr  ib_logfile1     mysql.ibd     server-cert.pem     undo_002
+</code></pre>
+<p>&#x8FDB;&#x5165;&#x5BB9;&#x5668;&#x67E5;&#x770B;</p>
+<pre><code class="lang-sh">[root@VM_0_13_centos wordpress-demo]# docker-compose exec db sh
+# ls
+bin  boot  dev    docker-entrypoint-initdb.d  entrypoint.sh  etc    home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+
+# hostname
+9a3da80a05ac
+
+# env
+HOSTNAME=9a3da80a05ac
+MYSQL_MAJOR=8.0
+HOME=/root
+MYSQL_ROOT_PASSWORD=somewordpress
+TERM=xterm
+MYSQL_PASSWORD=wordpress
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MYSQL_VERSION=8.0.22-1debian10
+MYSQL_USER=wordpress
+GOSU_VERSION=1.12
+PWD=/
+MYSQL_DATABASE=wordpress
+
+# which mysqld
+/usr/sbin/mysqld
+
+# ls /var/lib/mysql
+&apos;#ib_16384_0.dblwr&apos;   binlog.000001   binlog.index      client-key.pem     ibdata1     performance_schema   server-key.pem   wordpress
+&apos;#ib_16384_1.dblwr&apos;   binlog.000002   ca-key.pem        ib_buffer_pool     ibtmp1      private_key.pem      sys
+&apos;#innodb_temp&apos;          binlog.000003   ca.pem            ib_logfile0     mysql         public_key.pem      undo_001
+ auto.cnf          binlog.000004   client-cert.pem   ib_logfile1     mysql.ibd   server-cert.pem      undo_002
+</code></pre>
+<p>     <a href="E:\docs\myNote\_Daily\docker-k8s.assets\image-20201107174911101.png" rel="grouped" title="image-20201107174911101" target="_blank" class="fancybox">
+       <img src="E:\docs\myNote\_Daily\docker-k8s.assets\image-20201107174911101.png" alt="image-20201107174911101">
+     </a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Zeng 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Modified @
+2020-12-12 17:04:11
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../deployment/docker/" class="navigation navigation-prev " aria-label="Previous page: Docker">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../deployment/docker/docker-prometheus.html" class="navigation navigation-next " aria-label="Next page: Prometheus">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Docker","level":"2.2.1","depth":2,"next":{"title":"Prometheus","level":"2.2.2","depth":2,"path":"docs/deployment/docker/docker-prometheus.md","ref":"docs/deployment/docker/docker-prometheus.md","articles":[]},"previous":{"title":"Docker","level":"2.2","depth":1,"path":"docs/deployment/docker/README.md","ref":"docs/deployment/docker/README.md","articles":[{"title":"Docker","level":"2.2.1","depth":2,"path":"docs/normal/docker-learning.md","ref":"docs/normal/docker-learning.md","articles":[]},{"title":"Prometheus","level":"2.2.2","depth":2,"path":"docs/deployment/docker/docker-prometheus.md","ref":"docs/deployment/docker/docker-prometheus.md","articles":[]},{"title":"Nginx Consul","level":"2.2.3","depth":2,"path":"docs/deployment/docker/docker-nginx-consul.md","ref":"docs/deployment/docker/docker-nginx-consul.md","articles":[]},{"title":"PMM","level":"2.2.4","depth":2,"path":"docs/deployment/docker/docker-pmm.md","ref":"docs/deployment/docker/docker-pmm.md","articles":[]},{"title":"Redis in Docker","level":"2.2.5","depth":2,"path":"docs/deployment/docker/docker-redis.md","ref":"docs/deployment/docker/docker-redis.md","articles":[]},{"title":"LDAP","level":"2.2.6","depth":2,"path":"docs/deployment/docker/docker-ldap.md","ref":"docs/deployment/docker/docker-ldap.md","articles":[]},{"title":"Harbor","level":"2.2.7","depth":2,"path":"docs/deployment/docker/docker-harbor.md","ref":"docs/deployment/docker/docker-harbor.md","articles":[]},{"title":"Apollo","level":"2.2.8","depth":2,"path":"docs/deployment/docker/docker-apollo.md","ref":"docs/deployment/docker/docker-apollo.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","-sharing","search-plus","simple-page-toc","editlink","splitter","tbfed-pagefooter","chapter-fold","sectionx","anchor-navigation-ex","code","todo","pageview-count","hide-element","fancybox"],"root":".","styles":{"website":"/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © Zeng 2019","modify_label":"Modified @","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fancybox":{"helpers":{"buttons":{}}},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/zlzgithub/docs/blob/master/"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link",".treeview__container-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"pageview-count":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Zeng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DevOps Pages","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"运维笔记"},"file":{"path":"docs/normal/docker-learning.md","mtime":"2020-12-12T17:04:11.889Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-12T17:07:54.823Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

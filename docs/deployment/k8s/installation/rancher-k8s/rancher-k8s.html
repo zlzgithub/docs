@@ -1,0 +1,1988 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Rancher · DevOps Pages</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zeng">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../kubeadm-k8s/kubeadm-k8s-steps.html" />
+    
+    
+    <link rel="prev" href="../rke-k8s/rke-k8s.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../../SUMMARY.html">
+            
+                <a href="../../../../../SUMMARY.html">
+            
+                    
+                    目 录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../../../">
+            
+                <a href="../../../../../">
+            
+                    
+                    DevOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">应用部署</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../ansible/">
+            
+                <a href="../../../ansible/">
+            
+                    
+                    Ansible
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../../ansible/ansible-intro.html">
+            
+                <a href="../../../ansible/ansible-intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../../docker/">
+            
+                <a href="../../../docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../../../normal/docker-learning.html">
+            
+                <a href="../../../../normal/docker-learning.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../../docker/docker-prometheus.html">
+            
+                <a href="../../../docker/docker-prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../../docker/docker-nginx-consul.html">
+            
+                <a href="../../../docker/docker-nginx-consul.html">
+            
+                    
+                    Nginx Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../../../docker/docker-pmm.html">
+            
+                <a href="../../../docker/docker-pmm.html">
+            
+                    
+                    PMM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../../../docker/docker-redis.html">
+            
+                <a href="../../../docker/docker-redis.html">
+            
+                    
+                    Redis in Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../../../docker/docker-ldap.html">
+            
+                <a href="../../../docker/docker-ldap.html">
+            
+                    
+                    LDAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../../../docker/docker-harbor.html">
+            
+                <a href="../../../docker/docker-harbor.html">
+            
+                    
+                    Harbor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../../../docker/docker-apollo.html">
+            
+                <a href="../../../docker/docker-apollo.html">
+            
+                    
+                    Apollo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../../../normal/k8s-learning.html">
+            
+                <a href="../../../../normal/k8s-learning.html">
+            
+                    
+                    K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.1" data-path="../kubespray-k8s/kubespray-k8s.html">
+            
+                <a href="../kubespray-k8s/kubespray-k8s.html">
+            
+                    
+                    Kubespray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.2" data-path="../rke-k8s/rke-k8s.html">
+            
+                <a href="../rke-k8s/rke-k8s.html">
+            
+                    
+                    RKE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.2.3" data-path="rancher-k8s.html">
+            
+                <a href="rancher-k8s.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.4" data-path="../kubeadm-k8s/kubeadm-k8s-steps.html">
+            
+                <a href="../kubeadm-k8s/kubeadm-k8s-steps.html">
+            
+                    
+                    Kubeadm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../../deployment/">
+            
+                <a href="../../deployment/">
+            
+                    
+                    部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.1" data-path="../../deployment/Kubernetes-dashboard.html">
+            
+                <a href="../../deployment/Kubernetes-dashboard.html">
+            
+                    
+                    K8s Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.2" data-path="../../deployment/ELK.html">
+            
+                <a href="../../deployment/ELK.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.3" data-path="../../deployment/k8s-prometheus.html">
+            
+                <a href="../../deployment/k8s-prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.4" data-path="../../deployment/k8s-nfs-storageclass.html">
+            
+                <a href="../../deployment/k8s-nfs-storageclass.html">
+            
+                    
+                    NFS动态PV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.5" data-path="../../deployment/k8s-rancher.html">
+            
+                <a href="../../deployment/k8s-rancher.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.6" data-path="../../deployment/k8s-helm.html">
+            
+                <a href="../../deployment/k8s-helm.html">
+            
+                    
+                    Helm&Tiller
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../../else/">
+            
+                <a href="../../../else/">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../../else/mysql-replication.html">
+            
+                <a href="../../../else/mysql-replication.html">
+            
+                    
+                    MySQL主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../../../else/percona-toolkit.html">
+            
+                <a href="../../../else/percona-toolkit.html">
+            
+                    
+                    Percona toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../../../else/ins_mysql.html">
+            
+                <a href="../../../else/ins_mysql.html">
+            
+                    
+                    yum安装MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../../../else/ins_rabbitmq.html">
+            
+                <a href="../../../else/ins_rabbitmq.html">
+            
+                    
+                    yum安装RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../../../else/ins_redis5.html">
+            
+                <a href="../../../else/ins_redis5.html">
+            
+                    
+                    yum安装Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../../../else/ins_ruby_redis_dump.html">
+            
+                <a href="../../../else/ins_ruby_redis_dump.html">
+            
+                    
+                    安装ruby和redis dump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../../../else/ins_yapi.html">
+            
+                <a href="../../../else/ins_yapi.html">
+            
+                    
+                    Y-API的安装步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../../../else/gitlab-update.html">
+            
+                <a href="../../../else/gitlab-update.html">
+            
+                    
+                    GitLab升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../../../else/dataX-demo.html">
+            
+                <a href="../../../else/dataX-demo.html">
+            
+                    
+                    dataX示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../../../else/git-orphan-usage.html">
+            
+                <a href="../../../else/git-orphan-usage.html">
+            
+                    
+                    git分支重置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../../../else/repair-mysql-repl.html">
+            
+                <a href="../../../else/repair-mysql-repl.html">
+            
+                    
+                    修复mysql主从
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../../../else/disk-lvcreate.html">
+            
+                <a href="../../../else/disk-lvcreate.html">
+            
+                    
+                    磁盘扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../../../else/docker-notes.html">
+            
+                <a href="../../../else/docker-notes.html">
+            
+                    
+                    docker若干
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.14" data-path="../../../../normal/HiS.html">
+            
+                <a href="../../../../normal/HiS.html">
+            
+                    
+                    HiS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">监控报警</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../../../monitoring/alerts/">
+            
+                <a href="../../../../monitoring/alerts/">
+            
+                    
+                    Alerts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../../../monitoring/alerts/intro_syshost_syslink.html">
+            
+                <a href="../../../../monitoring/alerts/intro_syshost_syslink.html">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../../../monitoring/consul/">
+            
+                <a href="../../../../monitoring/consul/">
+            
+                    
+                    Consul
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../../../monitoring/consul/consul.html">
+            
+                <a href="../../../../monitoring/consul/consul.html">
+            
+                    
+                    Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../../../monitoring/consul/consul-template.html">
+            
+                <a href="../../../../monitoring/consul/consul-template.html">
+            
+                    
+                    Consul-template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../../../monitoring/consul/my-nginx-consul.html">
+            
+                <a href="../../../../monitoring/consul/my-nginx-consul.html">
+            
+                    
+                    Nginx-Consul-template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../../../../monitoring/consul/consul-acl.html">
+            
+                <a href="../../../../monitoring/consul/consul-acl.html">
+            
+                    
+                    Consul-ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../../../../monitoring/consul/consul-api-memo.html">
+            
+                <a href="../../../../monitoring/consul/consul-api-memo.html">
+            
+                    
+                    Consul APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../../../monitoring/prometheus/">
+            
+                <a href="../../../../monitoring/prometheus/">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../../../monitoring/prometheus/prom/">
+            
+                <a href="../../../../monitoring/prometheus/prom/">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1.1" data-path="../../../../monitoring/prometheus/prom/prometheus-intro.html">
+            
+                <a href="../../../../monitoring/prometheus/prom/prometheus-intro.html">
+            
+                    
+                    核心组件——prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.2" data-path="../../../../monitoring/prometheus/prom/alertmanager.html">
+            
+                <a href="../../../../monitoring/prometheus/prom/alertmanager.html">
+            
+                    
+                    告警组件——alertmanager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.3" data-path="../../../../monitoring/prometheus/prom/prometheus_federate.html">
+            
+                <a href="../../../../monitoring/prometheus/prom/prometheus_federate.html">
+            
+                    
+                    联邦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.4" data-path="../../../../monitoring/prometheus/prom/prometheus-discovery.html">
+            
+                <a href="../../../../monitoring/prometheus/prom/prometheus-discovery.html">
+            
+                    
+                    自动发现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../../../../monitoring/grafana/">
+            
+                <a href="../../../../monitoring/grafana/">
+            
+                    
+                    Grafana
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.2.1" data-path="../../../../monitoring/grafana/grafana-tmpl_k8s.html">
+            
+                <a href="../../../../monitoring/grafana/grafana-tmpl_k8s.html">
+            
+                    
+                    K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.2" data-path="../../../../monitoring/grafana/grafana-tmpl_log.html">
+            
+                <a href="../../../../monitoring/grafana/grafana-tmpl_log.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.3" data-path="../../../../monitoring/grafana/grafana-tmpl_mysql-repl.html">
+            
+                <a href="../../../../monitoring/grafana/grafana-tmpl_mysql-repl.html">
+            
+                    
+                    MySQL-Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.4" data-path="../../../../monitoring/grafana/grafana-tmpl_pmm-mysql.html">
+            
+                <a href="../../../../monitoring/grafana/grafana-tmpl_pmm-mysql.html">
+            
+                    
+                    PMM MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.5" data-path="../../../../monitoring/grafana/grafana-tmpl_rabbitmq-cluster.html">
+            
+                <a href="../../../../monitoring/grafana/grafana-tmpl_rabbitmq-cluster.html">
+            
+                    
+                    RabbitMQ Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.6" data-path="../../../../monitoring/grafana/grafana-tmpl_rabbitmq.html">
+            
+                <a href="../../../../monitoring/grafana/grafana-tmpl_rabbitmq.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.7" data-path="../../../../monitoring/grafana/grafana-tmpl_redis.html">
+            
+                <a href="../../../../monitoring/grafana/grafana-tmpl_redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../../../../monitoring/prometheus/3rd/">
+            
+                <a href="../../../../monitoring/prometheus/3rd/">
+            
+                    
+                    常用软件接入Prometheus监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.3.1" data-path="../../../../monitoring/prometheus/3rd/mysql-monitor-steps.html">
+            
+                <a href="../../../../monitoring/prometheus/3rd/mysql-monitor-steps.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.2" data-path="../../../../monitoring/prometheus/3rd/Prometheus-monitor-mysql-replication.html">
+            
+                <a href="../../../../monitoring/prometheus/3rd/Prometheus-monitor-mysql-replication.html">
+            
+                    
+                    MySQL主从同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.3" data-path="../../../../monitoring/prometheus/3rd/mongodb-monitor-steps.html">
+            
+                <a href="../../../../monitoring/prometheus/3rd/mongodb-monitor-steps.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.4" data-path="../../../../monitoring/prometheus/3rd/redis-monitor-steps.html">
+            
+                <a href="../../../../monitoring/prometheus/3rd/redis-monitor-steps.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.5" data-path="../../../../monitoring/prometheus/3rd/rabbitmq-monitor-steps.html">
+            
+                <a href="../../../../monitoring/prometheus/3rd/rabbitmq-monitor-steps.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.6" data-path="../../../../monitoring/prometheus/3rd/nginx-monitor-steps.html">
+            
+                <a href="../../../../monitoring/prometheus/3rd/nginx-monitor-steps.html">
+            
+                    
+                    NginX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../../../../monitoring/prometheus/self/prometheus-consul-guide.html">
+            
+                <a href="../../../../monitoring/prometheus/self/prometheus-consul-guide.html">
+            
+                    
+                    自研应用接入Prometheus监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../../../monitoring/zabbix/zabbix-intro.html">
+            
+                <a href="../../../../monitoring/zabbix/zabbix-intro.html">
+            
+                    
+                    Zabbix
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../../../../monitoring/zabbix/zabbix-discovery-rule.html">
+            
+                <a href="../../../../monitoring/zabbix/zabbix-discovery-rule.html">
+            
+                    
+                    自动发现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">日志分析</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../../../log-analysis/">
+            
+                <a href="../../../../log-analysis/">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../../../log-analysis/es-xpack.html">
+            
+                <a href="../../../../log-analysis/es-xpack.html">
+            
+                    
+                    X-pack权限控制版ES
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../../../log-analysis/es-account-manage.html">
+            
+                <a href="../../../../log-analysis/es-account-manage.html">
+            
+                    
+                    ELK账号权限分组管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../../../../log-analysis/elk-problems.html">
+            
+                <a href="../../../../log-analysis/elk-problems.html">
+            
+                    
+                    ELK若干问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../../../../log-analysis/clean_elk_indices.html">
+            
+                <a href="../../../../log-analysis/clean_elk_indices.html">
+            
+                    
+                    清理ES索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../../../../log-analysis/k8s-elk-auth-kibana-via-ad.html">
+            
+                <a href="../../../../log-analysis/k8s-elk-auth-kibana-via-ad.html">
+            
+                    
+                    K8s部署ELK并启用AD认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../../../../log-analysis/k8s-elk-improvement.html">
+            
+                <a href="../../../../log-analysis/k8s-elk-improvement.html">
+            
+                    
+                    ELK部署整改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../../../../log-analysis/elk-grafana.html">
+            
+                <a href="../../../../log-analysis/elk-grafana.html">
+            
+                    
+                    使用Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../../../../log-analysis/es-api-memo.html">
+            
+                <a href="../../../../log-analysis/es-api-memo.html">
+            
+                    
+                    ES APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">持续集成</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../../../cicd/">
+            
+                <a href="../../../../cicd/">
+            
+                    
+                    CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../../../cicd/gitlab/">
+            
+                <a href="../../../../cicd/gitlab/">
+            
+                    
+                    GitLab CI/CD
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../../../cicd/gitlab/gitlab-runner.html">
+            
+                <a href="../../../../cicd/gitlab/gitlab-runner.html">
+            
+                    
+                    GitLab Runner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../../../cicd/gitlab/gitlab-cicd.html">
+            
+                <a href="../../../../cicd/gitlab/gitlab-cicd.html">
+            
+                    
+                    GitLab CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">配置管理</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../../../config-management/">
+            
+                <a href="../../../../config-management/">
+            
+                    
+                    CMDB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../../../../config-management/ansible-tower.html">
+            
+                <a href="../../../../config-management/ansible-tower.html">
+            
+                    
+                    Ansible Tower
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../../../../config-management/bk-cmdb.html">
+            
+                <a href="../../../../config-management/bk-cmdb.html">
+            
+                    
+                    BlueKing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">任务调度</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../../../task-scheduling/">
+            
+                <a href="../../../../task-scheduling/">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../../../task-scheduling/xxl-job.html">
+            
+                <a href="../../../../task-scheduling/xxl-job.html">
+            
+                    
+                    XXL-JOB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../../../../task-scheduling/upgrade-xxl-job.html">
+            
+                <a href="../../../../task-scheduling/upgrade-xxl-job.html">
+            
+                    
+                    XXL-JOB升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">关于本书</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../../../my-gitbook.html">
+            
+                <a href="../../../../my-gitbook.html">
+            
+                    
+                    制作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../../../../cicd/publish-gitbook.html">
+            
+                <a href="../../../../cicd/publish-gitbook.html">
+            
+                    
+                    发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../../../../HELP.html">
+            
+                <a href="../../../../HELP.html">
+            
+                    
+                    官方示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../../.." >Rancher</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x901A;&#x8FC7;rancher&#x642D;&#x5EFA;k8s&#x96C6;&#x7FA4;"><b></b>&#x901A;&#x8FC7;Rancher&#x642D;&#x5EFA;K8s&#x96C6;&#x7FA4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x96C6;&#x7FA4;&#x7EC4;&#x6210;"><b></b>&#x96C6;&#x7FA4;&#x7EC4;&#x6210;</a></li><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;&#x6B65;&#x9AA4;"><b></b>&#x5B89;&#x88C5;&#x6B65;&#x9AA4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x73AF;&#x5883;&#x8BBE;&#x7F6E;"><b></b>&#x73AF;&#x5883;&#x8BBE;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;rancher-server"><b></b>&#x5B89;&#x88C5;rancher server</a></li><li><span class="title-icon "></span><a href="#&#x767B;&#x5F55;rancher-web&#x521B;&#x5EFA;&#x96C6;&#x7FA4;"><b></b>&#x767B;&#x5F55;Rancher Web&#x521B;&#x5EFA;&#x96C6;&#x7FA4;</a></li><li><span class="title-icon "></span><a href="#&#x90E8;&#x7F72;&#x670D;&#x52A1;"><b></b>&#x90E8;&#x7F72;&#x670D;&#x52A1;</a></li><li><span class="title-icon "></span><a href="#&#x6267;&#x884C;kubectl&#x547D;&#x4EE4;&#x884C;"><b></b>&#x6267;&#x884C;kubectl&#x547D;&#x4EE4;&#x884C;</a></li><li><span class="title-icon "></span><a href="#&#x6DFB;&#x52A0;dashboard"><b></b>&#x6DFB;&#x52A0;Dashboard</a></li></ul></ul></ul></div><a href="#&#x901A;&#x8FC7;rancher&#x642D;&#x5EFA;k8s&#x96C6;&#x7FA4;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x901A;&#x8FC7;rancher&#x642D;&#x5EFA;k8s&#x96C6;&#x7FA4;"><a name="&#x901A;&#x8FC7;rancher&#x642D;&#x5EFA;k8s&#x96C6;&#x7FA4;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;rancher&#x642D;&#x5EFA;k8s&#x96C6;&#x7FA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;Rancher&#x642D;&#x5EFA;K8s&#x96C6;&#x7FA4;</h1>
+<h2 id="&#x96C6;&#x7FA4;&#x7EC4;&#x6210;"><a name="&#x96C6;&#x7FA4;&#x7EC4;&#x6210;" class="anchor-navigation-ex-anchor" href="#&#x96C6;&#x7FA4;&#x7EC4;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x96C6;&#x7FA4;&#x7EC4;&#x6210;</h2>
+<p>&#x53C2;&#x8003;&#x67B6;&#x6784;&#x56FE;&#xFF1A;</p>
+<p>     <a href="rancher-k8s.assets/1551952435046.png" rel="grouped" title="1551952435046" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551952435046.png" alt="1551952435046">
+     </a></p>
+<p>&#x4E3B;&#x673A;&#x5217;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>IP</th>
+<th>role</th>
+<th>description</th>
+<th>OS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>192.168.101.71</td>
+<td>rancher server<br>k8s-master (etcd, control)</td>
+<td>&#x63A7;&#x5236;&#x8282;&#x70B9;<br><strong><em>rancher server</em></strong></td>
+<td>centos7.6<br>16U24G<br>&#x4E0B;&#x540C;</td>
+</tr>
+<tr>
+<td>192.168.101.72</td>
+<td>k8s-master (etcd, control)</td>
+<td>&#x63A7;&#x5236;&#x8282;&#x70B9;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>192.168.101.73</td>
+<td>k8s-master (etcd, control)</td>
+<td>&#x63A7;&#x5236;&#x8282;&#x70B9;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>192.168.101.74</td>
+<td>k8s-node (worker)</td>
+<td>worker&#x8282;&#x70B9;&#xFF08;&#x53EF;&#x88AB;&#x8C03;&#x5EA6;&#xFF09;</td>
+<td>centos7.6<br>16U48G<br>&#x4E0B;&#x540C;</td>
+</tr>
+<tr>
+<td>192.168.101.75</td>
+<td>k8s-node (worker)</td>
+<td>worker&#x8282;&#x70B9;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>192.168.101.76</td>
+<td>k8s-node (worker)</td>
+<td>worker&#x8282;&#x70B9;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>192.168.<strong><em>101.70</em></strong></td>
+<td>VIP</td>
+<td>&#x865A;&#x62DF; IP</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5B89;&#x88C5;&#x6B65;&#x9AA4;"><a name="&#x5B89;&#x88C5;&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;&#x6B65;&#x9AA4;</h2>
+<h3 id="&#x73AF;&#x5883;&#x8BBE;&#x7F6E;"><a name="&#x73AF;&#x5883;&#x8BBE;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x73AF;&#x5883;&#x8BBE;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x73AF;&#x5883;&#x8BBE;&#x7F6E;</h3>
+<pre><code class="lang-sh">  # /etc/hosts
+  127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+  ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+  192.168.101.71  b71-k8s-m01     b71-k8s-m01.keep.com
+  192.168.101.72  b72-k8s-m02     b72-k8s-m02.keep.com
+  192.168.101.73  b73-k8s-m03     b73-k8s-m03.keep.com
+  192.168.101.74  b74-k8s-c01     b74-k8s-c01.keep.com
+  192.168.101.75  b75-k8s-c02     b75-k8s-c02.keep.com
+  192.168.101.76  b76-k8s-c03     b76-k8s-c03.keep.com
+
+  # &#x5173;&#x95ED;firewalld
+  systemctl stop firewalld.service
+  systemctl disable firewalld.service
+
+  # &#x65E0;swap&#x5206;&#x533A;&#xFF0C;&#x4E0D;&#x6D89;&#x53CA;swapoff&#x64CD;&#x4F5C;
+
+  # &#x5173;&#x95ED;selinux
+  setenforce 0
+  sed -i &apos;/^SELINUX=/s/=.*$/=disabled/&apos; /etc/selinux/config
+
+  # &#x5B89;&#x88C5;docker-ce 18.06
+  wget -P /etc/yum.repos.d https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+  yum install docker-ce-18.06.1.ce -y
+  systemctl start docker.service
+  systemctl enable docker.service
+</code></pre>
+<p>  haproxy + keepalived &#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-sh">  ### &#x5BF9;3&#x4E2A;master&#x8282;&#x70B9;&#xFF1A;&#x6DFB;&#x52A0;&#x5230;&#x6587;&#x4EF6;/etc/sysctl.conf
+  cat &lt;&lt;EOF &gt;&gt;/etc/sysctl.conf
+  net.ipv4.ip_forward = 1
+  net.ipv4.ip_nonlocal_bind = 1
+  EOF
+
+  ### &#x4FEE;&#x6539;keepalived.conf
+  cat &gt; /etc/keepalived/keepalived.conf &lt;&lt; EOF
+  ! Configuration File for keepalived
+
+  global_defs {
+     router_id LVS_DEVEL
+  }
+
+  vrrp_script check_haproxy {
+      script &quot;killall -0 haproxy&quot;
+      interval 3
+      weight -2
+      fall 10
+      rise 2
+  }
+
+  vrrp_instance VI_1 {
+      state MASTER # &#x53E6;2&#x4E2A;&#x5206;&#x522B;&#x662F;BACKUP&#x3001;BACKUP
+      interface ens192
+      virtual_router_id 51
+      priority 120 # &#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x53E6;2&#x4E2A;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A;100
+      advert_int 1
+      authentication {
+          auth_type PASS
+          auth_pass 59144e4504f2b953e7b9
+      }
+      virtual_ipaddress {
+          192.168.101.70
+      }
+      track_script {
+          check_haproxy
+      }
+  }
+  EOF
+
+  # &#x5B89;&#x88C5;killall
+  yum install psmisc -y
+
+  systemctl enable keepalived.service
+  systemctl start keepalived.service
+  [root@B72-k8s-m02 haproxy]# ip address show ens192
+  2: ens192: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP group default qlen 1000
+      link/ether 00:50:56:85:8a:00 brd ff:ff:ff:ff:ff:ff
+      inet 192.168.101.72/24 brd 192.168.101.255 scope global noprefixroute ens192
+         valid_lft forever preferred_lft forever
+      inet 192.168.101.70/32 scope global ens192
+         valid_lft forever preferred_lft forever
+      inet6 fe80::250:56ff:fe85:8a00/64 scope link
+         valid_lft forever preferred_lft forever
+
+  ### &#x4FEE;&#x6539;haproxy.cfg
+  ...
+  # main frontend which proxys to the backends
+  #---------------------------------------------------------------------
+  frontend kubernetes-apiserver
+      mode                 tcp
+      bind                 *:16443
+      option               tcplog
+      default_backend      kubernetes-apiserver
+
+  backend kubernetes-apiserver
+      mode        tcp
+      balance     roundrobin
+      server  b71-k8s-m01 192.168.101.71:6443 check weight 1
+      server  b72-k8s-m02 192.168.101.72:6443 check weight 2
+      server  b73-k8s-m03 192.168.101.73:6443 check weight 2
+
+  listen stats
+      bind                 *:1080
+      stats auth           admin:password
+      stats refresh        5s
+      stats realm          HAProxy\ Statistics
+      stats uri            /admin?stats
+
+  # &#x542F;&#x52A8;haproxy
+  systemctl enable haproxy.service
+  systemctl start haproxy.service
+</code></pre>
+<p>  &#x9700;&#x5F00;&#x653E;&#x7684;&#x7AEF;&#x53E3;&#x89C1; <a href="https://rancher.com/docs/rancher/v2.x/en/installation/references/" target="_blank">https://rancher.com/docs/rancher/v2.x/en/installation/references/</a>&#x3002;</p>
+<p>  &#x901A;&#x8FC7;Rancher&#x5B89;&#x88C5;&#x540E;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x914D;&#x7F6E;iptables&#x89C4;&#x5219;&#xFF0C;&#x67E5;&#x770B;rancher server&#x8282;&#x70B9;&#x7684;&#x9632;&#x706B;&#x5899;&#x89C4;&#x5219;&#xFF1A;</p>
+<pre><code class="lang-sh">  [root@B71-k8s-m01 ~]# iptables -L -n
+  Chain INPUT (policy ACCEPT)
+  target     prot opt source               destination         
+  KUBE-EXTERNAL-SERVICES  all  --  0.0.0.0/0            0.0.0.0/0            ctstate NEW 
+  KUBE-FIREWALL  all  --  0.0.0.0/0            0.0.0.0/0           
+
+  Chain FORWARD (policy DROP)
+  target     prot opt source               destination         
+  KUBE-FORWARD  all  --  0.0.0.0/0            0.0.0.0/0            
+  DOCKER-USER  all  --  0.0.0.0/0            0.0.0.0/0           
+  ...
+</code></pre>
+<h3 id="&#x5B89;&#x88C5;rancher-server"><a name="&#x5B89;&#x88C5;rancher-server" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;rancher-server"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;rancher server</h3>
+<p>  &#x5728;&#x8282;&#x70B9;101.71&#x4E0A;&#x6267;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-sh">  docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher:stable
+</code></pre>
+<h3 id="&#x767B;&#x5F55;rancher-web&#x521B;&#x5EFA;&#x96C6;&#x7FA4;"><a name="&#x767B;&#x5F55;rancher-web&#x521B;&#x5EFA;&#x96C6;&#x7FA4;" class="anchor-navigation-ex-anchor" href="#&#x767B;&#x5F55;rancher-web&#x521B;&#x5EFA;&#x96C6;&#x7FA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x767B;&#x5F55;Rancher Web&#x521B;&#x5EFA;&#x96C6;&#x7FA4;</h3>
+<p>  Url: <a href="https://192.168.101.71/" target="_blank">https://192.168.101.71/</a></p>
+<p>       <a href="rancher-k8s.assets/1551953142393.png" rel="grouped" title="1551953142393" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551953142393.png" alt="1551953142393">
+     </a></p>
+<p>  &#x6DFB;&#x52A0;master&#x8282;&#x70B9;&#x65F6;&#xFF0C;&#x662F;&#x6309;&#x5982;&#x4E0B;&#x8BBE;&#x7F6E;&#x7684;&#xFF1A;</p>
+<p>     <a href="rancher-k8s.assets/1551840677589.png" rel="grouped" title="1551840677589" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551840677589.png" alt="1551840677589">
+     </a></p>
+<p>     <a href="rancher-k8s.assets/1551840771418.png" rel="grouped" title="1551840771418" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551840771418.png" alt="1551840771418">
+     </a></p>
+<p>     <a href="rancher-k8s.assets/1551840932234.png" rel="grouped" title="1551840932234" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551840932234.png" alt="1551840932234">
+     </a></p>
+<p>&#x590D;&#x5236;&#x547D;&#x4EE4;&#x5728;&#x5F85;&#x6DFB;&#x52A0;&#x7684;&#x8282;&#x70B9;&#x673A;&#x5668;&#x4E0A;&#x6267;&#x884C;&#xFF0C;&#x4F9D;&#x6B21;&#x6DFB;&#x52A0;&#x5B8C;3&#x4E2A;master&#x8282;&#x70B9;&#x540E;&#x5982;&#x4E0B;&#xFF0C;&#x5176;&#x4E2D;101.71&#x662F;&#x7B2C;&#x4E8C;&#x4E2A;&#x6DFB;&#x52A0;&#x7684;&#xFF1A;</p>
+<p>     <a href="rancher-k8s.assets/1551841031094.png" rel="grouped" title="1551841031094" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551841031094.png" alt="1551841031094">
+     </a></p>
+<p>&#x5728;&#x673A;&#x5668;&#x6570;&#x91CF;&#x8DB3;&#x591F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x5C06;rancher server&#x5355;&#x72EC;&#x90E8;&#x7F72;&#xFF0C;&#x6B64;&#x5904;&#x662F;&#x4E0E;K8s_master&#x5171;&#x7528;&#x3002;&#x7ECF;&#x53CD;&#x590D;&#x8BD5;&#x9A8C;&#xFF0C;&#x6DFB;&#x52A0;master&#x8282;&#x70B9;&#x65F6;&#xFF0C;&#x5148;&#x6DFB;&#x52A0;101.72&#x6216;101.73&#xFF0C;<strong>&#x4E0D;&#x8981;&#x9996;&#x5148;&#x6DFB;&#x52A0;rancher server&#x6240;&#x5728;&#x8282;&#x70B9;101.71</strong>&#x3002;&#x5426;&#x5219;&#xFF0C;&#x540E;&#x7EED;&#x6DFB;&#x52A0;master&#x65F6;&#x4F1A;&#x51FA;<strong>&#x95EE;&#x9898;</strong>&#xFF1A;</p>
+<p>     <a href="rancher-k8s.assets/1551839742271.png" rel="grouped" title="1551839742271" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551839742271.png" alt="1551839742271">
+     </a></p>
+<p>&#x4E0A;&#x56FE;&#x663E;&#x793A;101.72&#x4E00;&#x76F4;&#x5904;&#x4E8E;Registering&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x80FD;&#x6DFB;&#x52A0;&#x8FDB;&#x96C6;&#x7FA4;&#x3002;</p>
+<p>&#x5728;&#x6DFB;&#x52A0;&#x8282;&#x70B9;&#x5F02;&#x5E38;&#x65F6;&#xFF0C;&#x5148;&#x901A;&#x8FC7;Web&#x7BA1;&#x7406;&#x754C;&#x9762;&#x5220;&#x9664;&#x95EE;&#x9898;&#x8282;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x91CD;&#x65B0;&#x6267;&#x884C;&#x6DFB;&#x52A0;&#x524D;&#xFF0C;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x811A;&#x672C;&#x6E05;&#x7406;&#x4E00;&#x4E0B;&#x5F85;&#x6DFB;&#x52A0;&#x8282;&#x70B9;&#x7684;&#x73AF;&#x5883;&#xFF1A;</p>
+<pre><code class="lang-sh"># &#x6E05;&#x7406;&#x5B89;&#x88C5;&#x6587;&#x4EF6;&#x76EE;&#x5F55;
+DLIST=&quot;/var/lib/etcd /etc/kubernetes /etc/cni /opt/cni /var/lib/cni /var/run/calico /opt/rke&quot;
+for dir in $DLIST; do
+  echo &quot;Removing $dir&quot;
+  rm -rf $dir
+done
+</code></pre>
+<pre><code class="lang-sh"># &#x6E05;&#x7406;docker
+CLIST=$(docker ps -qa)
+if [ &quot;x&quot;$CLIST == &quot;x&quot; ]; then
+  echo &quot;No containers exist - skipping container cleanup&quot;
+else
+  docker stop -f $CLIST &amp;&amp; docker rm -f $CLIST
+fi
+
+ILIST=$(docker images -a -q)
+if [ &quot;x&quot;$ILIST == &quot;x&quot; ]; then
+  echo &quot;No images exist - skipping image cleanup&quot;
+else
+  docker rmi $ILIST
+fi
+
+VLIST=$(docker volume ls -q)
+if [ &quot;x&quot;$VLIST == &quot;x&quot; ]; then
+  echo &quot;No volumes exist - skipping volume cleanup&quot;
+else
+  docker volume rm -f $VLIST
+fi
+
+systemctl restart docker.service
+</code></pre>
+<p>&#x4E0B;&#x56FE;&#x662F;&#x6DFB;&#x52A0;&#x5B8C;3&#x4E2A;master&#x548C;3&#x4E2A;node&#x540E;&#x7684;&#x4E3B;&#x673A;&#x754C;&#x9762;&#xFF1A;</p>
+<p>     <a href="rancher-k8s.assets/1551844009517.png" rel="grouped" title="1551844009517" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551844009517.png" alt="1551844009517">
+     </a></p>
+<h3 id="&#x90E8;&#x7F72;&#x670D;&#x52A1;"><a name="&#x90E8;&#x7F72;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x90E8;&#x7F72;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x90E8;&#x7F72;&#x670D;&#x52A1;</h3>
+<p>       <a href="rancher-k8s.assets/1551844649598.png" rel="grouped" title="1551844649598" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551844649598.png" alt="1551844649598">
+     </a></p>
+<p>&#x6D4B;&#x8BD5;&#x90E8;&#x7F72;5&#x4E2A;jenkins&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<p>     <a href="rancher-k8s.assets/1551856322207.png" rel="grouped" title="1551856322207" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551856322207.png" alt="1551856322207">
+     </a></p>
+<p>     <a href="rancher-k8s.assets/1551844947277.png" rel="grouped" title="1551844947277" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551844947277.png" alt="1551844947277">
+     </a></p>
+<p>     <a href="rancher-k8s.assets/1551845031997.png" rel="grouped" title="1551845031997" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551845031997.png" alt="1551845031997">
+     </a></p>
+<p>     <a href="rancher-k8s.assets/1551845141705.png" rel="grouped" title="1551845141705" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551845141705.png" alt="1551845141705">
+     </a></p>
+<p>&#x8BBF;&#x95EE; Jenkins&#xFF1A;</p>
+<p>     <a href="rancher-k8s.assets/1551845268617.png" rel="grouped" title="1551845268617" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551845268617.png" alt="1551845268617">
+     </a></p>
+<hr>
+<h3 id="&#x6267;&#x884C;kubectl&#x547D;&#x4EE4;&#x884C;"><a name="&#x6267;&#x884C;kubectl&#x547D;&#x4EE4;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x6267;&#x884C;kubectl&#x547D;&#x4EE4;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6267;&#x884C;kubectl&#x547D;&#x4EE4;&#x884C;</h3>
+<p>&#x901A;&#x8FC7;Rancher Web&#x754C;&#x9762;&#x6765;&#x6267;&#x884C;kubectl&#x547D;&#x4EE4;&#x884C;&#xFF1A;</p>
+<p>     <a href="rancher-k8s.assets/1551845918415.png" rel="grouped" title="1551845918415" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551845918415.png" alt="1551845918415">
+     </a></p>
+<p>     <a href="rancher-k8s.assets/1551845411567.png" rel="grouped" title="1551845411567" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551845411567.png" alt="1551845411567">
+     </a></p>
+<p>&#x5982;&#x679C;&#x76F4;&#x63A5;&#x767B;&#x5F55;&#x4E3B;&#x673A;&#xFF0C;&#x627E;&#x4E0D;&#x5230;kubectl&#x547D;&#x4EE4;&#xFF0C;&#x9700;&#x8FDB;&#x5165;&#x76F8;&#x5173;&#x7684;&#x5BB9;&#x5668;</p>
+<p>     <a href="rancher-k8s.assets/1551845747894.png" rel="grouped" title="1551845747894" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551845747894.png" alt="1551845747894">
+     </a></p>
+<h3 id="&#x6DFB;&#x52A0;dashboard"><a name="&#x6DFB;&#x52A0;dashboard" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;dashboard"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;Dashboard</h3>
+<p>       <a href="rancher-k8s.assets/1551846399730.png" rel="grouped" title="1551846399730" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551846399730.png" alt="1551846399730">
+     </a></p>
+<p>       <a href="rancher-k8s.assets/1551846438286.png" rel="grouped" title="1551846438286" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551846438286.png" alt="1551846438286">
+     </a></p>
+<p>  &#x627E;&#x5230;kubernetes-dashboard&#xFF0C;&#x5E76;&#x90E8;&#x7F72;&#xFF08;&#x542F;&#x52A8;&#xFF09;</p>
+<p>       <a href="rancher-k8s.assets/1551846551235.png" rel="grouped" title="1551846551235" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551846551235.png" alt="1551846551235">
+     </a></p>
+<p>       <a href="rancher-k8s.assets/1551846635456.png" rel="grouped" title="1551846635456" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551846635456.png" alt="1551846635456">
+     </a></p>
+<p>     <a href="rancher-k8s.assets/1551953637260.png" rel="grouped" title="1551953637260" target="_self" class="fancybox">
+       <img src="rancher-k8s.assets/1551953637260.png" alt="1551953637260">
+     </a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Zeng 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Modified @
+2020-12-12 17:04:11
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../rke-k8s/rke-k8s.html" class="navigation navigation-prev " aria-label="Previous page: RKE">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../kubeadm-k8s/kubeadm-k8s-steps.html" class="navigation navigation-next " aria-label="Next page: Kubeadm">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Rancher","level":"2.3.2.3","depth":3,"next":{"title":"Kubeadm","level":"2.3.2.4","depth":3,"path":"docs/deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.md","ref":"docs/deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.md","articles":[]},"previous":{"title":"RKE","level":"2.3.2.2","depth":3,"path":"docs/deployment/k8s/installation/rke-k8s/rke-k8s.md","ref":"docs/deployment/k8s/installation/rke-k8s/rke-k8s.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","-sharing","search-plus","simple-page-toc","editlink","splitter","tbfed-pagefooter","chapter-fold","sectionx","anchor-navigation-ex","code","todo","pageview-count","hide-element","fancybox"],"root":".","styles":{"website":"/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © Zeng 2019","modify_label":"Modified @","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fancybox":{"helpers":{"buttons":{}}},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/zlzgithub/docs/blob/master/"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link",".treeview__container-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"pageview-count":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Zeng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DevOps Pages","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"运维笔记"},"file":{"path":"docs/deployment/k8s/installation/rancher-k8s/rancher-k8s.md","mtime":"2020-12-12T17:04:11.813Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-12T17:07:54.823Z"},"basePath":"../../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

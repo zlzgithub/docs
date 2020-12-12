@@ -1,0 +1,2187 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>K8s · DevOps Pages</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zeng">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../deployment/k8s/installation/" />
+    
+    
+    <link rel="prev" href="../deployment/k8s/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../SUMMARY.html">
+            
+                <a href="../../SUMMARY.html">
+            
+                    
+                    目 录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    DevOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">应用部署</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../deployment/ansible/">
+            
+                <a href="../deployment/ansible/">
+            
+                    
+                    Ansible
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../deployment/ansible/ansible-intro.html">
+            
+                <a href="../deployment/ansible/ansible-intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../deployment/docker/">
+            
+                <a href="../deployment/docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="docker-learning.html">
+            
+                <a href="docker-learning.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../deployment/docker/docker-prometheus.html">
+            
+                <a href="../deployment/docker/docker-prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../deployment/docker/docker-nginx-consul.html">
+            
+                <a href="../deployment/docker/docker-nginx-consul.html">
+            
+                    
+                    Nginx Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../deployment/docker/docker-pmm.html">
+            
+                <a href="../deployment/docker/docker-pmm.html">
+            
+                    
+                    PMM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../deployment/docker/docker-redis.html">
+            
+                <a href="../deployment/docker/docker-redis.html">
+            
+                    
+                    Redis in Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../deployment/docker/docker-ldap.html">
+            
+                <a href="../deployment/docker/docker-ldap.html">
+            
+                    
+                    LDAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../deployment/docker/docker-harbor.html">
+            
+                <a href="../deployment/docker/docker-harbor.html">
+            
+                    
+                    Harbor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../deployment/docker/docker-apollo.html">
+            
+                <a href="../deployment/docker/docker-apollo.html">
+            
+                    
+                    Apollo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../deployment/k8s/">
+            
+                <a href="../deployment/k8s/">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.3.1" data-path="k8s-learning.html">
+            
+                <a href="k8s-learning.html">
+            
+                    
+                    K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../deployment/k8s/installation/">
+            
+                <a href="../deployment/k8s/installation/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.1" data-path="../deployment/k8s/installation/kubespray-k8s/kubespray-k8s.html">
+            
+                <a href="../deployment/k8s/installation/kubespray-k8s/kubespray-k8s.html">
+            
+                    
+                    Kubespray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.2" data-path="../deployment/k8s/installation/rke-k8s/rke-k8s.html">
+            
+                <a href="../deployment/k8s/installation/rke-k8s/rke-k8s.html">
+            
+                    
+                    RKE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.3" data-path="../deployment/k8s/installation/rancher-k8s/rancher-k8s.html">
+            
+                <a href="../deployment/k8s/installation/rancher-k8s/rancher-k8s.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.4" data-path="../deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.html">
+            
+                <a href="../deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.html">
+            
+                    
+                    Kubeadm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../deployment/k8s/deployment/">
+            
+                <a href="../deployment/k8s/deployment/">
+            
+                    
+                    部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.1" data-path="../deployment/k8s/deployment/Kubernetes-dashboard.html">
+            
+                <a href="../deployment/k8s/deployment/Kubernetes-dashboard.html">
+            
+                    
+                    K8s Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.2" data-path="../deployment/k8s/deployment/ELK.html">
+            
+                <a href="../deployment/k8s/deployment/ELK.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.3" data-path="../deployment/k8s/deployment/k8s-prometheus.html">
+            
+                <a href="../deployment/k8s/deployment/k8s-prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.4" data-path="../deployment/k8s/deployment/k8s-nfs-storageclass.html">
+            
+                <a href="../deployment/k8s/deployment/k8s-nfs-storageclass.html">
+            
+                    
+                    NFS动态PV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.5" data-path="../deployment/k8s/deployment/k8s-rancher.html">
+            
+                <a href="../deployment/k8s/deployment/k8s-rancher.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.6" data-path="../deployment/k8s/deployment/k8s-helm.html">
+            
+                <a href="../deployment/k8s/deployment/k8s-helm.html">
+            
+                    
+                    Helm&Tiller
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../deployment/else/">
+            
+                <a href="../deployment/else/">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../deployment/else/mysql-replication.html">
+            
+                <a href="../deployment/else/mysql-replication.html">
+            
+                    
+                    MySQL主从复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../deployment/else/percona-toolkit.html">
+            
+                <a href="../deployment/else/percona-toolkit.html">
+            
+                    
+                    Percona toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../deployment/else/ins_mysql.html">
+            
+                <a href="../deployment/else/ins_mysql.html">
+            
+                    
+                    yum安装MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../deployment/else/ins_rabbitmq.html">
+            
+                <a href="../deployment/else/ins_rabbitmq.html">
+            
+                    
+                    yum安装RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../deployment/else/ins_redis5.html">
+            
+                <a href="../deployment/else/ins_redis5.html">
+            
+                    
+                    yum安装Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../deployment/else/ins_ruby_redis_dump.html">
+            
+                <a href="../deployment/else/ins_ruby_redis_dump.html">
+            
+                    
+                    安装ruby和redis dump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../deployment/else/ins_yapi.html">
+            
+                <a href="../deployment/else/ins_yapi.html">
+            
+                    
+                    Y-API的安装步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../deployment/else/gitlab-update.html">
+            
+                <a href="../deployment/else/gitlab-update.html">
+            
+                    
+                    GitLab升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../deployment/else/dataX-demo.html">
+            
+                <a href="../deployment/else/dataX-demo.html">
+            
+                    
+                    dataX示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../deployment/else/git-orphan-usage.html">
+            
+                <a href="../deployment/else/git-orphan-usage.html">
+            
+                    
+                    git分支重置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../deployment/else/repair-mysql-repl.html">
+            
+                <a href="../deployment/else/repair-mysql-repl.html">
+            
+                    
+                    修复mysql主从
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../deployment/else/disk-lvcreate.html">
+            
+                <a href="../deployment/else/disk-lvcreate.html">
+            
+                    
+                    磁盘扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../deployment/else/docker-notes.html">
+            
+                <a href="../deployment/else/docker-notes.html">
+            
+                    
+                    docker若干
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.14" data-path="HiS.html">
+            
+                <a href="HiS.html">
+            
+                    
+                    HiS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">监控报警</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../monitoring/alerts/">
+            
+                <a href="../monitoring/alerts/">
+            
+                    
+                    Alerts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../monitoring/alerts/intro_syshost_syslink.html">
+            
+                <a href="../monitoring/alerts/intro_syshost_syslink.html">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../monitoring/consul/">
+            
+                <a href="../monitoring/consul/">
+            
+                    
+                    Consul
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../monitoring/consul/consul.html">
+            
+                <a href="../monitoring/consul/consul.html">
+            
+                    
+                    Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../monitoring/consul/consul-template.html">
+            
+                <a href="../monitoring/consul/consul-template.html">
+            
+                    
+                    Consul-template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../monitoring/consul/my-nginx-consul.html">
+            
+                <a href="../monitoring/consul/my-nginx-consul.html">
+            
+                    
+                    Nginx-Consul-template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../monitoring/consul/consul-acl.html">
+            
+                <a href="../monitoring/consul/consul-acl.html">
+            
+                    
+                    Consul-ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../monitoring/consul/consul-api-memo.html">
+            
+                <a href="../monitoring/consul/consul-api-memo.html">
+            
+                    
+                    Consul APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../monitoring/prometheus/">
+            
+                <a href="../monitoring/prometheus/">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../monitoring/prometheus/prom/">
+            
+                <a href="../monitoring/prometheus/prom/">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1.1" data-path="../monitoring/prometheus/prom/prometheus-intro.html">
+            
+                <a href="../monitoring/prometheus/prom/prometheus-intro.html">
+            
+                    
+                    核心组件——prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.2" data-path="../monitoring/prometheus/prom/alertmanager.html">
+            
+                <a href="../monitoring/prometheus/prom/alertmanager.html">
+            
+                    
+                    告警组件——alertmanager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.3" data-path="../monitoring/prometheus/prom/prometheus_federate.html">
+            
+                <a href="../monitoring/prometheus/prom/prometheus_federate.html">
+            
+                    
+                    联邦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.1.4" data-path="../monitoring/prometheus/prom/prometheus-discovery.html">
+            
+                <a href="../monitoring/prometheus/prom/prometheus-discovery.html">
+            
+                    
+                    自动发现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../monitoring/grafana/">
+            
+                <a href="../monitoring/grafana/">
+            
+                    
+                    Grafana
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.2.1" data-path="../monitoring/grafana/grafana-tmpl_k8s.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_k8s.html">
+            
+                    
+                    K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.2" data-path="../monitoring/grafana/grafana-tmpl_log.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_log.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.3" data-path="../monitoring/grafana/grafana-tmpl_mysql-repl.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_mysql-repl.html">
+            
+                    
+                    MySQL-Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.4" data-path="../monitoring/grafana/grafana-tmpl_pmm-mysql.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_pmm-mysql.html">
+            
+                    
+                    PMM MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.5" data-path="../monitoring/grafana/grafana-tmpl_rabbitmq-cluster.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_rabbitmq-cluster.html">
+            
+                    
+                    RabbitMQ Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.6" data-path="../monitoring/grafana/grafana-tmpl_rabbitmq.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_rabbitmq.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.7" data-path="../monitoring/grafana/grafana-tmpl_redis.html">
+            
+                <a href="../monitoring/grafana/grafana-tmpl_redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../monitoring/prometheus/3rd/">
+            
+                <a href="../monitoring/prometheus/3rd/">
+            
+                    
+                    常用软件接入Prometheus监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.3.1" data-path="../monitoring/prometheus/3rd/mysql-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/mysql-monitor-steps.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.2" data-path="../monitoring/prometheus/3rd/Prometheus-monitor-mysql-replication.html">
+            
+                <a href="../monitoring/prometheus/3rd/Prometheus-monitor-mysql-replication.html">
+            
+                    
+                    MySQL主从同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.3" data-path="../monitoring/prometheus/3rd/mongodb-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/mongodb-monitor-steps.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.4" data-path="../monitoring/prometheus/3rd/redis-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/redis-monitor-steps.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.5" data-path="../monitoring/prometheus/3rd/rabbitmq-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/rabbitmq-monitor-steps.html">
+            
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3.6" data-path="../monitoring/prometheus/3rd/nginx-monitor-steps.html">
+            
+                <a href="../monitoring/prometheus/3rd/nginx-monitor-steps.html">
+            
+                    
+                    NginX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../monitoring/prometheus/self/prometheus-consul-guide.html">
+            
+                <a href="../monitoring/prometheus/self/prometheus-consul-guide.html">
+            
+                    
+                    自研应用接入Prometheus监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../monitoring/zabbix/zabbix-intro.html">
+            
+                <a href="../monitoring/zabbix/zabbix-intro.html">
+            
+                    
+                    Zabbix
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../monitoring/zabbix/zabbix-discovery-rule.html">
+            
+                <a href="../monitoring/zabbix/zabbix-discovery-rule.html">
+            
+                    
+                    自动发现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">日志分析</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../log-analysis/">
+            
+                <a href="../log-analysis/">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../log-analysis/es-xpack.html">
+            
+                <a href="../log-analysis/es-xpack.html">
+            
+                    
+                    X-pack权限控制版ES
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../log-analysis/es-account-manage.html">
+            
+                <a href="../log-analysis/es-account-manage.html">
+            
+                    
+                    ELK账号权限分组管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../log-analysis/elk-problems.html">
+            
+                <a href="../log-analysis/elk-problems.html">
+            
+                    
+                    ELK若干问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../log-analysis/clean_elk_indices.html">
+            
+                <a href="../log-analysis/clean_elk_indices.html">
+            
+                    
+                    清理ES索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../log-analysis/k8s-elk-auth-kibana-via-ad.html">
+            
+                <a href="../log-analysis/k8s-elk-auth-kibana-via-ad.html">
+            
+                    
+                    K8s部署ELK并启用AD认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../log-analysis/k8s-elk-improvement.html">
+            
+                <a href="../log-analysis/k8s-elk-improvement.html">
+            
+                    
+                    ELK部署整改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../log-analysis/elk-grafana.html">
+            
+                <a href="../log-analysis/elk-grafana.html">
+            
+                    
+                    使用Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../log-analysis/es-api-memo.html">
+            
+                <a href="../log-analysis/es-api-memo.html">
+            
+                    
+                    ES APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">持续集成</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../cicd/">
+            
+                <a href="../cicd/">
+            
+                    
+                    CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../cicd/gitlab/">
+            
+                <a href="../cicd/gitlab/">
+            
+                    
+                    GitLab CI/CD
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../cicd/gitlab/gitlab-runner.html">
+            
+                <a href="../cicd/gitlab/gitlab-runner.html">
+            
+                    
+                    GitLab Runner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../cicd/gitlab/gitlab-cicd.html">
+            
+                <a href="../cicd/gitlab/gitlab-cicd.html">
+            
+                    
+                    GitLab CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">配置管理</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../config-management/">
+            
+                <a href="../config-management/">
+            
+                    
+                    CMDB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../config-management/ansible-tower.html">
+            
+                <a href="../config-management/ansible-tower.html">
+            
+                    
+                    Ansible Tower
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../config-management/bk-cmdb.html">
+            
+                <a href="../config-management/bk-cmdb.html">
+            
+                    
+                    BlueKing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">任务调度</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../task-scheduling/">
+            
+                <a href="../task-scheduling/">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../task-scheduling/xxl-job.html">
+            
+                <a href="../task-scheduling/xxl-job.html">
+            
+                    
+                    XXL-JOB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../task-scheduling/upgrade-xxl-job.html">
+            
+                <a href="../task-scheduling/upgrade-xxl-job.html">
+            
+                    
+                    XXL-JOB升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">关于本书</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../my-gitbook.html">
+            
+                <a href="../my-gitbook.html">
+            
+                    
+                    制作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../cicd/publish-gitbook.html">
+            
+                <a href="../cicd/publish-gitbook.html">
+            
+                    
+                    发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../HELP.html">
+            
+                <a href="../HELP.html">
+            
+                    
+                    官方示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >K8s</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#k8s&#x662F;&#x4EC0;&#x4E48;"><b></b>K8s&#x662F;&#x4EC0;&#x4E48;</a></li><li><span class="title-icon "></span><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;k8s"><b></b>&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;K8s</a></li><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;k8s"><b></b>&#x5B89;&#x88C5;K8s</a></li><ul><li><span class="title-icon "></span><a href="#kubeadm"><b></b>kubeadm</a></li><li><span class="title-icon "></span><a href="#rancher"><b></b>rancher</a></li><li><span class="title-icon "></span><a href="#rke"><b></b>rke</a></li><li><span class="title-icon "></span><a href="#kubespray"><b></b>kubespray</a></li></ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;kubernetes-dashboard"><b></b>&#x5B89;&#x88C5;kubernetes dashboard</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;k8s"><b></b>&#x4F7F;&#x7528;K8s</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E00;&#x4E9B;&#x6982;&#x5FF5;"><b></b>&#x4E00;&#x4E9B;&#x6982;&#x5FF5;</a></li><ul><li><span class="title-icon "></span><a href="#service"><b></b>service</a></li><li><span class="title-icon "></span><a href="#rbac"><b></b>RBAC</a></li><li><span class="title-icon "></span><a href="#deployment"><b></b>deployment</a></li><li><span class="title-icon "></span><a href="#ingress"><b></b>ingress</a></li><li><span class="title-icon "></span><a href="#secret"><b></b>secret</a></li><li><span class="title-icon "></span><a href="#configmap"><b></b>configmap</a></li></ul><li><span class="title-icon "></span><a href="#kubectl-&#x547D;&#x4EE4;"><b></b>kubectl &#x547D;&#x4EE4;</a></li></ul><li><span class="title-icon "></span><a href="#myweb&#x90E8;&#x7F72;&#x81F3;k8s"><b></b>myweb&#x90E8;&#x7F72;&#x81F3;K8s</a></li><ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x5236;&#x955C;&#x50CF;"><b></b>&#x91CD;&#x5236;&#x955C;&#x50CF;</a></li><li><span class="title-icon "></span><a href="#&#x63A8;&#x9001;&#x955C;&#x50CF;&#x81F3;harbor"><b></b>&#x63A8;&#x9001;&#x955C;&#x50CF;&#x81F3;harbor</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;k8s&#x8D44;&#x6E90;&#x5BF9;&#x8C61;"><b></b>&#x521B;&#x5EFA;K8s&#x8D44;&#x6E90;&#x5BF9;&#x8C61;</a></li><ul><li><span class="title-icon "></span><a href="#namespace"><b></b>namespace</a></li><li><span class="title-icon "></span><a href="#configmap_1"><b></b>configmap</a></li><li><span class="title-icon "></span><a href="#secret_1"><b></b>secret</a></li><li><span class="title-icon "></span><a href="#deployment&#x3001;service&#x548C;ingress"><b></b>deployment&#x3001;service&#x548C;ingress</a></li><li><span class="title-icon "></span><a href="#kubectl-create"><b></b>kubectl create</a></li></ul></ul><li><span class="title-icon "></span><a href="#ingress-gateway"><b></b>ingress gateway</a></li><li><span class="title-icon "></span><a href="#helm-&#x4E0E;-harbor"><b></b>helm &#x4E0E; harbor</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;helm"><b></b>&#x4F7F;&#x7528;helm</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;harbor"><b></b>&#x4F7F;&#x7528;harbor</a></li></ul><li><span class="title-icon "></span><a href="#pv-&#x4E0E;-storageclass"><b></b>PV &#x4E0E; storageClass</a></li><ul><li><span class="title-icon "></span><a href="#&#x6301;&#x4E45;&#x5377;&#xFF08;pv&#xFF09;"><b></b>&#x6301;&#x4E45;&#x5377;&#xFF08;PV&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5B58;&#x50A8;&#x7C7B;&#xFF08;storageclass&#xFF09;"><b></b>&#x5B58;&#x50A8;&#x7C7B;&#xFF08;storageClass&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b></b>&#x53C2;&#x8003;</a></li></ul></div><a href="#k8s&#x662F;&#x4EC0;&#x4E48;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="k8s&#x662F;&#x4EC0;&#x4E48;"><a name="k8s&#x662F;&#x4EC0;&#x4E48;" class="anchor-navigation-ex-anchor" href="#k8s&#x662F;&#x4EC0;&#x4E48;"><i class="fa fa-link" aria-hidden="true"></i></a>K8s&#x662F;&#x4EC0;&#x4E48;</h1>
+<blockquote>
+<p><em><a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/" target="_blank">Kubernetes (K8s)</a> is an open-source system for automating deployment, scaling, and management of containerized applications.</em></p>
+<p><a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/" target="_blank"><strong>Kubernetes (K8s)</strong></a> &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x5F15;&#x64CE;&#xFF0C;&#x7528;&#x4E8E;&#x81EA;&#x52A8;&#x5316;&#x5BB9;&#x5668;&#x5316;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x90E8;&#x7F72;&#xFF0C;&#x6269;&#x5C55;&#x548C;&#x7BA1;&#x7406;&#x3002;</p>
+</blockquote>
+<p>     <a href="docker-k8s.assets/container_evolution.svg" rel="grouped" title="Deployment evolution" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/container_evolution.svg" alt="Deployment evolution">
+     </a></p>
+<p><em>&#x5E94;&#x7528;&#x90E8;&#x7F72;&#x65B9;&#x5F0F;&#x7684;&#x6F14;&#x53D8;&#x5386;&#x53F2;&#xFF1A;&#x7269;&#x7406;&#x673A;&#x90E8;&#x7F72;  =&gt; &#x865A;&#x62DF;&#x673A;&#x90E8;&#x7F72;  =&gt; &#x5BB9;&#x5668;&#x5316;&#x90E8;&#x7F72;</em></p>
+<h1 id="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;k8s"><a name="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;k8s" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;k8s"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;K8s</h1>
+<h1 id="&#x5B89;&#x88C5;k8s"><a name="&#x5B89;&#x88C5;k8s" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;k8s"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;K8s</h1>
+<p>&#x4E2A;&#x4EBA;&#x5C1D;&#x8BD5;&#x8FC7;&#x4EE5;&#x4E0B;&#x56DB;&#x79CD;&#x5B89;&#x88C5;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<h2 id="kubeadm"><a name="kubeadm" class="anchor-navigation-ex-anchor" href="#kubeadm"><i class="fa fa-link" aria-hidden="true"></i></a>kubeadm</h2>
+<p>&#x5B98;&#x7F51;&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5927;&#x81F4;&#x8FC7;&#x7A0B;&#x662F;&#xFF1A;</p>
+<ul>
+<li><p>&#x521D;&#x59CB;&#x5316;&#x73AF;&#x5883;&#xFF0C;&#x5B89;&#x88C5;docker&#x3001;&#x914D;&#x7F6E;&#x9632;&#x706B;&#x5899;&#x7B49;</p>
+</li>
+<li><p>&#x5148;&#x5728;&#x5404;&#x4E2A;&#x8282;&#x70B9;yum&#x5B89;&#x88C5;kubelet&#x3001;kubeadm&#x3001;kubectl</p>
+</li>
+<li><p>&#x5728;&#x4E00;&#x4E2A;master&#x8282;&#x70B9;kubeadm init &#x83B7;&#x5F97;kubeadm join&#x96C6;&#x7FA4;&#x7684;&#x547D;&#x4EE4;</p>
+</li>
+<li>&#x5728;&#x5176;&#x5B83;&#x8282;&#x70B9;&#x4E0A;&#x6267;&#x884C;kubeadm join&#x547D;&#x4EE4;&#x52A0;&#x5165;&#x96C6;&#x7FA4;</li>
+</ul>
+<h2 id="rancher"><a name="rancher" class="anchor-navigation-ex-anchor" href="#rancher"><i class="fa fa-link" aria-hidden="true"></i></a>rancher</h2>
+<p>&#x5148;&#x901A;&#x8FC7;docker&#x542F;&#x52A8;&#x4E00;&#x4E2A;rancher&#x7BA1;&#x7406;&#x754C;&#x9762;&#xFF0C;&#x7136;&#x540E;&#x4ECE;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x590D;&#x5236;&#x6DFB;&#x52A0;&#x8282;&#x70B9;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5728;&#x5F85;&#x52A0;&#x5165;&#x96C6;&#x7FA4;&#x7684;&#x8282;&#x70B9;&#x4E0A;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x9010;&#x4E2A;&#x6DFB;&#x52A0;&#x8282;&#x70B9;&#x521B;&#x5EFA;K8s&#x96C6;&#x7FA4;&#x3002;&#x754C;&#x9762;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>     <a href="docker-k8s.assets/1551840932234.png" rel="grouped" title="1551840932234" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/1551840932234.png" alt="1551840932234">
+     </a></p>
+<h2 id="rke"><a name="rke" class="anchor-navigation-ex-anchor" href="#rke"><i class="fa fa-link" aria-hidden="true"></i></a>rke</h2>
+<p>rancher&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x5B89;&#x88C5;&#x5DE5;&#x5177;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x96C6;&#x7FA4;&#x5404;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-yaml">nodes:
+  - address: 192.168.100.79
+    user: rancher
+    role: [controlplane,worker,etcd]
+  - address: 192.168.100.80
+    user: rancher
+    role: [controlplane,worker,etcd]
+  - address: 192.168.100.81
+    user: rancher
+    role: [controlplane,etcd]
+</code></pre>
+<p>&#x6267;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-sh">rke up --config  &lt;&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&gt;
+</code></pre>
+<p>&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x96C6;&#x7FA4;&#x7684;&#x521D;&#x6B65;&#x5B89;&#x88C5;&#xFF0C;&#x76F8;&#x6BD4;&#x5176;&#x5B83;&#x65B9;&#x5F0F;&#x66F4;&#x5FEB;&#x6377;&#xFF0C;&#x4F46;&#x80FD;&#x5B89;&#x88C5;&#x7684;&#x7248;&#x672C;&#x6EDE;&#x540E;&#x4E8E;&#x5B98;&#x7F51;&#xFF0C;&#x6700;&#x65B0;&#x7684;K8s&#x7248;&#x672C;&#x53EF;&#x80FD;&#x5C1A;&#x672A;&#x88AB;rancher&#x652F;&#x6301;&#x3002;</p>
+<p>rancher&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x7C7B;&#x4F3C;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p>     <a href="docker-k8s.assets/1551841031094.png" rel="grouped" title="1551841031094" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/1551841031094.png" alt="1551841031094">
+     </a></p>
+<p>3&#x4E2A;master&#x3001;etcd + 3&#x4E2A;node:</p>
+<p>     <a href="docker-k8s.assets/1551844009517.png" rel="grouped" title="1551844009517" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/1551844009517.png" alt="1551844009517">
+     </a></p>
+<h2 id="kubespray"><a name="kubespray" class="anchor-navigation-ex-anchor" href="#kubespray"><i class="fa fa-link" aria-hidden="true"></i></a>kubespray</h2>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x901A;&#x8FC7;ansible-playbook&#x81EA;&#x52A8;&#x5B89;&#x88C5;K8s&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x9ED8;&#x8BA4;&#x548C;kubeadm&#x4E00;&#x6837;&#x9700;&#x8981;&#x80FD;&#x8BBF;&#x95EE;&#x56FD;&#x5916;&#x7F51;&#x7AD9;&#xFF0C;&#x5426;&#x5219;&#x6709;&#x70B9;&#x955C;&#x50CF;&#x6216;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x83B7;&#x53D6;&#x4E0D;&#x5230;&#x3002;&#x4E5F;&#x53EF;&#x81EA;&#x884C;&#x4FEE;&#x6539;&#x76F8;&#x5173;&#x5730;&#x5740;&#xFF0C;&#x4E3B;&#x8981;&#x6D89;&#x53CA;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li><code>roles/download/defaults/main.yml</code></li>
+<li><p><code>inventory/sample/group_vars/k8s-cluster/k8s-cluster.yml</code></p>
+</li>
+<li><p><code>roles/kubespray-defaults/defaults/main.yaml</code></p>
+</li>
+</ul>
+<p>&#x4FEE;&#x6539;&#x5176;&#x4E2D;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x66FF;&#x6362;&#x6210;&#x56FD;&#x5185;&#x80FD;&#x8BBF;&#x95EE;&#x5230;&#x7684;&#x955C;&#x50CF;&#x6E90;&#xFF0C;&#x5B89;&#x88C5;&#x5E94;&#x8BE5;&#x5C31;&#x80FD;&#x987A;&#x5229;&#x8FDB;&#x884C;&#x4E86;&#x3002;&#x9ED8;&#x8BA4;&#x4F1A;&#x4E00;&#x5E76;&#x5B89;&#x88C5;dashboard&#x3002;</p>
+<p>&#x5176;&#x4E3B;&#x673A;&#x6E05;&#x5355;&#xFF08;inventory&#xFF09;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-yaml">[all]
+node1    ansible_host=192.168.100.79 ip=192.168.100.79
+node2    ansible_host=192.168.100.80 ip=192.168.100.80
+node3    ansible_host=192.168.100.81 ip=192.168.100.81
+node4    ansible_host=192.168.100.216 ip=192.168.100.216
+node5    ansible_host=192.168.100.217 ip=192.168.100.217
+node6    ansible_host=192.168.100.218 ip=192.168.100.218
+
+[kube-master]
+node1
+node2
+
+[etcd]
+node1
+node2
+node3
+
+[kube-node]
+node3
+node4
+node5
+node6
+
+[k8s-cluster:children]
+kube-master
+kube-node
+</code></pre>
+<p>&#x8BE6;&#x89C1;&#x5B98;&#x65B9;github: <a href="https://github.com/kubernetes-sigs/kubespray/tree/release-2.14" target="_blank">https://github.com/kubernetes-sigs/kubespray/tree/release-2.14</a></p>
+<h1 id="&#x5B89;&#x88C5;kubernetes-dashboard"><a name="&#x5B89;&#x88C5;kubernetes-dashboard" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;kubernetes-dashboard"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;kubernetes dashboard</h1>
+<p>&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a href="https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/" target="_blank">https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/</a></p>
+<p>&#x5728;&#x96C6;&#x7FA4;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-sh">kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x767B;&#x5F55;&#x4EE4;&#x724C;</p>
+<pre><code class="lang-sh">kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep kubernetes-dashboard-token|awk &apos;{print $1}&apos;)|grep token:|awk &apos;{print $2}&apos;
+</code></pre>
+<p>&#x8BBF;&#x95EE;</p>
+<pre><code class="lang-sh">https://&lt;master&#x8282;&#x70B9;ip&gt;:6443/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+</code></pre>
+<p>     <a href="docker-k8s.assets/image-20201108222956832.png" rel="grouped" title="image-20201108222956832" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108222956832.png" alt="image-20201108222956832">
+     </a></p>
+<p>&#x6216;&#x8005;&#x7ED1;&#x5B9A;&#x57DF;&#x540D;&#x8BBF;&#x95EE;&#xFF08;&#x6D89;&#x53CA;ingress&#xFF09;</p>
+<p>     <a href="docker-k8s.assets/image-20201108223045757.png" rel="grouped" title="image-20201108223045757" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108223045757.png" alt="image-20201108223045757">
+     </a></p>
+<h1 id="&#x4F7F;&#x7528;k8s"><a name="&#x4F7F;&#x7528;k8s" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;k8s"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;K8s</h1>
+<p>&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#x5728;&#x6211;&#x4E2A;&#x4EBA;&#x4F7F;&#x7528;&#x7684;K8s&#x73AF;&#x5883;&#xFF1A;</p>
+<pre><code class="lang-sh">[root@m01 myweb]# kubectl get nodes
+NAME   STATUS   ROLES    AGE    VERSION
+m01    Ready    master   255d   v1.15.1
+m02    Ready    master   255d   v1.15.1
+m03    Ready    master   255d   v1.15.1
+n01    Ready    node     255d   v1.15.1
+n02    Ready    node     255d   v1.15.1
+n03    Ready    node     255d   v1.15.1
+</code></pre>
+<h2 id="&#x4E00;&#x4E9B;&#x6982;&#x5FF5;"><a name="&#x4E00;&#x4E9B;&#x6982;&#x5FF5;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x4E9B;&#x6982;&#x5FF5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x4E9B;&#x6982;&#x5FF5;</h2>
+<h3 id="service"><a name="service" class="anchor-navigation-ex-anchor" href="#service"><i class="fa fa-link" aria-hidden="true"></i></a>service</h3>
+<h3 id="rbac"><a name="rbac" class="anchor-navigation-ex-anchor" href="#rbac"><i class="fa fa-link" aria-hidden="true"></i></a>RBAC</h3>
+<p>&#x200B;    role based access control</p>
+<h3 id="deployment"><a name="deployment" class="anchor-navigation-ex-anchor" href="#deployment"><i class="fa fa-link" aria-hidden="true"></i></a>deployment</h3>
+<h3 id="ingress"><a name="ingress" class="anchor-navigation-ex-anchor" href="#ingress"><i class="fa fa-link" aria-hidden="true"></i></a>ingress</h3>
+<h3 id="secret"><a name="secret" class="anchor-navigation-ex-anchor" href="#secret"><i class="fa fa-link" aria-hidden="true"></i></a>secret</h3>
+<h3 id="configmap"><a name="configmap" class="anchor-navigation-ex-anchor" href="#configmap"><i class="fa fa-link" aria-hidden="true"></i></a>configmap</h3>
+<h2 id="kubectl-&#x547D;&#x4EE4;"><a name="kubectl-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#kubectl-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>kubectl &#x547D;&#x4EE4;</h2>
+<p>kubectl  create</p>
+<h1 id="myweb&#x90E8;&#x7F72;&#x81F3;k8s"><a name="myweb&#x90E8;&#x7F72;&#x81F3;k8s" class="anchor-navigation-ex-anchor" href="#myweb&#x90E8;&#x7F72;&#x81F3;k8s"><i class="fa fa-link" aria-hidden="true"></i></a>myweb&#x90E8;&#x7F72;&#x81F3;K8s</h1>
+<h2 id="&#x91CD;&#x5236;&#x955C;&#x50CF;"><a name="&#x91CD;&#x5236;&#x955C;&#x50CF;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x5236;&#x955C;&#x50CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x5236;&#x955C;&#x50CF;</h2>
+<p>&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x662F;&#x4F7F;&#x7528;docker&#x8FD0;&#x884C;myweb&#x8FD9;&#x4E2A;demo&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x4E3A;&#x4E86;&#x7B80;&#x5355;&#xFF0C;&#x5C06;mysql&#x7684;&#x7528;&#x6237;&#x540D;&#x3001;&#x5BC6;&#x7801;&#x5199;&#x6B7B;&#x5728;settings.py&#x91CC;&#x4E86;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6539;&#x6210;&#x5982;&#x4E0B;&#xFF0C;&#x8BA9;name, user, password, host, port&#x5206;&#x522B;&#x4ECE;&#x73AF;&#x5883;&#x53D8;&#x91CF;DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT &#x83B7;&#x53D6;&#x3002;</p>
+<pre><code class="lang-sh">DATABASES = { 
+    &apos;default&apos;: {
+        &apos;ENGINE&apos;: &apos;django.db.backends.mysql&apos;,
+        &apos;NAME&apos;: os.environ.get(&apos;DB_NAME&apos;),
+        &apos;USER&apos;: os.environ.get(&apos;DB_USER&apos;)
+        &apos;PASSWORD&apos;: os.environ.get(&apos;DB_PASSWORD&apos;),
+        &apos;HOST&apos;: os.environ.get(&apos;DB_HOST&apos;),
+        &apos;PORT&apos;: os.environ.get(&apos;DB_PORT&apos;),
+        &apos;OPTIONS&apos;: {}
+    }
+}
+</code></pre>
+<p>&#x91CD;&#x65B0;&#x5236;&#x4F5C;&#x955C;&#x50CF; myweb:0.2&#xFF0C;&#x5E76;&#x4E0A;&#x4F20;&#x81F3; harbor</p>
+<p>&#x6D89;&#x53CA;&#x5230;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x4F20;&#x9012;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;docker-compose&#x9A8C;&#x8BC1;&#x4E00;&#x4E0B;&#x65B0;&#x955C;&#x50CF;&#x662F;&#x5426;&#x6B63;&#x5E38;&#xFF1A;</p>
+<p>docker-compose.yml</p>
+<pre><code class="lang-yaml">[root@localhost demo]# cat docker-compose.yml 
+db:
+    image: myweb:0.2
+    environment:
+      DB_NAME: &quot;testpv&quot;
+      DB_USER: &quot;root&quot;
+      DB_PASSWORD: &quot;mysql&quot;
+      DB_HOST: 172.17.0.13
+      DB_PORT: 3306
+    restart: always
+    #command: [&apos;&apos;]
+    volumes:
+      - /opt/log:/var/log
+    ports:
+      - 8009:8000
+</code></pre>
+<p>&#x6D4B;&#x8BD5;&#x6CA1;&#x95EE;&#x9898;&#xFF1A;</p>
+<pre><code class="lang-sh">[root@localhost demo]# docker-compose up -d
+Creating demo_db_1 ... done
+[root@localhost demo]# docker-compose ps
+  Name                 Command               State           Ports         
+---------------------------------------------------------------------------
+demo_db_1   supervisord -n -c /etc/sup ...   Up      0.0.0.0:8009-&gt;8000/tcp
+[root@localhost demo]# curl http://localhost:8009/visit/add/
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/static/visit/style.css&quot;/&gt;
+&lt;div&gt;
+    &lt;table class=&quot;gridtable&quot;&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ID&lt;/th&gt;
+            &lt;th&gt;date&lt;/th&gt;
+            &lt;th&gt;ip_addr&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;47&lt;/td&gt;
+            &lt;td&gt;2020-11-08 11:55:56&lt;/td&gt;
+            &lt;td&gt;172.17.0.1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;docker run&#x542F;&#x52A8;&#xFF0C;--env-file&#x52A0;&#x8F7D;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-sh">[root@localhost demo]# cat env
+DB_NAME=testpv
+DB_USER=root
+DB_PASSWORD=mysql
+DB_HOST=172.17.0.13
+DB_PORT=3306
+[root@localhost demo]# docker run -d --name myweb -p 8009:8000 --env-file=env myweb:0.2
+</code></pre>
+<h2 id="&#x63A8;&#x9001;&#x955C;&#x50CF;&#x81F3;harbor"><a name="&#x63A8;&#x9001;&#x955C;&#x50CF;&#x81F3;harbor" class="anchor-navigation-ex-anchor" href="#&#x63A8;&#x9001;&#x955C;&#x50CF;&#x81F3;harbor"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A8;&#x9001;&#x955C;&#x50CF;&#x81F3;harbor</h2>
+<pre><code class="lang-sh">[root@localhost demo]# docker tag myweb:0.2 harbor.lzzeng.cn/devops/myweb:0.2
+[root@localhost demo]# docker image ls myweb
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+myweb               0.2                 0245c29d6060        25 minutes ago      325MB
+[root@localhost demo]# docker image ls |grep myweb
+myweb                            0.2                              0245c29d6060        25 minutes ago      325MB
+harbor.lzzeng.cn/devops/myweb    0.2                              0245c29d6060        25 minutes ago      325MB
+[root@localhost demo]# 
+[root@localhost demo]# docker push harbor.lzzeng.cn/devops/myweb:0.2
+The push refers to repository [harbor.lzzeng.cn/devops/myweb]
+7615e9027750: Pushed 
+8daa36f6b1b1: Pushed 
+c4b9879e46c2: Pushed 
+879c0d8666e3: Mounted from devops/alerts 
+20a7b70bdf2f: Mounted from devops/alerts 
+3fc750b41be7: Mounted from devops/alerts 
+beee9f30bc1f: Mounted from devops/alerts 
+0.2: digest: sha256:4a74959ea51a5834436ecda47f9e9d461d4ec43a68ff1976c555dc6ba2878842 size: 1788
+</code></pre>
+<p>&#x5728;Harbor&#x4E0A;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF1A;</p>
+<p>     <a href="docker-k8s.assets/image-20201108202423148.png" rel="grouped" title="image-20201108202423148" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108202423148.png" alt="image-20201108202423148">
+     </a></p>
+<h2 id="&#x521B;&#x5EFA;k8s&#x8D44;&#x6E90;&#x5BF9;&#x8C61;"><a name="&#x521B;&#x5EFA;k8s&#x8D44;&#x6E90;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;k8s&#x8D44;&#x6E90;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;K8s&#x8D44;&#x6E90;&#x5BF9;&#x8C61;</h2>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x4ECD;&#x4F7F;&#x7528;&#x5DF2;&#x7ECF;&#x72EC;&#x7ACB;&#x90E8;&#x7F72;&#x597D;&#x7684;mysql&#xFF0C;&#x73B0;&#x5728;&#x53EA;&#x9700;&#x8981;&#x5199;myweb&#x7684;k8s&#x90E8;&#x7F72;&#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="namespace"><a name="namespace" class="anchor-navigation-ex-anchor" href="#namespace"><i class="fa fa-link" aria-hidden="true"></i></a>namespace</h3>
+<p>&#x5148;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;namespace</p>
+<pre><code class="lang-sh">[root@m01 myweb]# kubectl create ns myweb
+namespace/myweb created
+</code></pre>
+<h3 id="configmap_1"><a name="configmap_1" class="anchor-navigation-ex-anchor" href="#configmap_1"><i class="fa fa-link" aria-hidden="true"></i></a>configmap</h3>
+<p>&#x7531;&#x4E8E;&#x7528;&#x5230;&#x4E86;supervisor&#xFF0C;&#x5C06;&#x5176;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x4E3A;&#x4E00;&#x4E2A;configmap</p>
+<pre><code class="lang-sh">[root@m01 myweb]# ls
+myweb_supervisord.conf
+[root@m01 myweb]# 
+[root@m01 myweb]# #&#x521B;&#x5EFA;configmap
+[root@m01 myweb]# 
+[root@m01 myweb]# kubectl create -n myweb configmap myweb-supervisord-conf --from-file=myweb_supervisord.conf
+configmap/myweb-supervisord-conf created
+[root@m01 myweb]# 
+[root@m01 myweb]# kubectl get cm -n myweb
+NAME                     DATA   AGE
+myweb-supervisord-conf   1      7s
+[root@m01 myweb]#
+</code></pre>
+<p>&#x901A;&#x8FC7;--from-file&#x53C2;&#x6570;&#x521B;&#x5EFA;&#x7684;myweb-supervisord-conf&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-sh"># Please edit the object below. Lines beginning with a &apos;#&apos; will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+data:
+  myweb_supervisord.conf: |
+    [program:myweb]
+    command=/usr/local/bin/python manage.py runserver 0.0.0.0:8000
+    directory=/opt/apps/myweb
+    user=root
+    startsecs=3
+    redirect_stderr=true
+    stdout_logfile_maxbytes=20MB
+    stdout_logfile_backups=3
+    stdout_logfile=/var/log/myweb_supervisor.log
+kind: ConfigMap
+metadata:
+  creationTimestamp: &quot;2020-11-08T10:11:46Z&quot;
+  name: myweb-supervisord-conf
+  namespace: myweb
+  resourceVersion: &quot;1135081&quot;
+  selfLink: /api/v1/namespaces/myweb/configmaps/myweb-supervisord-conf
+  uid: 42cd4d5c-48c4-4845-b1a9-102eb78f591a
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5199;&#x4E00;&#x4E2A;yaml&#x6587;&#x4EF6;&#xFF1A;</p>
+<p>myweb-supervisord-conf.yml</p>
+<pre><code class="lang-yaml">apiVersion: v1
+data:
+  myweb_supervisord.conf: |
+    [program:myweb]
+    command=/usr/local/bin/python manage.py runserver 0.0.0.0:8000
+    directory=/opt/apps/myweb
+    user=root
+    startsecs=3
+    redirect_stderr=true
+    stdout_logfile_maxbytes=20MB
+    stdout_logfile_backups=3
+    stdout_logfile=/var/log/myweb_supervisor.log
+</code></pre>
+<p>&#x7136;&#x540E;</p>
+<pre><code class="lang-sh">kubectl create -n myweb configmap myweb-supervisord-conf -f myweb-supervisord-conf.yml
+</code></pre>
+<h3 id="secret_1"><a name="secret_1" class="anchor-navigation-ex-anchor" href="#secret_1"><i class="fa fa-link" aria-hidden="true"></i></a>secret</h3>
+<p>&#x5047;&#x8BBE;mysql&#x8FDE;&#x63A5;&#x53C2;&#x6570;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-sh">user=root
+password=mysql
+host=192.168.100.200
+port=3306
+name=testpv
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x5E26;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;secret</p>
+<pre><code class="lang-sh">[root@m01 myweb]# kubectl create -n myweb secret generic db-secret --from-literal=name=testpv --from-literal=user=root --from-literal=host=192.168.100.200 --from-literal=port=3306 --from-literal=password=mysql
+secret/db-secret created
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x5148;&#x7F16;&#x5199;&#x4E00;&#x4E2A;secret&#x6587;&#x4EF6;&#xFF08;data&#x5B57;&#x6BB5;&#x91C7;&#x7528;base64&#x7F16;&#x7801;&#xFF09;&#xFF0C;&#x518D;&#x521B;&#x5EFA;secret</p>
+<pre><code class="lang-yaml">apiVersion: v1
+kind: Secret
+metadata:
+  name: db-secret
+  namespace: myweb
+data:
+  host: MTkyLjE2OC4xMDAuMjAwCg==
+  name: dGVzdHB2
+  password: bXlzcWwK
+  port: MzMwNg==
+  user: cm9vdA==
+type: Opaque
+</code></pre>
+<p>&#x4ECE;dashboard&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x521B;&#x5EFA;&#x7684;&#x4FDD;&#x5BC6;&#x5B57;&#x5178;db-secret&#x5185;&#x5BB9;&#xFF1A;</p>
+<p>     <a href="docker-k8s.assets/image-20201109005053678.png" rel="grouped" title="image-20201109005053678" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201109005053678.png" alt="image-20201109005053678">
+     </a></p>
+<h3 id="deployment&#x3001;service&#x548C;ingress"><a name="deployment&#x3001;service&#x548C;ingress" class="anchor-navigation-ex-anchor" href="#deployment&#x3001;service&#x548C;ingress"><i class="fa fa-link" aria-hidden="true"></i></a>deployment&#x3001;service&#x548C;ingress</h3>
+<p>myweb-dep.yml</p>
+<pre><code class="lang-yaml">apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myweb
+  namespace: myweb
+  labels:
+    k8s-app: myweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: myweb
+  template:
+    metadata:
+      labels:
+        k8s-app: myweb
+    spec:
+      containers:
+      - name: myweb
+        image: harbor.lzzeng.cn/devops/myweb:0.2
+        resources:
+          limits:
+            cpu: 1
+            memory: 1000Mi
+          requests:
+            cpu: 0.5 
+            memory: 500Mi
+        env:
+          - name: DB_NAME
+            valueFrom:
+              secretKeyRef:
+                name: db-secret
+                key: name
+          - name: DB_USER
+            valueFrom:
+              secretKeyRef:
+                name: db-secret
+                key: user
+          - name: DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: db-secret
+                key: password
+          - name: DB_HOST
+            valueFrom:
+              secretKeyRef:
+                name: db-secret
+                key: host
+          - name: DB_PORT
+            valueFrom:
+              secretKeyRef:
+                name: db-secret
+                key: port
+        ports:
+        - containerPort: 8000
+          name: ui
+          protocol: TCP
+</code></pre>
+<p>myweb-svc.yml</p>
+<pre><code class="lang-yaml">apiVersion: v1
+kind: Service
+metadata:
+  name: myweb
+  namespace: myweb
+spec:
+  type: NodePort
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: ui
+    nodePort: 30888
+  selector:
+    k8s-app: myweb
+</code></pre>
+<p>myweb-ing.yml</p>
+<pre><code class="lang-yaml">apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: myweb
+  namespace: myweb
+spec:
+  rules:
+  - host: myweb.lzzeng.cn
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: myweb
+          servicePort: 8000
+</code></pre>
+<h3 id="kubectl-create"><a name="kubectl-create" class="anchor-navigation-ex-anchor" href="#kubectl-create"><i class="fa fa-link" aria-hidden="true"></i></a>kubectl create</h3>
+<pre><code class="lang-sh">kubectl create -n myweb -f myweb-def.yml
+kubectl create -n myweb -f myweb-svc.yml
+kubectl create -n myweb -f myweb-ing.yml
+</code></pre>
+<p>     <a href="docker-k8s.assets/image-20201108203029458.png" rel="grouped" title="image-20201108203029458" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108203029458.png" alt="image-20201108203029458">
+     </a></p>
+<p>&#x662F;deployment&#x6587;&#x4EF6;&#x4E2D;secret&#x540D;&#x79F0;&#x5199;&#x9519;&#x4E86;&#xFF0C;&#x4FEE;&#x6539;myweb-dep.yml&#xFF0C;&#x66F4;&#x65B0;&#x540E;&#x6B63;&#x5E38;&#xFF1A;</p>
+<pre><code class="lang-sh">kubectl apply -n myweb -f myweb-def.yml
+</code></pre>
+<p>     <a href="docker-k8s.assets/image-20201108213925801.png" rel="grouped" title="image-20201108213925801" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108213925801.png" alt="image-20201108213925801">
+     </a></p>
+<p>     <a href="docker-k8s.assets/image-20201108234036126.png" rel="grouped" title="image-20201108234036126" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108234036126.png" alt="image-20201108234036126">
+     </a></p>
+<h1 id="ingress-gateway"><a name="ingress-gateway" class="anchor-navigation-ex-anchor" href="#ingress-gateway"><i class="fa fa-link" aria-hidden="true"></i></a>ingress gateway</h1>
+<p>traefik-ui</p>
+<p>     <a href="docker-k8s.assets/image-20201108220655920.png" rel="grouped" title="image-20201108220655920" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108220655920.png" alt="image-20201108220655920">
+     </a></p>
+<h1 id="helm-&#x4E0E;-harbor"><a name="helm-&#x4E0E;-harbor" class="anchor-navigation-ex-anchor" href="#helm-&#x4E0E;-harbor"><i class="fa fa-link" aria-hidden="true"></i></a>helm &#x4E0E; harbor</h1>
+<p>helm&#x662F;K8s&#x7684;chart&#x7BA1;&#x7406;&#x5DE5;&#x5177;, harbor&#x662F;docker&#x955C;&#x50CF;&#x3001;helm charts&#x6258;&#x7BA1;&#x5E73;&#x53F0;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;helm"><a name="&#x4F7F;&#x7528;helm" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;helm"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;helm</h2>
+<p>&#x7F16;&#x5199;&#x4E00;&#x4E2A;helm chart</p>
+<p>&#x63A8;&#x9001;&#x81F3;harbor</p>
+<pre><code class="lang-sh">helm push -u xxx -p xxxxxx  ./  &lt;chart&#x9879;&#x76EE;&gt;
+</code></pre>
+<p>helm&#x90E8;&#x7F72;ELK</p>
+<pre><code class="lang-sh">helm install elastic/elasticsearch -n elk-es --namespace elk
+</code></pre>
+<p>     <a href="docker-k8s.assets/image-20201108222828848.png" rel="grouped" title="image-20201108222828848" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108222828848.png" alt="image-20201108222828848">
+     </a></p>
+<h2 id="&#x4F7F;&#x7528;harbor"><a name="&#x4F7F;&#x7528;harbor" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;harbor"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;harbor</h2>
+<blockquote>
+<p>&#x5B98;&#x65B9;github&#xFF1A;<a href="https://github.com/goharbor/harbor" target="_blank">https://github.com/goharbor/harbor</a></p>
+<p>&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a href="https://goharbor.io/docs/2.0.0/install-config/" target="_blank">https://goharbor.io/docs/2.0.0/install-config/</a></p>
+</blockquote>
+<p>&#x521B;&#x5EFA;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;&#xFF08;&#x4E00;&#x5E74;&#x671F;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-sh">openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./tls.key -out ./tls.crt -subj &quot;/CN=&#x4F60;&#x7684;&#x81EA;&#x5B9A;&#x4E49;harbor&#x57DF;&#x540D;&quot;
+</code></pre>
+<p>harbor.yml&#x914D;&#x7F6E;&#x793A;&#x4F8B;&#xFF1A;</p>
+<p>     <a href="docker-k8s.assets/image-20201108223522500.png" rel="grouped" title="image-20201108223522500" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108223522500.png" alt="image-20201108223522500">
+     </a></p>
+<p>Harbor&#x8981;&#x542F;&#x7528;helm charts&#x7BA1;&#x7406;&#x529F;&#x80FD;&#xFF0C;&#x5728;&#x5B89;&#x88C5;&#x65F6;&#x8981;&#x6DFB;&#x52A0;<code>--with-chartmuseum</code>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-sh">./install.sh --with-chartmuseum
+</code></pre>
+<p>Harbor&#x7684;charts&#x7BA1;&#x7406;&#x754C;&#x9762;&#xFF1A;</p>
+<p>     <a href="docker-k8s.assets/image-20201108164730437.png" rel="grouped" title="image-20201108164730437" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108164730437.png" alt="image-20201108164730437">
+     </a></p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;web&#x754C;&#x9762;&#x4E0A;&#x4F20;&#x6253;&#x5305;&#x597D;&#x7684;chart&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;helm push&#x547D;&#x4EE4;&#x63A8;&#x9001;&#x3002;</p>
+<p>&#x5728;&#x4F7F;&#x7528;&#x65F6;&#xFF1A;</p>
+<pre><code class="lang-sh"># 1. &#x6DFB;&#x52A0;repo
+helm repo add --ca-file &lt;ca file&gt; --cert-file &lt;cert file&gt; --key-file &lt;key file&gt;     --username &lt;username&gt; --password &lt;password&gt; &lt;repo name&gt; https://&lt;harbor&#x5730;&#x5740;&gt;/chartrepo/&lt;&#x9879;&#x76EE;&#x540D;&#x79F0;&gt;
+
+# 2. &#x83B7;&#x53D6;chart&#x5305;
+# helm fetch &lt;&#x9879;&#x76EE;&#x540D;&#x79F0;&gt;/&lt;chart&#x540D;&#x79F0;&gt;
+
+# 2. &#x76F4;&#x63A5;&#x4F7F;&#x7528;chart&#x5B89;&#x88C5;&#x90E8;&#x7F72;&#x81F3;K8s
+helm install --name &lt;&#x81EA;&#x5B9A;&#x4E49;&#x90E8;&#x7F72;&#x540D;&gt; --namespace &lt;&#x6307;&#x5B9A;&#x90E8;&#x7F72;&#x5230;&#x54EA;&#x4E2A;&#x540D;&#x79F0;&#x7A7A;&#x95F4;&gt; [&#x5176;&#x5B83;&#x9009;&#x9879;] &lt;&#x9879;&#x76EE;&#x540D;&#x79F0;&gt;/&lt;chart&#x540D;&#x79F0;&gt;
+</code></pre>
+<p>Harbor&#x7684;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x7BA1;&#x7406;&#x754C;&#x9762;&#xFF1A;</p>
+<p>     <a href="docker-k8s.assets/image-20201108165325479.png" rel="grouped" title="image-20201108165325479" target="_self" class="fancybox">
+       <img src="docker-k8s.assets/image-20201108165325479.png" alt="image-20201108165325479">
+     </a></p>
+<h1 id="pv-&#x4E0E;-storageclass"><a name="pv-&#x4E0E;-storageclass" class="anchor-navigation-ex-anchor" href="#pv-&#x4E0E;-storageclass"><i class="fa fa-link" aria-hidden="true"></i></a>PV &#x4E0E; storageClass</h1>
+<h2 id="&#x6301;&#x4E45;&#x5377;&#xFF08;pv&#xFF09;"><a name="&#x6301;&#x4E45;&#x5377;&#xFF08;pv&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6301;&#x4E45;&#x5377;&#xFF08;pv&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6301;&#x4E45;&#x5377;&#xFF08;PV&#xFF09;</h2>
+<h2 id="&#x5B58;&#x50A8;&#x7C7B;&#xFF08;storageclass&#xFF09;"><a name="&#x5B58;&#x50A8;&#x7C7B;&#xFF08;storageclass&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5B58;&#x50A8;&#x7C7B;&#xFF08;storageclass&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B58;&#x50A8;&#x7C7B;&#xFF08;storageClass&#xFF09;</h2>
+<h1 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h1>
+<ol>
+<li><a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/" target="_blank">https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/</a></li>
+<li><p><a href="https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/" target="_blank">https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/</a></p>
+</li>
+<li><p><a href="https://github.com/goharbor/harbor" target="_blank">https://github.com/goharbor/harbor</a></p>
+</li>
+<li><a href="https://doc.traefik.io/traefik/" target="_blank">https://doc.traefik.io/traefik/</a></li>
+<li><a href="https://rancher.com/docs/rancher/v2.x/en/" target="_blank">https://rancher.com/docs/rancher/v2.x/en/</a></li>
+<li><a href="https://github.com/kubernetes-sigs" target="_blank">https://github.com/kubernetes-sigs</a></li>
+</ol>
+<hr>
+<p>End</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Zeng 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Modified @
+2020-12-12 17:04:11
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../deployment/k8s/" class="navigation navigation-prev " aria-label="Previous page: Kubernetes">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../deployment/k8s/installation/" class="navigation navigation-next " aria-label="Next page: 安装">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"K8s","level":"2.3.1","depth":2,"next":{"title":"安装","level":"2.3.2","depth":2,"path":"docs/deployment/k8s/installation/README.md","ref":"docs/deployment/k8s/installation/README.md","articles":[{"title":"Kubespray","level":"2.3.2.1","depth":3,"path":"docs/deployment/k8s/installation/kubespray-k8s/kubespray-k8s.md","ref":"docs/deployment/k8s/installation/kubespray-k8s/kubespray-k8s.md","articles":[]},{"title":"RKE","level":"2.3.2.2","depth":3,"path":"docs/deployment/k8s/installation/rke-k8s/rke-k8s.md","ref":"docs/deployment/k8s/installation/rke-k8s/rke-k8s.md","articles":[]},{"title":"Rancher","level":"2.3.2.3","depth":3,"path":"docs/deployment/k8s/installation/rancher-k8s/rancher-k8s.md","ref":"docs/deployment/k8s/installation/rancher-k8s/rancher-k8s.md","articles":[]},{"title":"Kubeadm","level":"2.3.2.4","depth":3,"path":"docs/deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.md","ref":"docs/deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.md","articles":[]}]},"previous":{"title":"Kubernetes","level":"2.3","depth":1,"path":"docs/deployment/k8s/README.md","ref":"docs/deployment/k8s/README.md","articles":[{"title":"K8s","level":"2.3.1","depth":2,"path":"docs/normal/k8s-learning.md","ref":"docs/normal/k8s-learning.md","articles":[]},{"title":"安装","level":"2.3.2","depth":2,"path":"docs/deployment/k8s/installation/README.md","ref":"docs/deployment/k8s/installation/README.md","articles":[{"title":"Kubespray","level":"2.3.2.1","depth":3,"path":"docs/deployment/k8s/installation/kubespray-k8s/kubespray-k8s.md","ref":"docs/deployment/k8s/installation/kubespray-k8s/kubespray-k8s.md","articles":[]},{"title":"RKE","level":"2.3.2.2","depth":3,"path":"docs/deployment/k8s/installation/rke-k8s/rke-k8s.md","ref":"docs/deployment/k8s/installation/rke-k8s/rke-k8s.md","articles":[]},{"title":"Rancher","level":"2.3.2.3","depth":3,"path":"docs/deployment/k8s/installation/rancher-k8s/rancher-k8s.md","ref":"docs/deployment/k8s/installation/rancher-k8s/rancher-k8s.md","articles":[]},{"title":"Kubeadm","level":"2.3.2.4","depth":3,"path":"docs/deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.md","ref":"docs/deployment/k8s/installation/kubeadm-k8s/kubeadm-k8s-steps.md","articles":[]}]},{"title":"部署","level":"2.3.3","depth":2,"path":"docs/deployment/k8s/deployment/README.md","ref":"docs/deployment/k8s/deployment/README.md","articles":[{"title":"K8s Dashboard","level":"2.3.3.1","depth":3,"path":"docs/deployment/k8s/deployment/Kubernetes-dashboard.md","ref":"docs/deployment/k8s/deployment/Kubernetes-dashboard.md","articles":[]},{"title":"ELK","level":"2.3.3.2","depth":3,"path":"docs/deployment/k8s/deployment/ELK.md","ref":"docs/deployment/k8s/deployment/ELK.md","articles":[]},{"title":"Prometheus","level":"2.3.3.3","depth":3,"path":"docs/deployment/k8s/deployment/k8s-prometheus.md","ref":"docs/deployment/k8s/deployment/k8s-prometheus.md","articles":[]},{"title":"NFS动态PV","level":"2.3.3.4","depth":3,"path":"docs/deployment/k8s/deployment/k8s-nfs-storageclass.md","ref":"docs/deployment/k8s/deployment/k8s-nfs-storageclass.md","articles":[]},{"title":"Rancher","level":"2.3.3.5","depth":3,"path":"docs/deployment/k8s/deployment/k8s-rancher.md","ref":"docs/deployment/k8s/deployment/k8s-rancher.md","articles":[]},{"title":"Helm&Tiller","level":"2.3.3.6","depth":3,"path":"docs/deployment/k8s/deployment/k8s-helm.md","ref":"docs/deployment/k8s/deployment/k8s-helm.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","-sharing","search-plus","simple-page-toc","editlink","splitter","tbfed-pagefooter","chapter-fold","sectionx","anchor-navigation-ex","code","todo","pageview-count","hide-element","fancybox"],"root":".","styles":{"website":"/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © Zeng 2019","modify_label":"Modified @","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fancybox":{"helpers":{"buttons":{}}},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/zlzgithub/docs/blob/master/"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link",".treeview__container-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"pageview-count":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Zeng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DevOps Pages","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"运维笔记"},"file":{"path":"docs/normal/k8s-learning.md","mtime":"2020-12-12T17:04:11.889Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-12T17:07:54.823Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
