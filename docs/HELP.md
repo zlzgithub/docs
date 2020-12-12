@@ -92,18 +92,6 @@ unless you want to contribute back to the upstream project.
 
 ----
 
-[Ops](assets/Ops.zip)
-
-[Ops-lite](assets/Ops-lite.zip)
-
-[Ops-lite1123](assets/Ops-lite-1123.zip)
-
-[pic](assets/E.zip)
-
-[Q&A](assets/Q&A.zip)
-
-[docker&k8s_1115](assets/docker&k8s_1115.zip)
-
 Forked from @virtuacreative
 
 [ci]: https://about.gitlab.com/gitlab-ci/
